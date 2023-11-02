@@ -2,37 +2,36 @@
 
 // Constructors and destructor
 Model::Model() {}
-Model::~Model() {
-    for(auto flow : flows) delete flow;
-    for(auto system : systems) delete system;
-}
 
 void Model::execute(int timeInitial, int timeFinal) {
 
    setInitialHistory();
 
    for (int tempo = timeInitial; tempo < timeFinal; tempo++) {
-        // Vetor para armazenar valores dos fluxos
+        // Vector to save flows and systems values
         vector<double> currentFlowValues(flows.size());
         vector<double> currentSystemValues;
 
-        // Calcula os valores dos fluxos
-        for (size_t i = 0; i < flows.size(); i++) {
-            currentFlowValues[i] = flows[i]->execute();  
+        // Flow values
+        for (Model::flowIterator it = beginFlows(); it != endFlows(); ++it) {
+            Flow* flow = *it;
+            currentFlowValues[it - beginFlows()] = flow->execute();
         }
 
-        // Atualiza os sistemas de acordo com os fluxos
-        for (size_t i = 0; i < flows.size(); i++) {
-            System* sistemaOrigem = flows[i]->getSource();
-            System* sistemaDestino = flows[i]->getTarget();
+        // Update systems by flows
+        for (Model::flowIterator it = beginFlows(); it != endFlows(); ++it) {
+            Flow* flow = *it;
+            System* source = flow->getSource();
+            System* target = flow->getTarget();
 
-            // Atualiza os valores dos sistemas de origem e destino
-            sistemaOrigem->setValue(sistemaOrigem->getValue() - currentFlowValues[i]);
-            sistemaDestino->setValue(sistemaDestino->getValue() + currentFlowValues[i]);
+            // Update source and target systems
+            source->setValue(source->getValue() - currentFlowValues[it - beginFlows()]);
+            target->setValue(target->getValue() + currentFlowValues[it - beginFlows()]);
         }
 
-        for(auto& sistem : systems) {
-            currentSystemValues.push_back(sistem->getValue());
+        for (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) {
+            System* system = *it;
+            currentSystemValues.push_back(system->getValue());
         }
         history.push_back(currentSystemValues);
     }
@@ -41,8 +40,9 @@ void Model::execute(int timeInitial, int timeFinal) {
 void Model::setInitialHistory() {
     vector<double> current;
 
-    for(auto& sistem : systems) {
-       current.push_back(sistem->getValue());
+    for (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) {
+        System* system = *it;
+        current.push_back(system->getValue());
     }
     history.push_back(current);
 }
@@ -50,15 +50,16 @@ void Model::setInitialHistory() {
 void Model::report() {
 
     cout << "Time";
-    for (auto& sistem : systems) {
-        cout << "\t" << sistem->getName();
+    for (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) {
+        System* system = *it;
+        cout << "\t" << system->getName();
     }
     cout << endl;
 
-    for (size_t i = 0; i < history.size(); i++) {
-        cout << i;  
-        for (size_t j = 0; j < history[i].size(); j++) {
-            cout << "\t" << history[i][j];
+    for (Model::historyIterator it1 = beginHistory(); it1 != endHistory(); ++it1) {
+        cout << distance(beginHistory(), it1);
+        for (vector<double>::iterator it2 = it1->begin(); it2 != it1->end(); ++it2) {
+            cout << "\t" << *it2;
         }
         cout << endl;
     }
@@ -67,9 +68,17 @@ void Model::report() {
 void Model::add(Flow* flow) { flows.push_back(flow); }
 void Model::add(System* system) { systems.push_back(system); }
 
+// Iterators
+Model::systemIterator Model::beginSystems() { return systems.begin(); }
+Model::systemIterator Model::endSystems() { return systems.end(); }
+Model::flowIterator Model::beginFlows() { return flows.begin(); }
+Model::flowIterator Model::endFlows() { return flows.end(); }
+Model::historyIterator Model::beginHistory() { return history.begin(); }
+Model::historyIterator Model::endHistory() { return history.end(); }
+
 void Model::clearModel() {
-    for(auto flow : flows) delete flow;
-    for(auto system : systems) delete system;
+    for (auto flow : flows) delete flow;
+    for (auto system : systems) delete system;
     flows.clear();
     systems.clear();
 }

@@ -15,13 +15,25 @@ private:
 
 public:
     // Constructor
-    Model();  
+    Model();
+
+    // Iterators
+    typedef vector<System *>::iterator systemIterator;
+    typedef vector<Flow *>::iterator flowIterator;
+    typedef vector<vector<double>>::iterator historyIterator;
+
+    systemIterator beginSystems();
+    systemIterator endSystems();   
+    flowIterator beginFlows();   
+    flowIterator endFlows();
+    historyIterator beginHistory();   
+    historyIterator endHistory();
 
     // Destructor
-    ~Model();
+    virtual ~Model();
 
     // Methods
-    void execute(int timeInitial, int timeFinal);
+    void execute(const int timeInitial, const int timeFinal);
     void report();
     void setInitialHistory();
 
@@ -29,12 +41,6 @@ public:
     void add(Flow* flow);
     void add(System* system);
     void clearModel();
-
-    // Getters and Setters for t_inicial and t_final
-    int getTInicial() const;
-    int getTFinal() const;
-    void setTInicial(int time);
-    void setTFinal(int time);
 };
 
 #endif
