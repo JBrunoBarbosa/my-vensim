@@ -13,7 +13,7 @@ private:
 
 public:
     // Constuctors
-    Flow(string name, System* source, System* target);
+    Flow(string name = "", System* source = nullptr, System* target = nullptr);
     Flow(const Flow* other);
 
     // Destructor
