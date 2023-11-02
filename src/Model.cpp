@@ -3,6 +3,9 @@
 // Constructors and destructor
 Model::Model() {}
 
+// Destructor
+Model::~Model() {} 
+
 void Model::execute(int timeInitial, int timeFinal) {
 
    setInitialHistory();

@@ -34,7 +34,7 @@ public:
     string getName() const;
     
     // Operator 
-    Flow& Flow::operator=(const Flow& other);
+    Flow& operator=(const Flow& other);
 };
 
 #endif
