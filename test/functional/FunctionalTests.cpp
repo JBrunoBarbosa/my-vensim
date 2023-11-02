@@ -46,7 +46,7 @@ void logisticalFuncionalTest(){
     
     System* p = new System("Populacao 1", 100);
     System* p2 = new System("Populacao 2", 10);
-    Flow* logFlow = new FlowExponential("Crescimento", p, p2);
+    Flow* logFlow = new FlowLogistic("Crescimento", p, p2);
     Model* logModel = new Model();
    
     logModel->add(p);

@@ -1,4 +1,4 @@
-#include "funcional_tests.h"
+#include "FunctionalTests.hpp"
 
 int main(){
 
