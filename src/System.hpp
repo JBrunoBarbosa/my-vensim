@@ -14,19 +14,22 @@ private:
 public:
 
     // Constructors
-    System(string name, double value);
-    System(string name);
+    System(const string name = "", const double value = 0.0);
+    System(const System* other);
 
     // Destructor
-    ~System();
+    virtual ~System();
 
     // Setters
-    void setName(string name);
-    void setValue(double value);
+    void setName(const string name);
+    void setValue(const double value);
 
     // Getters
     string getName() const;
     double getValue() const;
+
+    // Operador
+    System& operator=(const System& other);
 };
 
 #endif
