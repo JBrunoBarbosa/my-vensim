@@ -1,6 +1,10 @@
 name: Clean Files
 
 on: [pull_request]
+  workflow_run:
+    workflows: ["Checkout Code", "Install Dependencies", "Build Project", "Functional Tests"]
+    types:
+      - completed
 
 jobs:
   build-and-test:

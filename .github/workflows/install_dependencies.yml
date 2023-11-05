@@ -1,6 +1,10 @@
 name: Install Dependencies
 
 on: [pull_request]
+  workflow_run:
+    workflows: ["Checkout Code"]
+    types:
+      - completed
 
 jobs:
   build-and-test:

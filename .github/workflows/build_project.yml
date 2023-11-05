@@ -1,6 +1,10 @@
 name: Build Project
 
 on: [pull_request]
+  workflow_run:
+    workflows: ["Checkout Code", "Install Dependencies"]
+    types:
+      - completed
 
 jobs:
   build-and-test:
