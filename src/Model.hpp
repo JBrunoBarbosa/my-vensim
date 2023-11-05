@@ -41,6 +41,8 @@ public:
     void add(Flow* flow);
     void add(System* system);
     void clearModel();
+
+    Model& operator= (const Model&);
 };
 
 #endif

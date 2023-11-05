@@ -85,3 +85,21 @@ void Model::clearModel() {
     flows.clear();
     systems.clear();
 }
+
+Model& Model::operator= (const Model &model){
+
+    if(this == &model)
+        return *this;
+
+
+    for(System* element: systems){
+        add(element);
+    }
+
+
+    for(Flow* element: flows){
+        add(element);
+    }
+
+    return *this;
+}
