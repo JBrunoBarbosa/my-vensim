@@ -1,0 +1,11 @@
+name: Clean Files
+
+on: [pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+
+    steps:
+    - name: Clean files
+      run: make clean

@@ -10,8 +10,6 @@
 using namespace std;
 
 void exponentialFuncionalTest(){
-    cout << "---------Teste Exponencial---------" << endl;
-
     System* pop = new System("Populacao 1", 100);
     System* pop2 = new System("Populacao 2", 0);
     Flow* expFlow = new FlowExponential("Crescimento", pop, pop2);
@@ -38,12 +36,10 @@ void exponentialFuncionalTest(){
     delete pop2;
     delete expFlow;
     
-    cout << "Teste Bem Sucedido" << endl;
+    cout << "Teste Exponencial Bem Sucedido" << endl;
 }
 
 void logisticalFuncionalTest(){
-    cout << "-------------Teste Logistico------------" << endl;
-    
     System* p = new System("Populacao 1", 100);
     System* p2 = new System("Populacao 2", 10);
     Flow* logFlow = new FlowLogistic("Crescimento", p, p2);
@@ -70,12 +66,11 @@ void logisticalFuncionalTest(){
     delete logFlow;
     delete logModel;
 
-    cout << "Teste Bem Sucedido" << endl;
+    cout << "Teste Logistico Bem Sucedido" << endl;
 }
 
 void complexFuncionalTest(){
-    cout << "----------------Teste Complexo---------------" << endl;
-    
+
     System* q1 = new System("Q1", 100);
     System* q2 = new System("Q2", 0);
     System* q3 = new System("Q3", 100);
@@ -140,5 +135,5 @@ void complexFuncionalTest(){
     delete comFlowR;
     delete comModel;
 
-    cout << "Teste Bem Sucedido" << endl;
+    cout << "Teste Complexo Bem Sucedido" << endl;
 }
