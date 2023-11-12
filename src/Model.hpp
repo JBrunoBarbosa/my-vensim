@@ -12,10 +12,12 @@ private:
     vector<Flow*> flows;
     vector<System*> systems;
     vector<vector<double>> history;
+    Model& operator= (const Model&);
 
 public:
     // Constructor
     Model();
+    Model(Model* other);
 
     // Iterators
     typedef vector<System *>::iterator systemIterator;
@@ -41,8 +43,6 @@ public:
     void add(Flow* flow);
     void add(System* system);
     void clearModel();
-
-    Model& operator= (const Model&);
 };
 
 #endif

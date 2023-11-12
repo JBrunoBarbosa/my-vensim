@@ -1,10 +1,10 @@
 #include <iostream>
 #include <assert.h>
 #include "FunctionalTests.hpp" 
+#include "../models/FlowExponential.hpp"
+#include "../models/FlowLogistic.hpp"
 #include "../../src/System.hpp"
 #include "../../src/Flow.hpp"
-#include "../../src/FlowExponential.hpp"
-#include "../../src/FlowLogistic.hpp"
 #include "../../src/Model.hpp"
 
 using namespace std;

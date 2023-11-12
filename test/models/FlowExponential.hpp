@@ -1,12 +1,11 @@
 #ifndef FLOW_EXPONENTIAL_HPP
 #define FLOW_EXPONENTIAL_HPP
 
-#include "Flow.hpp"
+#include "../../src/Flow.hpp"
 
 class FlowExponential : public Flow {
 public:
-    FlowExponential(string name, System* source, System* target);
-    FlowExponential(string name);
+    using Flow::Flow;   
     double execute() override;
 };
 

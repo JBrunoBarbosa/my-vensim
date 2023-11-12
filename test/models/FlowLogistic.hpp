@@ -1,12 +1,11 @@
 #ifndef FLOW_LOGISTIC_HPP
 #define FLOW_LOGISTIC_HPP
 
-#include "Flow.hpp"
+#include "../../src/Flow.hpp"
 
 class FlowLogistic : public Flow {
 public:
-    FlowLogistic(string name, System* source, System* target);
-    FlowLogistic(string name);
+    using Flow::Flow;
     double execute() override;
 };
 

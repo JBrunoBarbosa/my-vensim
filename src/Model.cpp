@@ -6,6 +6,31 @@ Model::Model() {}
 // Destructor
 Model::~Model() {} 
 
+// Operator private
+Model& Model::operator= (const Model &model){}
+
+// Add methods
+void Model::add(Flow* flow) { flows.push_back(flow); }
+void Model::add(System* system) { systems.push_back(system); }
+
+// Iterators
+Model::systemIterator Model::beginSystems() { return systems.begin(); }
+Model::systemIterator Model::endSystems() { return systems.end(); }
+Model::flowIterator Model::beginFlows() { return flows.begin(); }
+Model::flowIterator Model::endFlows() { return flows.end(); }
+Model::historyIterator Model::beginHistory() { return history.begin(); }
+Model::historyIterator Model::endHistory() { return history.end(); }
+
+Model::Model(Model* obj){
+    
+    for(systemIterator it = obj->beginSystems(); it != obj->endSystems(); ++it){
+        (systems).push_back(*it);
+    }
+    for(flowIterator it = obj->beginFlows(); it != obj->endFlows(); ++it){
+        (flows).push_back(*it);
+    }
+}
+
 void Model::execute(int timeInitial, int timeFinal) {
 
    setInitialHistory();
@@ -68,38 +93,9 @@ void Model::report() {
     }
 }
 
-void Model::add(Flow* flow) { flows.push_back(flow); }
-void Model::add(System* system) { systems.push_back(system); }
-
-// Iterators
-Model::systemIterator Model::beginSystems() { return systems.begin(); }
-Model::systemIterator Model::endSystems() { return systems.end(); }
-Model::flowIterator Model::beginFlows() { return flows.begin(); }
-Model::flowIterator Model::endFlows() { return flows.end(); }
-Model::historyIterator Model::beginHistory() { return history.begin(); }
-Model::historyIterator Model::endHistory() { return history.end(); }
-
 void Model::clearModel() {
     for (auto flow : flows) delete flow;
     for (auto system : systems) delete system;
     flows.clear();
     systems.clear();
-}
-
-Model& Model::operator= (const Model &model){
-
-    if(this == &model)
-        return *this;
-
-
-    for(System* element: systems){
-        add(element);
-    }
-
-
-    for(Flow* element: flows){
-        add(element);
-    }
-
-    return *this;
 }
