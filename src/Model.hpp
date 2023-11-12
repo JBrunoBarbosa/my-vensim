@@ -12,7 +12,7 @@ private:
     vector<Flow*> flows;
     vector<System*> systems;
     vector<vector<double>> history;
-    Model& operator= (const Model&);
+    void operator= (const Model&);
 
 public:
     // Constructor
