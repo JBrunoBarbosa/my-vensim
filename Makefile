@@ -7,11 +7,11 @@ System.o: ./src/System.cpp ./src/System.hpp
 Flow.o: ./src/Flow.cpp ./src/Flow.hpp System.o
 	g++ -Wall -g -c ./src/Flow.cpp -o ./bin/Flow.o
 
-FlowExponential.o: ./src/FlowExponential.cpp ./src/FlowExponential.hpp System.o
-	g++ -Wall -g -c ./src/FlowExponential.cpp -o ./bin/FlowExponential.o
+FlowExponential.o: ./test/models/FlowExponential.cpp ./test/models/FlowExponential.hpp System.o
+	g++ -Wall -g -c ./test/models/FlowExponential.cpp -o ./bin/FlowExponential.o
 
-FlowLogistic.o: ./src/FlowLogistic.cpp ./src/FlowLogistic.hpp System.o
-	g++ -Wall -g -c ./src/FlowLogistic.cpp -o ./bin/FlowLogistic.o
+FlowLogistic.o: ./test/models/FlowLogistic.cpp ./test/models/FlowLogistic.hpp System.o
+	g++ -Wall -g -c ./test/models/FlowLogistic.cpp -o ./bin/FlowLogistic.o
 
 Model.o: ./src/Model.cpp ./src/Model.hpp Flow.o System.o
 	g++ -Wall -g -c ./src/Model.cpp -o ./bin/Model.o

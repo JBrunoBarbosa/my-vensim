@@ -7,7 +7,7 @@ Model::Model() {}
 Model::~Model() {} 
 
 // Operator private
-Model& Model::operator= (const Model &model){}
+void Model::operator= (const Model &model){}
 
 // Add methods
 void Model::add(Flow* flow) { flows.push_back(flow); }
