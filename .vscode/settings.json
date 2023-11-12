@@ -30,6 +30,7 @@
         "fstream": "cpp",
         "initializer_list": "cpp",
         "iosfwd": "cpp",
+        "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
         "new": "cpp",
@@ -37,9 +38,6 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp",
-        "iostream": "cpp",
-        "iomanip": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "enabled"
+        "typeinfo": "cpp"
+    }
 }

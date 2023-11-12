@@ -13,11 +13,11 @@ private:
 
 public:
     // Constuctors
-    Flow(string name, System* source, System* target);
-    Flow(string name);
+    Flow(string name = "", System* source = nullptr, System* target = nullptr);
+    Flow(const Flow* other);
 
     // Destructor
-    ~Flow(); 
+    virtual ~Flow(); 
 
     // Methods
     double virtual execute() = 0;
@@ -32,6 +32,9 @@ public:
     System* getSource() const;
     System* getTarget() const;
     string getName() const;
+    
+    // Operator 
+    Flow& operator=(const Flow& other);
 };
 
-#endif
+#endif 
