@@ -1,0 +1,9 @@
+<map id="unit_Flow_constructor" name="unit_Flow_constructor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,154,83"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#aff4ced90aedec7ff19ea84086ea0d412" title="Obtém o nome do fluxo." alt="" coords="205,5,338,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,53,203,34,204,39,134,58"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title="Obtém o sistema de origem do fluxo." alt="" coords="202,56,341,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,67,186,67,186,72,154,72"/>
+<area shape="rect" id="Node000004" href="$class_flow_impl.html#adb35e3574470e91207c631fda3cdc9bd" title="Obtém o sistema de destino do fluxo." alt="" coords="204,107,339,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,81,204,100,203,105,132,86"/>
+</map>

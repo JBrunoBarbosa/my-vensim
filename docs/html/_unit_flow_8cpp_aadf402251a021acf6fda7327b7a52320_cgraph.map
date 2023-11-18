@@ -1,0 +1,7 @@
+<map id="unit_Flow_setName" name="unit_Flow_setName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,141,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#aff4ced90aedec7ff19ea84086ea0d412" title="Obtém o nome do fluxo." alt="" coords="189,5,321,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,32,173,27,174,33,141,37"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#a0697f37bf67037c7a6b8fd2671cb0a7d" title="Define o nome do fluxo." alt="" coords="189,56,321,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,51,174,55,173,61,141,56"/>
+</map>

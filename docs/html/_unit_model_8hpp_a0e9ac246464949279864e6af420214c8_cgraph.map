@@ -1,0 +1,9 @@
+<map id="unit_Model_beginSystems" name="unit_Model_beginSystems">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,180,83"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a3e8843e5353f40ab30afcf19b4f13a67" title="Adiciona um flow no model." alt="" coords="259,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,53,243,32,244,37,155,58"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#a4a03adec9113f93ad2504ad67859ebb6" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="228,56,399,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,67,212,67,212,72,180,72"/>
+<area shape="rect" id="Node000004" href="$class_model_impl.html#a36b84959d5586b53b7dfade16d5e6c2e" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="233,107,394,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,81,238,100,237,105,153,86"/>
+</map>

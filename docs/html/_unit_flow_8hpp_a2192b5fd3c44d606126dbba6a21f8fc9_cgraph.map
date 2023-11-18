@@ -1,0 +1,9 @@
+<map id="unit_Flow_execute" name="unit_Flow_execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,135,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_exponential.html#a4ac6c0ad3b6291c700c0247444bdcaf1" title="&lt; Herda construtores da classe FlowImpl." alt="" coords="183,31,353,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,41,167,41,167,47,135,47"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title="Obtém o sistema de origem do fluxo." alt="" coords="401,5,540,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,31,386,27,386,32,354,36"/>
+<area shape="rect" id="Node000004" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="408,56,533,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="354,52,393,57,392,62,353,57"/>
+</map>
