@@ -10,9 +10,9 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
-#include <vector>
 #include "System.hpp"
 #include "Flow.hpp"
+#include <vector>
 
 class Model {
 public:
@@ -25,9 +25,9 @@ public:
     /**
      * @brief Declaração dos iteradores.
      */
-    typedef vector<System *>::iterator systemIterator;
-    typedef vector<Flow *>::iterator flowIterator;
-    typedef vector<vector<double>>::iterator historyIterator;
+    typedef std::vector<System *>::iterator systemIterator;
+    typedef std::vector<Flow *>::iterator flowIterator;
+    typedef std::vector<std::vector<double>>::iterator historyIterator;
 
     /**
      * @brief Retorna um iterador para o início dos sistemas no modelo.

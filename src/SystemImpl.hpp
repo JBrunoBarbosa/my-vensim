@@ -1,22 +1,21 @@
 #ifndef SYSTEM_IMPL_HPP
 #define SYSTEM_IMPL_HPP
 
-#include <string>
 #include "System.hpp"
 
 class SystemImpl: public System {
 protected:
-    string name;      
+    std::string name;      
     double value;     
 
 public:
-    SystemImpl(const string name = "", const double value = 0.0);
+    SystemImpl(const std::string name = "", const double value = 0.0);
     SystemImpl(const System* other);
     virtual ~SystemImpl();
 
-    void setName(const string name) override;
+    void setName(const std::string name) override;
     void setValue(const double value) override;
-    string getName() const override;
+    std::string getName() const override;
     double getValue() const override;
     System& operator=(const System& other);
     System* clone() const override;

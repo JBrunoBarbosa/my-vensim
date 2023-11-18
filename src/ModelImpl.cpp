@@ -1,5 +1,5 @@
-#include <iostream>
 #include "ModelImpl.hpp"
+#include <iostream>
 
 using namespace std;
 

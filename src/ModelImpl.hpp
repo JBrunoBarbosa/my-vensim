@@ -5,9 +5,9 @@
 
 class ModelImpl : public Model {
 protected:
-    vector<Flow*> flows;
-    vector<System*> systems;
-    vector<vector<double>> history;
+    std::vector<Flow*> flows;
+    std::vector<System*> systems;
+    std::vector<std::vector<double>> history;
 
 public:
     ModelImpl();
