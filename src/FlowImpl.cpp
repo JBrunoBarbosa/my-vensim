@@ -1,5 +1,7 @@
 #include "FlowImpl.hpp"
 
+using namespace std;
+
 // Constructors
 FlowImpl::FlowImpl(string name, System* source, System* target) : name(name), source(source), target(target) {}
 

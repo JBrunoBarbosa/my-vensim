@@ -2,10 +2,7 @@
 #define SYSTEM_IMPL_HPP
 
 #include <string>
-#include <iostream>
 #include "System.hpp"
-
-using namespace std;
 
 class SystemImpl: public System {
 protected:

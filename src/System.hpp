@@ -10,9 +10,6 @@
 #define SYSTEM_HPP
 
 #include <string>
-#include <iostream>
-
-using namespace std;
 
 class System {
 public:
@@ -26,7 +23,7 @@ public:
      * @brief Define o nome do sistema.
      * @param name O novo nome descritivo do sistema.
      */
-    virtual void setName(const string name) = 0;
+    virtual void setName(const std::string name) = 0;
 
     /**
      * @brief Define o valor associado ao sistema.
@@ -39,7 +36,7 @@ public:
      * @brief Obtém o nome do sistema.
      * @return O nome descritivo do sistema.
      */
-    virtual string getName() const = 0;
+    virtual std::string getName() const = 0;
 
     /**
      * @brief Obtém o valor associado ao sistema.

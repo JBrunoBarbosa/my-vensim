@@ -1,4 +1,7 @@
+#include <iostream>
 #include "ModelImpl.hpp"
+
+using namespace std;
 
 // Constructors and destructor
 ModelImpl::ModelImpl() {}
