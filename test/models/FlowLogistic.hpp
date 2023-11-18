@@ -9,11 +9,11 @@
 #ifndef FLOW_LOGISTIC_HPP
 #define FLOW_LOGISTIC_HPP
 
-#include "../../src/Flow.hpp"
+#include "../../src/FlowImpl.hpp"
 
-class FlowLogistic : public Flow {
+class FlowLogistic : public FlowImpl {
 public:
-    using Flow::Flow;   ///< Herda construtores da classe `Flow`.
+    using FlowImpl::FlowImpl;   ///< Herda construtores da classe `Flow`.
 
     /**
      * @brief Executa o fluxo logístico.

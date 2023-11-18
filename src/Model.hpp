@@ -14,21 +14,17 @@
 #include "System.hpp"
 #include "Flow.hpp"
 
-using namespace std;
-
 class Model {
-private:
-    vector<Flow*> flows;               ///< Vetor de ponteiros para os fluxos no modelo.
-    vector<System*> systems;           ///< Vetor de ponteiros para os sistemas no modelo.
-    vector<vector<double>> history;    ///< Histórico de valores durante a execução do modelo.
-    void operator= (const Model&);
-
 public:
-    // Construtor
-    Model();
-    Model(Model* other);
 
-    // Iteradores
+    /**
+     * @brief Destrutor virtual.
+    */
+    virtual ~Model() {};
+
+    /**
+     * @brief Declaração dos iteradores.
+     */
     typedef vector<System *>::iterator systemIterator;
     typedef vector<Flow *>::iterator flowIterator;
     typedef vector<vector<double>>::iterator historyIterator;
@@ -37,67 +33,71 @@ public:
      * @brief Retorna um iterador para o início dos sistemas no modelo.
      * @return Iterador para o início dos sistemas.
      */
-    systemIterator beginSystems();
+    virtual systemIterator beginSystems() = 0;
 
     /**
      * @brief Retorna um iterador para o final dos sistemas no modelo.
      * @return Iterador para o final dos sistemas.
      */
-    systemIterator endSystems();
+    virtual systemIterator endSystems() = 0;
 
     /**
      * @brief Retorna um iterador para o início dos fluxos no modelo.
      * @return Iterador para o início dos fluxos.
      */
-    flowIterator beginFlows();
+    virtual flowIterator beginFlows() = 0;
 
     /**
      * @brief Retorna um iterador para o final dos fluxos no modelo.
      * @return Iterador para o final dos fluxos.
      */
-    flowIterator endFlows();
+    virtual flowIterator endFlows() = 0;
 
     /**
      * @brief Retorna um iterador para o início do histórico no modelo.
      * @return Iterador para o início do histórico.
      */
-    historyIterator beginHistory();
+    virtual historyIterator beginHistory() = 0;
 
     /**
      * @brief Retorna um iterador para o final do histórico no modelo.
      * @return Iterador para o final do histórico.
      */
-    historyIterator endHistory();
+    virtual historyIterator endHistory() = 0;
+    
+    /**
+     * @brief Adiciona um flow no model.
+     * @param flow Adicionando um flow.
+    */
+    virtual void add(Flow* flow) = 0;
 
-    // Destrutor
-    virtual ~Model();
+    /**
+     * @brief Adiciona um sytem no model.
+     * @param system Adicionando um system.
+    */
+    virtual void add(System* system) = 0;
 
-    // Métodos
+    /**
+     * @brief Gera um relatório do modelo.
+     */
+    virtual void report() = 0;
+
+    /**
+     * @brief Define o histórico inicial com valores padrão.
+     */
+    virtual void setInitialHistory() = 0;
+
+    /**
+     * @brief Limpa o modelo, removendo todos os sistemas e fluxos.
+     */
+    virtual void clearModel() = 0;
+    
     /**
      * @brief Executa o modelo de tempo inicial a tempo final.
      * @param timeInitial O tempo inicial da execução do modelo.
      * @param timeFinal O tempo final da execução do modelo.
      */
-    void execute(const int timeInitial, const int timeFinal);
-
-    /**
-     * @brief Gera um relatório do modelo.
-     */
-    void report();
-
-    /**
-     * @brief Define o histórico inicial com valores padrão.
-     */
-    void setInitialHistory();
-
-    // Modifica o modelo
-    void add(Flow* flow);
-    void add(System* system);
-
-    /**
-     * @brief Limpa o modelo, removendo todos os sistemas e fluxos.
-     */
-    void clearModel();
+    virtual void execute(const int timeInitial, const int timeFinal) = 0;
 };
 
 #endif

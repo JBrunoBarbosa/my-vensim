@@ -1,27 +1,24 @@
-#include "Model.hpp"
+#include "ModelImpl.hpp"
 
 // Constructors and destructor
-Model::Model() {}
+ModelImpl::ModelImpl() {}
 
 // Destructor
-Model::~Model() {} 
-
-// Operator private
-void Model::operator= (const Model &model){}
+ModelImpl::~ModelImpl() {} 
 
 // Add methods
-void Model::add(Flow* flow) { flows.push_back(flow); }
-void Model::add(System* system) { systems.push_back(system); }
+void ModelImpl::add(Flow* flow) { flows.push_back(flow); }
+void ModelImpl::add(System* system) { systems.push_back(system); }
 
 // Iterators
-Model::systemIterator Model::beginSystems() { return systems.begin(); }
-Model::systemIterator Model::endSystems() { return systems.end(); }
-Model::flowIterator Model::beginFlows() { return flows.begin(); }
-Model::flowIterator Model::endFlows() { return flows.end(); }
-Model::historyIterator Model::beginHistory() { return history.begin(); }
-Model::historyIterator Model::endHistory() { return history.end(); }
+ModelImpl::systemIterator ModelImpl::beginSystems() { return systems.begin(); }
+ModelImpl::systemIterator ModelImpl::endSystems() { return systems.end(); }
+ModelImpl::flowIterator ModelImpl::beginFlows() { return flows.begin(); }
+ModelImpl::flowIterator ModelImpl::endFlows() { return flows.end(); }
+ModelImpl::historyIterator ModelImpl::beginHistory() { return history.begin(); }
+ModelImpl::historyIterator ModelImpl::endHistory() { return history.end(); }
 
-Model::Model(Model* obj){
+ModelImpl::ModelImpl(Model* obj){
     
     for(systemIterator it = obj->beginSystems(); it != obj->endSystems(); ++it){
         (systems).push_back(*it);
@@ -31,7 +28,7 @@ Model::Model(Model* obj){
     }
 }
 
-void Model::execute(int timeInitial, int timeFinal) {
+void ModelImpl::execute(int timeInitial, int timeFinal) {
 
    setInitialHistory();
 
@@ -65,7 +62,7 @@ void Model::execute(int timeInitial, int timeFinal) {
     }
 }
 
-void Model::setInitialHistory() {
+void ModelImpl::setInitialHistory() {
     vector<double> current;
 
     for (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) {
@@ -75,7 +72,7 @@ void Model::setInitialHistory() {
     history.push_back(current);
 }
 
-void Model::report() {
+void ModelImpl::report() {
 
     cout << "Time";
     for (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) {
@@ -93,7 +90,7 @@ void Model::report() {
     }
 }
 
-void Model::clearModel() {
+void ModelImpl::clearModel() {
     for (auto flow : flows) delete flow;
     for (auto system : systems) delete system;
     flows.clear();

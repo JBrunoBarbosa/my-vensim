@@ -1,33 +1,12 @@
-/**
- * @class Flow
- * @brief Esta classe representa um fluxo em um sistema.
- *
- * A classe `Flow` é responsável por representar um fluxo entre dois sistemas em um modelo.
- * Ela pode ser usada para modelar o fluxo de recursos, informações ou qualquer outra entidade
- * entre sistemas.
- */
+// Flow.hpp
 #ifndef FLOW_HPP
 #define FLOW_HPP
 
 #include "System.hpp"
-
-using namespace std;
+#include <string>
 
 class Flow {
-private:
-    string name;      ///< O nome do fluxo.
-    System* source;   ///< O sistema de origem do fluxo.
-    System* target;   ///< O sistema de destino do fluxo.
-
 public:
-    // Construtores
-    Flow(string name = "", System* source = nullptr, System* target = nullptr);
-    Flow(const Flow* other);
-
-    // Destrutor
-    virtual ~Flow();
-
-    // Métodos
     /**
      * @brief Executa o fluxo.
      *
@@ -36,7 +15,7 @@ public:
      *
      * @return O resultado da execução do fluxo.
      */
-    double virtual execute() = 0;
+    virtual double execute() = 0;
 
     /**
      * @brief Liga o fluxo a sistemas de origem e destino.
@@ -46,20 +25,54 @@ public:
      * @param source O sistema de origem do fluxo.
      * @param target O sistema de destino do fluxo.
      */
-    void link(System* source, System* target);
+    virtual void link(System* source, System* target) = 0;
 
-    // Setters
-    void setSource(System* source);
-    void setTarget(System* target);
-    void setName(string name);
+    /**
+     * @brief Define o sistema de origem do fluxo.
+     *
+     * @param source Sistema de origem do fluxo.
+     */
+    virtual void setSource(System* source) = 0;
 
-    // Getters
-    System* getSource() const;
-    System* getTarget() const;
-    string getName() const;
+    /**
+     * @brief Define o sistema de destino do fluxo.
+     *
+     * @param target Sistema de destino do fluxo.
+     */
+    virtual void setTarget(System* target) = 0;
 
-    // Operador de atribuição
-    Flow& operator=(const Flow& other);
+    /**
+     * @brief Define o nome do fluxo.
+     *
+     * @param name Nome do fluxo.
+     */
+    virtual void setName(const std::string name) = 0;
+
+    /**
+     * @brief Obtém o sistema de origem do fluxo.
+     *
+     * @return O sistema de origem do fluxo.
+     */
+    virtual System* getSource() const = 0;
+
+    /**
+     * @brief Obtém o sistema de destino do fluxo.
+     *
+     * @return O sistema de destino do fluxo.
+     */
+    virtual System* getTarget() const = 0;
+
+    /**
+     * @brief Obtém o nome do fluxo.
+     *
+     * @return O nome do fluxo.
+     */
+    virtual std::string getName() const = 0;
+
+    /**
+     * @brief Destrutor virtual.
+     */
+    virtual ~Flow() {};
 };
 
 #endif
