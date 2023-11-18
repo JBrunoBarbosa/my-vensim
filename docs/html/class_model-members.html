@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">my-vensim<span id="projectnumber">&#160;V 1.3</span>
+   <div id="projectname">my-vensim<span id="projectnumber">&#160;V 1.4</span>
    </div>
   </td>
  </tr>
@@ -75,24 +75,22 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="class_model.html">Model</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#ab69613bde0ace81c92bbf519660ccb2c">add</a>(Flow *flow)</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a302d4ed93c6e6f9a0f728e021a91f821">add</a>(System *system)</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a2c1ca83c40f2dea05e01275651a476b1">beginFlows</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#ab76eb23e9bcbc7d92ed3445ab21dbadb">beginHistory</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a79fe15fb9d2fbd880eaaf38b0f03e17e">beginSystems</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a6a453292b47443982659a56f7ee9155a">clearModel</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#abfae233cbcbc3b9875ee87698f1e140c">endFlows</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a984f9f5de11aa58885b168c4e232ae90">endHistory</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a815cd0c70ae9cb2344cc7256e2dda35f">endSystems</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a1db6e8d86983a326c44e95eec919f35a">execute</a>(const int timeInitial, const int timeFinal)</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#ab49462747685b9625739b323fbdb373b">flowIterator</a> typedef</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a6369bd9f585415accadb12e32ab6647b">historyIterator</a> typedef</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#ae3b375de5f6df4faf74a95d64748e048">Model</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a1d52d64f2e949edc126c596c980f5812">Model</a>(Model *other)</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a6c8adae88b9988587a4912650f660fd5">report</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#ab52fc3f82c19a530d16ff75789d2f5e5">setInitialHistory</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a6ee7e31b02b03db955c631d88c21f1be">systemIterator</a> typedef</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#ad6ebd2062a0b823db841a0b88baac4c0">~Model</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">add</a>(Flow *flow)=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#afde6c25ab942f2eec7aedeaf8eec53fd">add</a>(System *system)=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#abcffa5ec37be677f444f724a3c0ee474">clearModel</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">execute</a>(const int timeInitial, const int timeFinal)=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#af19b499569caa4d43b69914002e04271">flowIterator</a> typedef</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#a1540ee77b5d5bb07fef7e3f9d9ee867a">historyIterator</a> typedef</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#af679e89214a7cd7c8259af770c0731c9">report</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba">setInitialHistory</a>()=0</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_model.html#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a> typedef</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_model.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a>()</td><td class="entry"><a class="el" href="class_model.html">Model</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

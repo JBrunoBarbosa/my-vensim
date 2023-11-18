@@ -1,3 +1,7 @@
+/**
+ * @class ModelImpl
+ * @brief Classe que implementa Model.
+ */
 #ifndef MODELIMPL_HPP
 #define MODELIMPL_HPP
 

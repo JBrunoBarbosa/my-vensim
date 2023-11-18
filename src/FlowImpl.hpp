@@ -1,4 +1,7 @@
-// FlowImpl.hpp
+/**
+ * @class FlowImpl
+ * @brief Classe que implementa Flow.
+ */
 #ifndef FLOW_IMPL_HPP
 #define FLOW_IMPL_HPP
 

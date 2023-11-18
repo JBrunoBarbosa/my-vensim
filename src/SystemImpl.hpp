@@ -1,3 +1,7 @@
+/**
+ * @class SystemImpl
+ * @brief Classe que implementa System.
+ */
 #ifndef SYSTEM_IMPL_HPP
 #define SYSTEM_IMPL_HPP
 

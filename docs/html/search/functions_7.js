@@ -1,5 +1,5 @@
 var searchData=
 [
   ['main_0',['main',['../test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Main.cpp']]],
-  ['model_1',['model',['../class_model.html#ae3b375de5f6df4faf74a95d64748e048',1,'Model::Model()'],['../class_model.html#a1d52d64f2e949edc126c596c980f5812',1,'Model::Model(Model *other)']]]
+  ['modelimpl_1',['modelimpl',['../class_model_impl.html#a081505846c37ce9928f2176d77db4bc8',1,'ModelImpl::ModelImpl()'],['../class_model_impl.html#a6f5958c8c1a164751346a284fe0df4a7',1,'ModelImpl::ModelImpl(Model *other)']]]
 ];

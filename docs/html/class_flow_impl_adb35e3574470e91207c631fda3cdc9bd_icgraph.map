@@ -1,0 +1,5 @@
+<map id="FlowImpl::getTarget" name="FlowImpl::getTarget">
+<area shape="rect" id="Node000001" title="Obtém o sistema de destino do fluxo." alt="" coords="201,5,335,32"/>
+<area shape="rect" id="Node000002" href="$class_flow_logistic.html#a9b25e905a9501d4b4bcc32183cccc4c5" title="&lt; Herda construtores da classe Flow." alt="" coords="5,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>

@@ -1,6 +1,6 @@
 /**
  * @class System
- * @brief Classe que representa um sistema.
+ * @brief Classe que representa um sistema puramente virtual.
  *
  * A classe `System` é responsável por representar um sistema em um modelo. Ela armazena
  * um nome descritivo e um valor associado ao sistema. Essa classe fornece métodos para

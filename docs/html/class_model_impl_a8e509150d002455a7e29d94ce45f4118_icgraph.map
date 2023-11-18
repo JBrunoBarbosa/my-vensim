@@ -1,0 +1,5 @@
+<map id="ModelImpl::beginFlows" name="ModelImpl::beginFlows">
+<area shape="rect" id="Node000001" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="188,5,341,32"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="5,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,21,140,21,140,16,172,16"/>
+</map>

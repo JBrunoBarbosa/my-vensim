@@ -1,4 +1,11 @@
-// Flow.hpp
+/**
+ * @class Flow
+ * @brief Classe que representa um fluxo de sistema puramente virtual.
+ *
+ * A classe `Flow` é responsável por representar um fluxo entre sistemas que ao executar 
+ * aplica uma funcao ao valor de sistemas.
+ *
+ */
 #ifndef FLOW_HPP
 #define FLOW_HPP
 

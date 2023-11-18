@@ -1,6 +1,6 @@
 /**
  * @class Model
- * @brief Classe que representa um modelo de sistema.
+ * @brief Classe que representa um modelo de sistema puramente virtual.
  *
  * A classe `Model` é responsável por representar um modelo de sistema que consiste em
  * uma coleção de fluxos (Flows) e sistemas (Systems). Ela fornece métodos para executar o

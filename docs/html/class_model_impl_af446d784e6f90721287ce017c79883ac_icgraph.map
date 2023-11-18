@@ -1,0 +1,5 @@
+<map id="ModelImpl::endHistory" name="ModelImpl::endHistory">
+<area shape="rect" id="Node000001" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="175,5,325,32"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a074977f721b0605a6d0407f15511ca5b" title="Gera um relatório do modelo." alt="" coords="5,5,127,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,21,127,21,127,16,159,16"/>
+</map>

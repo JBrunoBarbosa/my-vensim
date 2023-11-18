@@ -1,7 +1,0 @@
-<map id="C:/my&#45;vensin/test/models/FlowLogistic.hpp" name="C:/my&#45;vensin/test/models/FlowLogistic.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,279,48"/>
-<area shape="rect" id="Node000002" href="$_functional_tests_8cpp.html" title=" " alt="" coords="5,96,187,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,61,121,97,117,93,159,57"/>
-<area shape="rect" id="Node000003" href="$_flow_logistic_8cpp.html" title=" " alt="" coords="211,96,379,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,56,273,93,269,97,227,60"/>
-</map>

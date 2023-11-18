@@ -1,7 +1,7 @@
 <map id="FlowExponential::execute" name="FlowExponential::execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,176,57"/>
-<area shape="rect" id="Node000002" href="$class_flow.html#a1f3858f90d141807377c2640fb5dd0fc" title=" " alt="" coords="229,5,344,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,30,213,25,214,31,176,36"/>
-<area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title=" " alt="" coords="224,56,349,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,52,208,57,208,62,176,58"/>
+<area shape="rect" id="Node000001" title="&lt; Herda construtores da classe FlowImpl." alt="" coords="5,31,176,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title="Obtém o sistema de origem do fluxo." alt="" coords="224,5,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,31,208,27,209,32,176,36"/>
+<area shape="rect" id="Node000003" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="231,56,356,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,52,215,57,215,62,176,57"/>
 </map>

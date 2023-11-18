@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['historyiterator_0',['historyIterator',['../class_model.html#a6369bd9f585415accadb12e32ab6647b',1,'Model']]]
+  ['history_0',['history',['../class_model_impl.html#a99ad4520c697d919dc2568bed019f79e',1,'ModelImpl']]],
+  ['historyiterator_1',['historyIterator',['../class_model.html#a1540ee77b5d5bb07fef7e3f9d9ee867a',1,'Model']]]
 ];
