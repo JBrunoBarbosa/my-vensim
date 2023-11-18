@@ -16,8 +16,11 @@ jobs:
     - name: Build project
       run: make
 
-    - name: Run tests
+    - name: Run functional tests
       run: make run_functional
+
+    - name: Run unit tests
+      run: make run_unit
 
     - name: Clean files
       run: make clean
