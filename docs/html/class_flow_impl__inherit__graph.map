@@ -1,0 +1,9 @@
+<map id="FlowImpl" name="FlowImpl">
+<area shape="rect" id="Node000001" title="Classe que implementa Flow." alt="" coords="74,293,165,640"/>
+<area shape="rect" id="Node000003" href="$class_flow_exponential.html" title="Classe que representa um fluxo exponencial em um sistema." alt="" coords="5,688,113,800"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="81,655,74,689,69,688,76,654"/>
+<area shape="rect" id="Node000004" href="$class_flow_logistic.html" title="Classe que representa um fluxo logístico em um sistema." alt="" coords="138,688,223,800"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,654,171,688,166,689,158,655"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Classe que representa um fluxo de sistema puramente virtual." alt="" coords="74,5,165,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,260,122,293,117,293,117,260"/>
+</map>

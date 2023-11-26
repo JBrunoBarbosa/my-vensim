@@ -3,17 +3,17 @@
 #include "FunctionalTests.hpp" 
 #include "../models/FlowExponential.hpp"
 #include "../models/FlowLogistic.hpp"
-#include "../../src/System.hpp"
-#include "../../src/Flow.hpp"
-#include "../../src/Model.hpp"
+#include "../../src/SystemImpl.hpp"
+#include "../../src/FlowImpl.hpp"
+#include "../../src/ModelImpl.hpp"
 
 using namespace std;
 
 void exponentialFuncionalTest(){
-    System* pop = new System("Populacao 1", 100);
-    System* pop2 = new System("Populacao 2", 0);
+    System* pop = new SystemImpl("Populacao 1", 100);
+    System* pop2 = new SystemImpl("Populacao 2", 0);
     Flow* expFlow = new FlowExponential("Crescimento", pop, pop2);
-    Model* expModel = new Model();
+    Model* expModel = new ModelImpl();
 
     expModel->add(pop);
     expModel->add(pop2);
@@ -40,10 +40,10 @@ void exponentialFuncionalTest(){
 }
 
 void logisticalFuncionalTest(){
-    System* p = new System("Populacao 1", 100);
-    System* p2 = new System("Populacao 2", 10);
+    System* p = new SystemImpl("Populacao 1", 100);
+    System* p2 = new SystemImpl("Populacao 2", 10);
     Flow* logFlow = new FlowLogistic("Crescimento", p, p2);
-    Model* logModel = new Model();
+    Model* logModel = new ModelImpl();
    
     logModel->add(p);
     logModel->add(p2);
@@ -71,18 +71,18 @@ void logisticalFuncionalTest(){
 
 void complexFuncionalTest(){
 
-    System* q1 = new System("Q1", 100);
-    System* q2 = new System("Q2", 0);
-    System* q3 = new System("Q3", 100);
-    System* q4 = new System("Q4", 0);
-    System* q5 = new System("Q5", 0);
+    System* q1 = new SystemImpl("Q1", 100);
+    System* q2 = new SystemImpl("Q2", 0);
+    System* q3 = new SystemImpl("Q3", 100);
+    System* q4 = new SystemImpl("Q4", 0);
+    System* q5 = new SystemImpl("Q5", 0);
     Flow* comFlowF = new FlowExponential("Fluxo f", q1, q2);
     Flow* comFlowT = new FlowExponential("Fluxo t", q2, q3);
     Flow* comFlowU = new FlowExponential("Fluxo u", q3, q4);
     Flow* comFlowV = new FlowExponential("Fluxo v", q4, q1);
     Flow* comFlowG = new FlowExponential("Fluxo g", q1, q3);
     Flow* comFlowR = new FlowExponential("Fluxo r", q2, q5);
-    Model* comModel = new Model();
+    Model* comModel = new ModelImpl();
 
     comModel->add(q1);
     comModel->add(q2);

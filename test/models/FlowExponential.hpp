@@ -9,12 +9,12 @@
 #ifndef FLOW_EXPONENTIAL_HPP
 #define FLOW_EXPONENTIAL_HPP
 
-#include "../../src/Flow.hpp"
+#include "../../src/FlowImpl.hpp"
 
-class FlowExponential : public Flow {
+class FlowExponential : public FlowImpl {
 public:
-    using Flow::Flow;   ///< Herda construtores da classe `Flow`.
-
+    using FlowImpl::FlowImpl;   ///< Herda construtores da classe `FlowImpl`.
+    
     /**
      * @brief Executa o fluxo exponencial.
      *

@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['setinitialhistory_0',['setInitialHistory',['../class_model.html#ab52fc3f82c19a530d16ff75789d2f5e5',1,'Model']]],
-  ['setname_1',['setname',['../class_flow.html#ac829599a96f9ae03979d762771a4fea0',1,'Flow::setName()'],['../class_system.html#a36e1f259c6de9329eff42ce671ea80fa',1,'System::setName()']]],
-  ['setsource_2',['setSource',['../class_flow.html#a250fc53158862fc0db77b323a33e48a3',1,'Flow']]],
-  ['settarget_3',['setTarget',['../class_flow.html#ab69903880174e5bcdc0d815b5de7b3e0',1,'Flow']]],
-  ['setvalue_4',['setValue',['../class_system.html#ac9ebf01a2d2835412aca2b6a22e772a3',1,'System']]],
-  ['system_5',['system',['../class_system.html',1,'System'],['../class_system.html#a57978a652a158fc07bf8510ad68cbc2e',1,'System::System(const string name=&quot;&quot;, const double value=0.0)'],['../class_system.html#a426c4b34f62846ebf4b234eff4994f1a',1,'System::System(const System *other)']]],
-  ['system_2ecpp_6',['System.cpp',['../_system_8cpp.html',1,'']]],
-  ['system_2ehpp_7',['System.hpp',['../_system_8hpp.html',1,'']]],
-  ['systemiterator_8',['systemIterator',['../class_model.html#a6ee7e31b02b03db955c631d88c21f1be',1,'Model']]]
+  ['report_0',['report',['../class_model.html#af679e89214a7cd7c8259af770c0731c9',1,'Model::report()'],['../class_model_impl.html#a074977f721b0605a6d0407f15511ca5b',1,'ModelImpl::report()']]],
+  ['run_5funit_5ftests_5fflow_1',['run_unit_tests_flow',['../_unit_flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e',1,'run_unit_tests_Flow():&#160;UnitFlow.cpp'],['../_unit_flow_8hpp.html#a31fe372f712944be1d93f7c5b01fbb3e',1,'run_unit_tests_Flow():&#160;UnitFlow.cpp']]],
+  ['run_5funit_5ftests_5fmodel_2',['run_unit_tests_model',['../_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51',1,'run_unit_tests_Model():&#160;UnitModel.cpp'],['../_unit_model_8hpp.html#a8a49913008ee3aede79ca904bcb8cd51',1,'run_unit_tests_Model():&#160;UnitModel.cpp']]],
+  ['run_5funit_5ftests_5fsystem_3',['run_unit_tests_system',['../_unit_system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b',1,'run_unit_tests_System():&#160;UnitSystem.cpp'],['../_unit_system_8hpp.html#ad467de422f8fd316dde6be5ded75b13b',1,'run_unit_tests_System():&#160;UnitSystem.cpp']]]
 ];

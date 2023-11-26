@@ -76,17 +76,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Classe que representa um fluxo de sistema puramente virtual.  
+ <a href="class_flow.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_flow_8hpp_source.html">Flow.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__inherit__graph.png" border="0" usemap="#a_flow_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_flow_inherit__map" id="a_flow_inherit__map">
-<area shape="rect" title=" " alt="" coords="74,5,165,309"/>
-<area shape="rect" href="class_flow_exponential.html" title=" " alt="" coords="5,357,113,469"/>
-<area shape="poly" title=" " alt="" coords="83,325,75,358,70,357,78,323"/>
-<area shape="rect" href="class_flow_logistic.html" title=" " alt="" coords="138,357,223,469"/>
-<area shape="poly" title=" " alt="" coords="162,323,170,357,165,358,157,325"/>
+<area shape="rect" title="Classe que representa um fluxo de sistema puramente virtual." alt="" coords="74,5,165,245"/>
+<area shape="rect" href="class_flow_impl.html" title="Classe que implementa Flow." alt="" coords="74,293,165,640"/>
+<area shape="poly" title=" " alt="" coords="122,260,122,293,117,293,117,260"/>
+<area shape="rect" href="class_flow_exponential.html" title="Classe que representa um fluxo exponencial em um sistema." alt="" coords="5,688,113,800"/>
+<area shape="poly" title=" " alt="" coords="81,655,74,689,69,688,76,654"/>
+<area shape="rect" href="class_flow_logistic.html" title="Classe que representa um fluxo logístico em um sistema." alt="" coords="138,688,223,800"/>
+<area shape="poly" title=" " alt="" coords="164,654,171,688,166,689,158,655"/>
 </map>
 </div>
 <div class="dynheader">
@@ -94,102 +99,46 @@ Collaboration diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__coll__graph.png" border="0" usemap="#a_flow_coll__map" alt="Collaboration graph"/></div>
 <map name="a_flow_coll__map" id="a_flow_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,96,309"/>
+<area shape="rect" title="Classe que representa um fluxo de sistema puramente virtual." alt="" coords="5,5,96,245"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa71d94c5d1d8aef5c041f544d98014dd" id="r_aa71d94c5d1d8aef5c041f544d98014dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aa71d94c5d1d8aef5c041f544d98014dd">Flow</a> (string name=&quot;&quot;, <a class="el" href="class_system.html">System</a> *source=nullptr, <a class="el" href="class_system.html">System</a> *target=nullptr)</td></tr>
-<tr class="separator:aa71d94c5d1d8aef5c041f544d98014dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c4ddeecea15d85a8f5a5db2f8a2a806" id="r_a8c4ddeecea15d85a8f5a5db2f8a2a806"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a8c4ddeecea15d85a8f5a5db2f8a2a806">Flow</a> (const <a class="el" href="class_flow.html">Flow</a> *other)</td></tr>
-<tr class="separator:a8c4ddeecea15d85a8f5a5db2f8a2a806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5991efa6e8cf88c4ef2125cc727db333" id="r_a5991efa6e8cf88c4ef2125cc727db333"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a5991efa6e8cf88c4ef2125cc727db333">~Flow</a> ()</td></tr>
-<tr class="separator:a5991efa6e8cf88c4ef2125cc727db333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619be0b590c78202127bc6ac7fb04029" id="r_a619be0b590c78202127bc6ac7fb04029"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a619be0b590c78202127bc6ac7fb04029">execute</a> ()=0</td></tr>
+<tr class="memdesc:a619be0b590c78202127bc6ac7fb04029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa o fluxo.  <br /></td></tr>
 <tr class="separator:a619be0b590c78202127bc6ac7fb04029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d4af4063aa4fc2cf96f75e1b6fa599" id="r_a18d4af4063aa4fc2cf96f75e1b6fa599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a18d4af4063aa4fc2cf96f75e1b6fa599">link</a> (<a class="el" href="class_system.html">System</a> *source, <a class="el" href="class_system.html">System</a> *target)</td></tr>
-<tr class="separator:a18d4af4063aa4fc2cf96f75e1b6fa599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250fc53158862fc0db77b323a33e48a3" id="r_a250fc53158862fc0db77b323a33e48a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a250fc53158862fc0db77b323a33e48a3">setSource</a> (<a class="el" href="class_system.html">System</a> *source)</td></tr>
-<tr class="separator:a250fc53158862fc0db77b323a33e48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab69903880174e5bcdc0d815b5de7b3e0" id="r_ab69903880174e5bcdc0d815b5de7b3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ab69903880174e5bcdc0d815b5de7b3e0">setTarget</a> (<a class="el" href="class_system.html">System</a> *target)</td></tr>
-<tr class="separator:ab69903880174e5bcdc0d815b5de7b3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac829599a96f9ae03979d762771a4fea0" id="r_ac829599a96f9ae03979d762771a4fea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#ac829599a96f9ae03979d762771a4fea0">setName</a> (string name)</td></tr>
-<tr class="separator:ac829599a96f9ae03979d762771a4fea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3858f90d141807377c2640fb5dd0fc" id="r_a1f3858f90d141807377c2640fb5dd0fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a1f3858f90d141807377c2640fb5dd0fc">getSource</a> () const</td></tr>
-<tr class="separator:a1f3858f90d141807377c2640fb5dd0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8a0f8ca8dc50d37c92ab7556e172b5" id="r_aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a> () const</td></tr>
-<tr class="separator:aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62bbc54ff95eeb0795511519edf32077" id="r_a62bbc54ff95eeb0795511519edf32077"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a62bbc54ff95eeb0795511519edf32077">getName</a> () const</td></tr>
-<tr class="separator:a62bbc54ff95eeb0795511519edf32077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7550e37445bb6ae955beffd1fa857a" id="r_a5f7550e37445bb6ae955beffd1fa857a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a5f7550e37445bb6ae955beffd1fa857a">operator=</a> (const <a class="el" href="class_flow.html">Flow</a> &amp;other)</td></tr>
-<tr class="separator:a5f7550e37445bb6ae955beffd1fa857a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67c8d3287998a9c8610ae65d21d5c68" id="r_aa67c8d3287998a9c8610ae65d21d5c68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aa67c8d3287998a9c8610ae65d21d5c68">link</a> (<a class="el" href="class_system.html">System</a> *source, <a class="el" href="class_system.html">System</a> *target)=0</td></tr>
+<tr class="memdesc:aa67c8d3287998a9c8610ae65d21d5c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liga o fluxo a sistemas de origem e destino.  <br /></td></tr>
+<tr class="separator:aa67c8d3287998a9c8610ae65d21d5c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ce99a961622788ae59bb73abad3bb3" id="r_a42ce99a961622788ae59bb73abad3bb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a42ce99a961622788ae59bb73abad3bb3">setSource</a> (<a class="el" href="class_system.html">System</a> *source)=0</td></tr>
+<tr class="memdesc:a42ce99a961622788ae59bb73abad3bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o sistema de origem do fluxo.  <br /></td></tr>
+<tr class="separator:a42ce99a961622788ae59bb73abad3bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6121cf6e400af1aa8b4c9f9f2dc8e68b" id="r_a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b">setTarget</a> (<a class="el" href="class_system.html">System</a> *target)=0</td></tr>
+<tr class="memdesc:a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o sistema de destino do fluxo.  <br /></td></tr>
+<tr class="separator:a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac5c465920d5bff0f1370641c91fc40" id="r_a7ac5c465920d5bff0f1370641c91fc40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a7ac5c465920d5bff0f1370641c91fc40">setName</a> (const std::string name)=0</td></tr>
+<tr class="memdesc:a7ac5c465920d5bff0f1370641c91fc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o nome do fluxo.  <br /></td></tr>
+<tr class="separator:a7ac5c465920d5bff0f1370641c91fc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8" id="r_abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a> () const =0</td></tr>
+<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o sistema de origem do fluxo.  <br /></td></tr>
+<tr class="separator:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787" id="r_afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a> () const =0</td></tr>
+<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o sistema de destino do fluxo.  <br /></td></tr>
+<tr class="separator:afb9b8d93ea0fc81868b8e02dd382a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0340d844ab2d275222938234e44169" id="r_a2d0340d844ab2d275222938234e44169"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a2d0340d844ab2d275222938234e44169">getName</a> () const =0</td></tr>
+<tr class="memdesc:a2d0340d844ab2d275222938234e44169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o nome do fluxo.  <br /></td></tr>
+<tr class="separator:a2d0340d844ab2d275222938234e44169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
+<tr class="separator:a325d284a50ca3274b126b21f5c39b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa71d94c5d1d8aef5c041f544d98014dd" name="aa71d94c5d1d8aef5c041f544d98014dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71d94c5d1d8aef5c041f544d98014dd">&#9670;&#160;</a></span>Flow() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>source</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
-          <td class="paramname"><em>target</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">    4</span>: name(name), source(source), target(target) {}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8c4ddeecea15d85a8f5a5db2f8a2a806" name="a8c4ddeecea15d85a8f5a5db2f8a2a806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c4ddeecea15d85a8f5a5db2f8a2a806">&#9670;&#160;</a></span>Flow() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Flow::Flow </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_flow.html">Flow</a> *&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">    6</span>                            : name(other-&gt;name), source(<span class="keyword">nullptr</span>), target(<span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">    7</span>    <span class="keywordflow">if</span> (other-&gt;source != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">    8</span>        source = <span class="keyword">new</span> <a class="code hl_class" href="class_system.html">System</a>(*(other-&gt;source));</div>
-<div class="line"><span class="lineno">    9</span>    }</div>
-<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">if</span> (other-&gt;target != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   11</span>        target = <span class="keyword">new</span> <a class="code hl_class" href="class_system.html">System</a>(*(other-&gt;target));</div>
-<div class="line"><span class="lineno">   12</span>    }</div>
-<div class="line"><span class="lineno">   13</span>}</div>
-<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdef"><b>Definition</b> System.hpp:9</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5991efa6e8cf88c4ef2125cc727db333" name="a5991efa6e8cf88c4ef2125cc727db333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5991efa6e8cf88c4ef2125cc727db333">&#9670;&#160;</a></span>~Flow()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe que representa um fluxo de sistema puramente virtual. </p>
+<p>A classe <code><a class="el" href="class_flow.html" title="Classe que representa um fluxo de sistema puramente virtual.">Flow</a></code> é responsável por representar um fluxo entre sistemas que ao executar aplica uma funcao ao valor de sistemas. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a325d284a50ca3274b126b21f5c39b9af" name="a325d284a50ca3274b126b21f5c39b9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325d284a50ca3274b126b21f5c39b9af">&#9670;&#160;</a></span>~Flow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +147,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Flow::~Flow </td>
+          <td class="memname">virtual Flow::~Flow </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -206,11 +155,13 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   16</span>{} </div>
+
+<p>Destrutor virtual. </p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,57 +189,74 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_flow_exponential.html#a4ac6c0ad3b6291c700c0247444bdcaf1">FlowExponential</a>, and <a class="el" href="class_flow_logistic.html#a9b25e905a9501d4b4bcc32183cccc4c5">FlowLogistic</a>.</p>
+<p>Executa o fluxo. </p>
+<p>Este método virtual puro deve ser implementado nas classes derivadas para executar o comportamento específico do fluxo.</p>
+<dl class="section return"><dt>Returns</dt><dd>O resultado da execução do fluxo. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow_exponential.html#a4ac6c0ad3b6291c700c0247444bdcaf1">FlowExponential</a>, <a class="el" href="class_flow_logistic.html#a9b25e905a9501d4b4bcc32183cccc4c5">FlowLogistic</a>, and <a class="el" href="class_flow_impl.html#a00477469f20eeaa48efa26954d1b661b">FlowImpl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow_a619be0b590c78202127bc6ac7fb04029_icgraph.png" border="0" usemap="#aclass_flow_a619be0b590c78202127bc6ac7fb04029_icgraph" alt=""/></div>
 <map name="aclass_flow_a619be0b590c78202127bc6ac7fb04029_icgraph" id="aclass_flow_a619be0b590c78202127bc6ac7fb04029_icgraph">
-<area shape="rect" title=" " alt="" coords="477,56,580,83"/>
-<area shape="rect" href="class_model.html#a1db6e8d86983a326c44e95eec919f35a" title=" " alt="" coords="319,56,429,83"/>
-<area shape="poly" title=" " alt="" coords="462,72,430,72,430,67,462,67"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="111,5,263,32"/>
-<area shape="poly" title=" " alt="" coords="307,54,238,35,240,30,308,49"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="103,56,271,83"/>
-<area shape="poly" title=" " alt="" coords="303,72,272,72,272,67,303,67"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="110,107,264,133"/>
-<area shape="poly" title=" " alt="" coords="308,90,240,109,238,103,307,85"/>
-<area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
-<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
-<area shape="poly" title=" " alt="" coords="123,104,102,97,54,81,56,76,104,92,125,99"/>
+<area shape="rect" title="Executa o fluxo." alt="" coords="690,31,792,57"/>
+<area shape="rect" href="class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="507,31,642,57"/>
+<area shape="poly" title=" " alt="" coords="674,47,642,47,642,41,674,41"/>
+<area shape="rect" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="296,5,459,32"/>
+<area shape="poly" title=" " alt="" coords="492,36,459,32,460,27,492,31"/>
+<area shape="rect" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="309,56,446,83"/>
+<area shape="poly" title=" " alt="" coords="492,57,447,63,447,58,492,52"/>
+<area shape="rect" href="_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,31,248,57"/>
+<area shape="poly" title=" " alt="" coords="281,33,249,38,248,32,280,28"/>
+<area shape="rect" href="test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" title=" " alt="" coords="294,62,248,56,249,50,294,56"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a62bbc54ff95eeb0795511519edf32077" name="a62bbc54ff95eeb0795511519edf32077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62bbc54ff95eeb0795511519edf32077">&#9670;&#160;</a></span>getName()</h2>
+<a id="a2d0340d844ab2d275222938234e44169" name="a2d0340d844ab2d275222938234e44169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0340d844ab2d275222938234e44169">&#9670;&#160;</a></span>getName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string Flow::getName </td>
+          <td class="memname">virtual std::string Flow::getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> name; }</div>
-</div><!-- fragment --><div class="dynheader">
+
+<p>Obtém o nome do fluxo. </p>
+<dl class="section return"><dt>Returns</dt><dd>O nome do fluxo. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#aff4ced90aedec7ff19ea84086ea0d412">FlowImpl</a>.</p>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_flow_a62bbc54ff95eeb0795511519edf32077_icgraph.png" border="0" usemap="#aclass_flow_a62bbc54ff95eeb0795511519edf32077_icgraph" alt=""/></div>
-<map name="aclass_flow_a62bbc54ff95eeb0795511519edf32077_icgraph" id="aclass_flow_a62bbc54ff95eeb0795511519edf32077_icgraph">
-<area shape="rect" title=" " alt="" coords="319,56,427,83"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="111,5,263,32"/>
-<area shape="poly" title=" " alt="" coords="306,54,238,35,239,30,308,49"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="103,56,271,83"/>
-<area shape="poly" title=" " alt="" coords="303,72,272,72,272,67,303,67"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="110,107,264,133"/>
-<area shape="poly" title=" " alt="" coords="308,90,239,109,238,103,306,85"/>
+<div class="center"><img src="class_flow_a2d0340d844ab2d275222938234e44169_icgraph.png" border="0" usemap="#aclass_flow_a2d0340d844ab2d275222938234e44169_icgraph" alt=""/></div>
+<map name="aclass_flow_a2d0340d844ab2d275222938234e44169_icgraph" id="aclass_flow_a2d0340d844ab2d275222938234e44169_icgraph">
+<area shape="rect" title="Obtém o nome do fluxo." alt="" coords="319,81,427,108"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa o teste funcional em modelo complexo." alt="" coords="111,5,263,32"/>
+<area shape="poly" title=" " alt="" coords="333,76,270,46,238,35,239,30,272,42,335,71"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa o teste funcional para fluxos exponenciais." alt="" coords="103,56,271,83"/>
+<area shape="poly" title=" " alt="" coords="303,88,271,83,272,78,304,83"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa o teste funcional para fluxos logísticos." alt="" coords="110,107,264,133"/>
+<area shape="poly" title=" " alt="" coords="304,107,264,112,264,107,304,101"/>
+<area shape="rect" href="class_flow_impl.html#a0bc14fb2c5766fed3baabbb4f1af24b8" title=" " alt="" coords="119,157,255,184"/>
+<area shape="poly" title=" " alt="" coords="335,118,272,148,239,159,238,154,270,143,333,113"/>
 <area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
 <area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
 <area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
@@ -298,94 +266,119 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a1f3858f90d141807377c2640fb5dd0fc" name="a1f3858f90d141807377c2640fb5dd0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3858f90d141807377c2640fb5dd0fc">&#9670;&#160;</a></span>getSource()</h2>
+<a id="abf0f3dbb285fe82e5ba6449de06b97c8" name="abf0f3dbb285fe82e5ba6449de06b97c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0f3dbb285fe82e5ba6449de06b97c8">&#9670;&#160;</a></span>getSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::getSource </td>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Flow::getSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{ <span class="keywordflow">return</span> source; }</div>
-</div><!-- fragment --><div class="dynheader">
+
+<p>Obtém o sistema de origem do fluxo. </p>
+<dl class="section return"><dt>Returns</dt><dd>O sistema de origem do fluxo. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#a06c8ffdcfd36b04ddad091d2c043f5d0">FlowImpl</a>.</p>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_flow_a1f3858f90d141807377c2640fb5dd0fc_icgraph.png" border="0" usemap="#aclass_flow_a1f3858f90d141807377c2640fb5dd0fc_icgraph" alt=""/></div>
-<map name="aclass_flow_a1f3858f90d141807377c2640fb5dd0fc_icgraph" id="aclass_flow_a1f3858f90d141807377c2640fb5dd0fc_icgraph">
-<area shape="rect" title=" " alt="" coords="537,31,653,57"/>
-<area shape="rect" href="class_flow_exponential.html#a4ac6c0ad3b6291c700c0247444bdcaf1" title=" " alt="" coords="319,5,489,32"/>
-<area shape="poly" title=" " alt="" coords="521,37,489,33,490,27,522,32"/>
-<area shape="rect" href="class_model.html#a1db6e8d86983a326c44e95eec919f35a" title=" " alt="" coords="349,56,459,83"/>
-<area shape="poly" title=" " alt="" coords="522,56,460,65,459,59,522,51"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="111,5,263,32"/>
-<area shape="poly" title=" " alt="" coords="333,56,247,35,248,30,335,50"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="103,56,271,83"/>
-<area shape="poly" title=" " alt="" coords="333,72,272,72,272,67,333,67"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="110,107,264,133"/>
-<area shape="poly" title=" " alt="" coords="335,88,248,109,247,103,333,83"/>
-<area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
-<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
-<area shape="poly" title=" " alt="" coords="123,104,102,97,54,81,56,76,104,92,125,99"/>
+<div class="center"><img src="class_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph.png" border="0" usemap="#aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" alt=""/></div>
+<map name="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph" id="aclass_flow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph">
+<area shape="rect" title="Obtém o sistema de origem do fluxo." alt="" coords="691,56,806,83"/>
+<area shape="rect" href="class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="508,31,642,57"/>
+<area shape="poly" title=" " alt="" coords="675,61,642,56,643,51,675,56"/>
+<area shape="rect" href="class_flow_impl.html#a0bc14fb2c5766fed3baabbb4f1af24b8" title=" " alt="" coords="507,81,643,108"/>
+<area shape="poly" title=" " alt="" coords="676,83,643,87,643,82,675,77"/>
+<area shape="rect" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="296,5,459,32"/>
+<area shape="poly" title=" " alt="" coords="492,36,460,32,460,27,493,31"/>
+<area shape="rect" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="309,56,446,83"/>
+<area shape="poly" title=" " alt="" coords="493,57,447,63,446,58,492,52"/>
+<area shape="rect" href="_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,31,248,57"/>
+<area shape="poly" title=" " alt="" coords="281,33,249,38,248,32,280,28"/>
+<area shape="rect" href="test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" title=" " alt="" coords="294,62,248,56,249,50,294,56"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aff8a0f8ca8dc50d37c92ab7556e172b5" name="aff8a0f8ca8dc50d37c92ab7556e172b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff8a0f8ca8dc50d37c92ab7556e172b5">&#9670;&#160;</a></span>getTarget()</h2>
+<a id="afb9b8d93ea0fc81868b8e02dd382a787" name="afb9b8d93ea0fc81868b8e02dd382a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9b8d93ea0fc81868b8e02dd382a787">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system.html">System</a> * Flow::getTarget </td>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Flow::getTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <span class="keywordflow">return</span> target; }</div>
-</div><!-- fragment --><div class="dynheader">
+
+<p>Obtém o sistema de destino do fluxo. </p>
+<dl class="section return"><dt>Returns</dt><dd>O sistema de destino do fluxo. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#adb35e3574470e91207c631fda3cdc9bd">FlowImpl</a>.</p>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_flow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph.png" border="0" usemap="#aclass_flow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph" alt=""/></div>
-<map name="aclass_flow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph" id="aclass_flow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph">
-<area shape="rect" title=" " alt="" coords="514,31,625,57"/>
-<area shape="rect" href="class_flow_logistic.html#a9b25e905a9501d4b4bcc32183cccc4c5" title=" " alt="" coords="319,5,466,32"/>
-<area shape="poly" title=" " alt="" coords="498,37,466,32,467,27,499,31"/>
-<area shape="rect" href="class_model.html#a1db6e8d86983a326c44e95eec919f35a" title=" " alt="" coords="338,56,448,83"/>
-<area shape="poly" title=" " alt="" coords="499,57,449,64,448,59,498,51"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="111,5,263,32"/>
-<area shape="poly" title=" " alt="" coords="322,55,244,35,245,30,323,50"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="103,56,271,83"/>
-<area shape="poly" title=" " alt="" coords="322,72,271,72,271,67,322,67"/>
-<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="110,107,264,133"/>
-<area shape="poly" title=" " alt="" coords="323,89,245,109,244,103,322,84"/>
-<area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
-<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
-<area shape="poly" title=" " alt="" coords="123,104,102,97,54,81,56,76,104,92,125,99"/>
+<div class="center"><img src="class_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph.png" border="0" usemap="#aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" alt=""/></div>
+<map name="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph" id="aclass_flow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph">
+<area shape="rect" title="Obtém o sistema de destino do fluxo." alt="" coords="691,56,801,83"/>
+<area shape="rect" href="class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="508,31,642,57"/>
+<area shape="poly" title=" " alt="" coords="675,62,642,57,643,51,676,56"/>
+<area shape="rect" href="class_flow_impl.html#a0bc14fb2c5766fed3baabbb4f1af24b8" title=" " alt="" coords="507,81,643,108"/>
+<area shape="poly" title=" " alt="" coords="676,82,643,87,642,82,675,77"/>
+<area shape="rect" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="296,5,459,32"/>
+<area shape="poly" title=" " alt="" coords="492,36,460,32,460,27,493,31"/>
+<area shape="rect" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="309,56,446,83"/>
+<area shape="poly" title=" " alt="" coords="493,57,447,63,446,58,492,52"/>
+<area shape="rect" href="_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,31,248,57"/>
+<area shape="poly" title=" " alt="" coords="281,33,249,38,248,32,280,28"/>
+<area shape="rect" href="test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" title=" " alt="" coords="294,62,248,56,249,50,294,56"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a18d4af4063aa4fc2cf96f75e1b6fa599" name="a18d4af4063aa4fc2cf96f75e1b6fa599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d4af4063aa4fc2cf96f75e1b6fa599">&#9670;&#160;</a></span>link()</h2>
+<a id="aa67c8d3287998a9c8610ae65d21d5c68" name="aa67c8d3287998a9c8610ae65d21d5c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67c8d3287998a9c8610ae65d21d5c68">&#9670;&#160;</a></span>link()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::link </td>
+          <td class="memname">virtual void Flow::link </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
@@ -402,114 +395,137 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   19</span>                                              {</div>
-<div class="line"><span class="lineno">   20</span>    this-&gt;source = source;</div>
-<div class="line"><span class="lineno">   21</span>    this-&gt;target = target;</div>
-<div class="line"><span class="lineno">   22</span>}</div>
-</div><!-- fragment -->
+
+<p>Liga o fluxo a sistemas de origem e destino. </p>
+<p>Este método permite associar o fluxo aos sistemas de origem e destino.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>O sistema de origem do fluxo. </td></tr>
+    <tr><td class="paramname">target</td><td>O sistema de destino do fluxo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#ab60dcb20f3d6fbafc971c262a90b86fc">FlowImpl</a>.</p>
+
 </div>
 </div>
-<a id="a5f7550e37445bb6ae955beffd1fa857a" name="a5f7550e37445bb6ae955beffd1fa857a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7550e37445bb6ae955beffd1fa857a">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a7ac5c465920d5bff0f1370641c91fc40" name="a7ac5c465920d5bff0f1370641c91fc40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac5c465920d5bff0f1370641c91fc40">&#9670;&#160;</a></span>setName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_flow.html">Flow</a> &amp; Flow::operator= </td>
+          <td class="memname">virtual void Flow::setName </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_flow.html">Flow</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                                       {</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
-<div class="line"><span class="lineno">   37</span>        <span class="comment">// Copia o nome</span></div>
-<div class="line"><span class="lineno">   38</span>        name = other.name;</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (source != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   41</span>            <span class="keyword">delete</span> source;</div>
-<div class="line"><span class="lineno">   42</span>            source = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   43</span>        }</div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (target != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   45</span>            <span class="keyword">delete</span> target;</div>
-<div class="line"><span class="lineno">   46</span>            target = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   47</span>        }</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (other.source != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   49</span>            source = <span class="keyword">new</span> <a class="code hl_class" href="class_system.html">System</a>(other.source);</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span> (other.target != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">   52</span>            target = <span class="keyword">new</span> <a class="code hl_class" href="class_system.html">System</a>(other.target);</div>
-<div class="line"><span class="lineno">   53</span>        }</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   56</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac829599a96f9ae03979d762771a4fea0" name="ac829599a96f9ae03979d762771a4fea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac829599a96f9ae03979d762771a4fea0">&#9670;&#160;</a></span>setName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Flow::setName </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">const std::string&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{ this-&gt;name = name; }</div>
-</div><!-- fragment -->
+
+<p>Define o nome do fluxo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Nome do fluxo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#a0697f37bf67037c7a6b8fd2671cb0a7d">FlowImpl</a>.</p>
+
 </div>
 </div>
-<a id="a250fc53158862fc0db77b323a33e48a3" name="a250fc53158862fc0db77b323a33e48a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250fc53158862fc0db77b323a33e48a3">&#9670;&#160;</a></span>setSource()</h2>
+<a id="a42ce99a961622788ae59bb73abad3bb3" name="a42ce99a961622788ae59bb73abad3bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ce99a961622788ae59bb73abad3bb3">&#9670;&#160;</a></span>setSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setSource </td>
+          <td class="memname">virtual void Flow::setSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
           <td class="paramname"><em>source</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   25</span>{ this-&gt;source = source; }</div>
-</div><!-- fragment -->
+
+<p>Define o sistema de origem do fluxo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Sistema de origem do fluxo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#aa48ab1dd4effd57c55c1434ccfce3ac3">FlowImpl</a>.</p>
+
 </div>
 </div>
-<a id="ab69903880174e5bcdc0d815b5de7b3e0" name="ab69903880174e5bcdc0d815b5de7b3e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69903880174e5bcdc0d815b5de7b3e0">&#9670;&#160;</a></span>setTarget()</h2>
+<a id="a6121cf6e400af1aa8b4c9f9f2dc8e68b" name="a6121cf6e400af1aa8b4c9f9f2dc8e68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6121cf6e400af1aa8b4c9f9f2dc8e68b">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setTarget </td>
+          <td class="memname">virtual void Flow::setTarget </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
           <td class="paramname"><em>target</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   26</span>{ this-&gt;target = target; }</div>
-</div><!-- fragment -->
+
+<p>Define o sistema de destino do fluxo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Sistema de destino do fluxo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_flow_impl.html#a48b3e6939aec2694d412760149164622">FlowImpl</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/my-vensin/src/<a class="el" href="_flow_8hpp_source.html">Flow.hpp</a></li>
-<li>C:/my-vensin/src/<a class="el" href="_flow_8cpp.html">Flow.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/<a class="el" href="_flow_8hpp_source.html">Flow.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

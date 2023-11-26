@@ -1,7 +1,7 @@
 <map id="FlowLogistic::execute" name="FlowLogistic::execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,153,57"/>
-<area shape="rect" id="Node000002" href="$class_flow.html#aff8a0f8ca8dc50d37c92ab7556e172b5" title=" " alt="" coords="208,5,319,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,31,192,26,193,31,154,36"/>
-<area shape="rect" id="Node000003" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title=" " alt="" coords="201,56,326,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,52,186,56,185,61,153,57"/>
+<area shape="rect" id="Node000001" title="&lt; Herda construtores da classe Flow." alt="" coords="5,31,153,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#adb35e3574470e91207c631fda3cdc9bd" title="Obtém o sistema de destino do fluxo." alt="" coords="201,5,335,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,31,185,27,186,32,153,37"/>
+<area shape="rect" id="Node000003" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="205,56,331,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,51,190,56,189,62,152,57"/>
 </map>

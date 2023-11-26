@@ -1,0 +1,20 @@
+<map id="ModelImpl::beginHistory" name="ModelImpl::beginHistory">
+<area shape="rect" id="Node000001" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="524,107,685,133"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a074977f721b0605a6d0407f15511ca5b" title="Gera um relatório do modelo." alt="" coords="326,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="570,100,526,72,475,46,444,35,446,30,477,42,528,68,573,95"/>
+<area shape="rect" id="Node000003" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="305,56,468,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="528,105,446,86,447,81,529,100"/>
+<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="310,107,463,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="509,123,463,123,463,117,509,117"/>
+<area shape="rect" id="Node000007" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="318,157,455,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="529,140,447,159,446,154,528,135"/>
+<area shape="rect" id="Node000008" href="$_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title="Testa o método setInitialHistory da classe Model." alt="" coords="296,208,476,235"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="573,145,528,172,477,198,446,210,444,205,475,194,526,168,570,140"/>
+<area shape="rect" id="Node000004" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,132,248,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="318,90,297,97,208,134,206,129,295,92,316,85"/>
+<area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,148,55,148,55,143,87,143"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="294,134,249,139,248,134,294,128"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="302,163,248,157,249,151,303,158"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="316,206,295,199,206,162,208,157,297,193,318,200"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="FlowImpl::setName" name="FlowImpl::setName">
+<area shape="rect" id="Node000001" title="Define o nome do fluxo." alt="" coords="471,31,604,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#a0bc14fb2c5766fed3baabbb4f1af24b8" title=" " alt="" coords="288,5,423,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="456,35,423,31,424,25,456,30"/>
+<area shape="rect" id="Node000003" href="$_unit_flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="Testa o método setName da classe Flow." alt="" coords="288,56,423,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="456,58,424,63,423,57,456,53"/>
+<area shape="rect" id="Node000004" href="$_unit_flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Executa todos os testes unitários para a classe Flow." alt="" coords="103,56,240,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="273,72,240,72,240,67,273,67"/>
+<area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+</map>

@@ -1,5 +1,11 @@
 <map id="FlowExponential" name="FlowExponential">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,357,113,469"/>
-<area shape="rect" id="Node000002" href="$class_flow.html" title=" " alt="" coords="14,5,105,309"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,324,62,358,57,358,57,324"/>
+<area shape="rect" id="Node000001" title="Classe que representa um fluxo exponencial em um sistema." alt="" coords="89,679,197,791"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html" title="Classe que implementa Flow." alt="" coords="97,325,188,629"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,644,145,679,140,679,140,644"/>
+<area shape="rect" id="Node000003" href="$class_flow.html" title="Classe que representa um fluxo de sistema puramente virtual." alt="" coords="5,5,96,245"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,259,106,325,100,326,83,260"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,91,165,160"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="145,160,145,308,140,308,140,160"/>
+<area shape="rect" id="Node000005" href="$class_system.html" title="Classe que representa um sistema puramente virtual." alt="" coords="190,37,274,213"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="215,214,193,302,191,309,186,308,188,301,210,212"/>
 </map>

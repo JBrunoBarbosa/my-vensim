@@ -1,0 +1,7 @@
+<map id="unit_System_setName" name="unit_System_setName">
+<area shape="rect" id="Node000001" title="Testa o método setName da classe System." alt="" coords="5,31,159,57"/>
+<area shape="rect" id="Node000002" href="$class_system_impl.html#a68ca2c650fa5669baec1bd4c05fa2bd0" title="Obtém o nome do sistema." alt="" coords="207,5,357,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,32,191,28,191,33,159,37"/>
+<area shape="rect" id="Node000003" href="$class_system_impl.html#a039cabfff727be44153fe6cf7c659808" title="Define o nome do sistema." alt="" coords="207,56,357,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,51,191,55,191,60,159,56"/>
+</map>

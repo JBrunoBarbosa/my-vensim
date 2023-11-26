@@ -1,6 +1,6 @@
 /**
  * @class System
- * @brief Classe que representa um sistema.
+ * @brief Classe que representa um sistema puramente virtual.
  *
  * A classe `System` é responsável por representar um sistema em um modelo. Ela armazena
  * um nome descritivo e um valor associado ao sistema. Essa classe fornece métodos para
@@ -10,66 +10,45 @@
 #define SYSTEM_HPP
 
 #include <string>
-#include <iostream>
-
-using namespace std;
 
 class System {
-private:
-    string name;      ///< O nome descritivo do sistema.
-    double value;     ///< O valor associado ao sistema.
-
 public:
-    // Construtores
-    /**
-     * @brief Construtor da classe `System`.
-     * @param name O nome descritivo do sistema.
-     * @param value O valor associado ao sistema (padrão é 0.0).
-     */
-    System(const string name = "", const double value = 0.0);
 
     /**
-     * @brief Construtor de cópia da classe `System`.
-     * @param other Um objeto `System` a ser copiado.
+     * @brief Destrutor do sistema.
      */
-    System(const System* other);
+    virtual ~System() {};
 
-    // Destrutor
-    virtual ~System();
-
-    // Setters
     /**
      * @brief Define o nome do sistema.
      * @param name O novo nome descritivo do sistema.
      */
-    void setName(const string name);
+    virtual void setName(const std::string name) = 0;
 
     /**
      * @brief Define o valor associado ao sistema.
      * @param value O novo valor associado ao sistema.
      */
-    void setValue(const double value);
+    virtual void setValue(const double value) = 0;
 
     // Getters
     /**
      * @brief Obtém o nome do sistema.
      * @return O nome descritivo do sistema.
      */
-    string getName() const;
+    virtual std::string getName() const = 0;
 
     /**
      * @brief Obtém o valor associado ao sistema.
      * @return O valor associado ao sistema.
      */
-    double getValue() const;
-
-    // Operador de atribuição
+    virtual double getValue() const = 0;
+    
     /**
-     * @brief Sobrecarga do operador de atribuição.
-     * @param other Um objeto `System` a ser atribuído.
-     * @return Uma referência ao objeto `System` atual após a atribuição.
+     * @brief Clona um sistema.
+     * @return O valor associado ao sistema.
      */
-    System& operator=(const System& other);
+    virtual System* clone() const = 0;
 };
 
 #endif

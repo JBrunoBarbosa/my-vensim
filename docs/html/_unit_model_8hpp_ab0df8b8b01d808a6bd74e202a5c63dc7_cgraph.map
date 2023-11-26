@@ -1,0 +1,13 @@
+<map id="unit_Model_setInitialHistory" name="unit_Model_setInitialHistory">
+<area shape="rect" id="Node000001" title="Testa o método setInitialHistory da classe Model." alt="" coords="5,31,186,57"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a2b9e1522d14c0fddd5eb117f1c81e0c9" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="242,5,403,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,31,227,27,227,32,186,37"/>
+<area shape="rect" id="Node000003" href="$class_model_impl.html#ae391fb4f23c1a4ac810167c36ae0fe32" title="Define o histórico inicial com valores padrão." alt="" coords="234,56,411,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,51,218,55,218,60,186,57"/>
+<area shape="rect" id="Node000004" href="$class_model_impl.html#a4a03adec9113f93ad2504ad67859ebb6" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="459,5,630,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,53,468,33,469,39,385,58"/>
+<area shape="rect" id="Node000005" href="$class_model_impl.html#a36b84959d5586b53b7dfade16d5e6c2e" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="464,56,625,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="411,67,449,67,449,72,411,72"/>
+<area shape="rect" id="Node000006" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="482,107,607,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="385,81,469,100,468,105,384,86"/>
+</map>

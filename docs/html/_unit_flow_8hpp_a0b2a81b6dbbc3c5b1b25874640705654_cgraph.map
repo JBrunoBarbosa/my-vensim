@@ -1,0 +1,7 @@
+<map id="unit_Flow_setTarget" name="unit_Flow_setTarget">
+<area shape="rect" id="Node000001" title="Testa o método setTarget da classe Flow." alt="" coords="5,31,143,57"/>
+<area shape="rect" id="Node000002" href="$class_flow_impl.html#adb35e3574470e91207c631fda3cdc9bd" title="Obtém o sistema de destino do fluxo." alt="" coords="191,5,325,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,32,175,27,176,33,144,37"/>
+<area shape="rect" id="Node000003" href="$class_flow_impl.html#a48b3e6939aec2694d412760149164622" title="Define o sistema de destino do fluxo." alt="" coords="191,56,325,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,51,176,55,175,61,143,56"/>
+</map>

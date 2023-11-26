@@ -1,0 +1,5 @@
+<map id="Model::endFlows" name="Model::endFlows">
+<area shape="rect" id="Node000001" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="201,5,320,32"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a6f5958c8c1a164751346a284fe0df4a7" title=" " alt="" coords="5,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>
