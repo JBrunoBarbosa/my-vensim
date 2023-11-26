@@ -1,14 +1,14 @@
 <map id="SystemImpl::getValue" name="SystemImpl::getValue">
 <area shape="rect" id="Node000001" title="Obtém o valor associado ao sistema." alt="" coords="520,81,670,108"/>
-<area shape="rect" id="Node000002" href="$_unit_system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title=" " alt="" coords="306,5,472,32"/>
+<area shape="rect" id="Node000002" href="$_unit_system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title="Arquivo de testes unitários para a classe System." alt="" coords="306,5,472,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="548,77,471,47,438,35,439,30,473,41,550,72"/>
-<area shape="rect" id="Node000005" href="$_unit_system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title=" " alt="" coords="313,56,465,83"/>
+<area shape="rect" id="Node000005" href="$_unit_system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Testa o método getValue da classe System." alt="" coords="313,56,465,83"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="504,86,465,81,466,76,505,81"/>
-<area shape="rect" id="Node000006" href="$_unit_system_8cpp.html#a95925cfe7e811911b56dbebcdebe16b6" title=" " alt="" coords="315,107,463,133"/>
+<area shape="rect" id="Node000006" href="$_unit_system_8cpp.html#a95925cfe7e811911b56dbebcdebe16b6" title="Testa o operador de atribuição da classe System." alt="" coords="315,107,463,133"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="505,108,464,114,463,108,504,103"/>
-<area shape="rect" id="Node000007" href="$_unit_system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title=" " alt="" coords="313,157,465,184"/>
+<area shape="rect" id="Node000007" href="$_unit_system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Testa o método setValue da classe System." alt="" coords="313,157,465,184"/>
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="550,117,473,148,439,159,438,154,471,143,548,112"/>
-<area shape="rect" id="Node000003" href="$_unit_system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title=" " alt="" coords="103,81,258,108"/>
+<area shape="rect" id="Node000003" href="$_unit_system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Função para executar todos os testes unitários para a classe System." alt="" coords="103,81,258,108"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="327,40,307,47,215,83,213,78,305,41,325,35"/>
 <area shape="rect" id="Node000004" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>

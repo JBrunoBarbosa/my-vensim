@@ -1,22 +1,22 @@
 <map id="run_unit_tests_Flow" name="run_unit_tests_Flow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,259,143,285"/>
+<area shape="rect" id="Node000001" title="Executa todos os testes unitários para a classe Flow." alt="" coords="5,259,143,285"/>
 <area shape="rect" id="Node000002" href="$_unit_flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title=" " alt="" coords="191,208,339,235"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,255,196,237,198,242,128,261"/>
-<area shape="rect" id="Node000006" href="$_unit_flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title=" " alt="" coords="200,157,330,184"/>
+<area shape="rect" id="Node000006" href="$_unit_flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title="Testa o método execute da classe Flow." alt="" coords="200,157,330,184"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="92,256,135,225,189,194,202,188,205,193,192,198,138,230,95,260"/>
-<area shape="rect" id="Node000009" href="$_unit_flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title=" " alt="" coords="197,107,333,133"/>
+<area shape="rect" id="Node000009" href="$_unit_flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title="Testa o método getName da classe Flow." alt="" coords="197,107,333,133"/>
 <area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="82,256,124,202,155,171,189,143,198,138,201,142,192,148,158,175,128,206,87,260"/>
-<area shape="rect" id="Node000010" href="$_unit_flow_8cpp.html#a0dc76658e06597697628386d69327367" title=" " alt="" coords="401,512,543,539"/>
+<area shape="rect" id="Node000010" href="$_unit_flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Testa o método getSource da classe Flow." alt="" coords="401,512,543,539"/>
 <area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="83,284,97,318,120,362,152,408,192,447,238,474,288,494,338,507,386,516,385,521,337,512,286,499,236,479,189,451,148,412,115,365,92,320,78,287"/>
-<area shape="rect" id="Node000011" href="$_unit_flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title=" " alt="" coords="196,309,334,336"/>
+<area shape="rect" id="Node000011" href="$_unit_flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Testa o método getTarget da classe Flow." alt="" coords="196,309,334,336"/>
 <area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="128,283,198,302,196,307,127,289"/>
-<area shape="rect" id="Node000012" href="$_unit_flow_8cpp.html#a63db95fe4c2c52fecec5eaad8ff4cacd" title=" " alt="" coords="213,259,317,285"/>
+<area shape="rect" id="Node000012" href="$_unit_flow_8cpp.html#a63db95fe4c2c52fecec5eaad8ff4cacd" title="Testa o método link da classe Flow." alt="" coords="213,259,317,285"/>
 <area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="143,269,198,269,198,275,143,275"/>
-<area shape="rect" id="Node000014" href="$_unit_flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title=" " alt="" coords="197,56,333,83"/>
+<area shape="rect" id="Node000014" href="$_unit_flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="Testa o método setName da classe Flow." alt="" coords="197,56,333,83"/>
 <area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="78,257,93,224,116,180,149,133,189,93,195,88,198,92,192,97,153,137,121,183,98,226,83,259"/>
-<area shape="rect" id="Node000016" href="$_unit_flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title=" " alt="" coords="194,411,336,437"/>
+<area shape="rect" id="Node000016" href="$_unit_flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Testa o método setSource da classe Flow." alt="" coords="194,411,336,437"/>
 <area shape="poly" id="edge22_Node000001_Node000016" title=" " alt="" coords="87,284,128,338,158,369,192,396,201,402,198,406,189,401,155,373,124,342,82,288"/>
-<area shape="rect" id="Node000018" href="$_unit_flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title=" " alt="" coords="196,360,334,387"/>
+<area shape="rect" id="Node000018" href="$_unit_flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Testa o método setTarget da classe Flow." alt="" coords="196,360,334,387"/>
 <area shape="poly" id="edge25_Node000001_Node000018" title=" " alt="" coords="95,284,138,314,192,346,205,351,202,356,189,350,135,319,92,288"/>
 <area shape="rect" id="Node000003" href="$class_flow_impl.html#aff4ced90aedec7ff19ea84086ea0d412" title="Obtém o nome do fluxo." alt="" coords="406,56,538,83"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,205,337,194,348,182,354,170,360,144,366,119,373,105,385,93,391,88,394,93,389,97,378,109,371,120,365,146,359,172,352,185,341,198,323,210"/>

@@ -2,11 +2,11 @@
 <area shape="rect" id="Node000001" title="Define o valor associado ao sistema." alt="" coords="690,31,815,57"/>
 <area shape="rect" id="Node000002" href="$class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="507,31,642,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="674,47,642,47,642,41,674,41"/>
-<area shape="rect" id="Node000003" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title=" " alt="" coords="296,5,459,32"/>
+<area shape="rect" id="Node000003" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="296,5,459,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,36,459,32,460,27,492,31"/>
-<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title=" " alt="" coords="309,56,446,83"/>
+<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="309,56,446,83"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="492,57,447,63,447,58,492,52"/>
-<area shape="rect" id="Node000004" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="103,31,248,57"/>
+<area shape="rect" id="Node000004" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,31,248,57"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="281,33,249,38,248,32,280,28"/>
 <area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>

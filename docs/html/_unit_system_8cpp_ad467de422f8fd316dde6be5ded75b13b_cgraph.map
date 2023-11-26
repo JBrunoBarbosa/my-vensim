@@ -1,18 +1,18 @@
 <map id="run_unit_tests_System" name="run_unit_tests_System">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,245,161,272"/>
-<area shape="rect" id="Node000002" href="$_unit_system_8cpp.html#a094d376fe28d77accfef78b6e70d658d" title=" " alt="" coords="226,68,358,95"/>
+<area shape="rect" id="Node000001" title="Função para executar todos os testes unitários para a classe System." alt="" coords="5,245,161,272"/>
+<area shape="rect" id="Node000002" href="$_unit_system_8cpp.html#a094d376fe28d77accfef78b6e70d658d" title="Testa o método clone da classe System." alt="" coords="226,68,358,95"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,243,141,191,207,130,250,100,253,105,210,134,145,195,98,247"/>
-<area shape="rect" id="Node000006" href="$_unit_system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title=" " alt="" coords="209,296,375,323"/>
+<area shape="rect" id="Node000006" href="$_unit_system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title="Arquivo de testes unitários para a classe System." alt="" coords="209,296,375,323"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="142,270,220,289,219,294,141,275"/>
-<area shape="rect" id="Node000009" href="$_unit_system_8cpp.html#a672a51794472bbde676a33115e003b15" title=" " alt="" coords="215,195,369,221"/>
+<area shape="rect" id="Node000009" href="$_unit_system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Testa o método getName da classe System." alt="" coords="215,195,369,221"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="141,242,219,223,220,228,142,247"/>
-<area shape="rect" id="Node000010" href="$_unit_system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title=" " alt="" coords="216,347,368,373"/>
+<area shape="rect" id="Node000010" href="$_unit_system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Testa o método getValue da classe System." alt="" coords="216,347,368,373"/>
 <area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="105,270,152,301,210,332,225,339,223,344,208,337,149,306,102,275"/>
-<area shape="rect" id="Node000011" href="$_unit_system_8cpp.html#a95925cfe7e811911b56dbebcdebe16b6" title=" " alt="" coords="218,245,366,272"/>
+<area shape="rect" id="Node000011" href="$_unit_system_8cpp.html#a95925cfe7e811911b56dbebcdebe16b6" title="Testa o operador de atribuição da classe System." alt="" coords="218,245,366,272"/>
 <area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="161,256,202,256,202,261,161,261"/>
-<area shape="rect" id="Node000012" href="$_unit_system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title=" " alt="" coords="215,144,369,171"/>
+<area shape="rect" id="Node000012" href="$_unit_system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Testa o método setName da classe System." alt="" coords="215,144,369,171"/>
 <area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="102,242,149,212,208,180,223,174,225,179,210,185,152,216,105,247"/>
-<area shape="rect" id="Node000014" href="$_unit_system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title=" " alt="" coords="216,397,368,424"/>
+<area shape="rect" id="Node000014" href="$_unit_system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Testa o método setValue da classe System." alt="" coords="216,397,368,424"/>
 <area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="96,271,141,325,174,356,210,383,220,388,217,393,207,388,170,360,137,329,92,274"/>
 <area shape="rect" id="Node000003" href="$class_system_impl.html#a8bd27841fed469e74068b82fa94547dd" title="Clona um sistema." alt="" coords="434,5,563,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,65,436,35,438,40,339,70"/>

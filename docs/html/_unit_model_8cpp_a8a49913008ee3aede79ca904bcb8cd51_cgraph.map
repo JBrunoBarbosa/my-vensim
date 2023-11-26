@@ -1,26 +1,26 @@
 <map id="run_unit_tests_Model" name="run_unit_tests_Model">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,434,151,460"/>
-<area shape="rect" id="Node000002" href="$_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title=" " alt="" coords="458,139,570,166"/>
+<area shape="rect" id="Node000001" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="5,434,151,460"/>
+<area shape="rect" id="Node000002" href="$_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="458,139,570,166"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,432,95,396,119,347,153,294,174,270,197,249,256,212,321,186,385,168,443,157,444,162,387,173,323,191,259,217,200,253,178,274,157,297,124,349,100,398,86,434"/>
-<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title=" " alt="" coords="436,190,592,216"/>
+<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="436,190,592,216"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="85,432,128,371,160,336,197,305,251,274,309,249,367,230,421,217,422,222,369,235,311,254,254,278,200,309,164,340,132,375,90,435"/>
-<area shape="rect" id="Node000008" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title=" " alt="" coords="207,586,371,612"/>
+<area shape="rect" id="Node000008" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="207,586,371,612"/>
 <area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="91,459,134,514,165,545,200,571,210,577,208,582,197,576,161,549,130,517,86,462"/>
-<area shape="rect" id="Node000019" href="$_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title=" " alt="" coords="427,63,601,90"/>
+<area shape="rect" id="Node000019" href="$_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Testa o método beginSystems da classe Model." alt="" coords="427,63,601,90"/>
 <area shape="poly" id="edge26_Node000001_Node000019" title=" " alt="" coords="79,433,91,387,113,323,147,253,170,221,197,192,246,155,301,127,357,106,411,91,412,96,359,111,303,132,249,160,200,196,174,224,152,256,118,325,96,389,85,434"/>
-<area shape="rect" id="Node000020" href="$_unit_model_8cpp.html#afb61439c4f930cc4d2c41574f0b59f38" title=" " alt="" coords="437,291,591,318"/>
+<area shape="rect" id="Node000020" href="$_unit_model_8cpp.html#afb61439c4f930cc4d2c41574f0b59f38" title="Testa o método clearModel da classe Model." alt="" coords="437,291,591,318"/>
 <area shape="poly" id="edge30_Node000001_Node000020" title=" " alt="" coords="121,430,455,321,457,326,123,436"/>
-<area shape="rect" id="Node000022" href="$_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="211,950,367,976"/>
+<area shape="rect" id="Node000022" href="$_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="211,950,367,976"/>
 <area shape="poly" id="edge37_Node000001_Node000022" title=" " alt="" coords="87,460,279,935,274,937,82,462"/>
-<area shape="rect" id="Node000024" href="$_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title=" " alt="" coords="441,240,587,267"/>
+<area shape="rect" id="Node000024" href="$_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="441,240,587,267"/>
 <area shape="poly" id="edge40_Node000001_Node000024" title=" " alt="" coords="93,431,138,395,197,357,258,328,322,304,437,269,439,274,324,309,261,333,200,361,141,399,97,435"/>
-<area shape="rect" id="Node000025" href="$_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title=" " alt="" coords="212,535,366,562"/>
+<area shape="rect" id="Node000025" href="$_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="212,535,366,562"/>
 <area shape="poly" id="edge44_Node000001_Node000025" title=" " alt="" coords="99,459,144,489,200,521,216,527,214,532,198,525,141,494,96,463"/>
-<area shape="rect" id="Node000026" href="$_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title=" " alt="" coords="432,434,596,460"/>
+<area shape="rect" id="Node000026" href="$_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Testa o método endSystems da classe Model." alt="" coords="432,434,596,460"/>
 <area shape="poly" id="edge47_Node000001_Node000026" title=" " alt="" coords="151,444,416,444,416,450,151,450"/>
-<area shape="rect" id="Node000027" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title=" " alt="" coords="220,636,358,663"/>
+<area shape="rect" id="Node000027" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="220,636,358,663"/>
 <area shape="poly" id="edge51_Node000001_Node000027" title=" " alt="" coords="87,460,102,493,126,537,159,583,200,622,208,627,205,631,197,626,155,587,122,540,97,496,82,462"/>
-<area shape="rect" id="Node000028" href="$_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title=" " alt="" coords="199,484,379,511"/>
+<area shape="rect" id="Node000028" href="$_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title="Testa o método setInitialHistory da classe Model." alt="" coords="199,484,379,511"/>
 <area shape="poly" id="edge55_Node000001_Node000028" title=" " alt="" coords="137,458,216,477,215,483,136,464"/>
 <area shape="rect" id="Node000003" href="$class_model_impl.html#a3e8843e5353f40ab30afcf19b4f13a67" title="Adiciona um flow no model." alt="" coords="683,139,793,166"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,150,668,150,668,155,571,155"/>

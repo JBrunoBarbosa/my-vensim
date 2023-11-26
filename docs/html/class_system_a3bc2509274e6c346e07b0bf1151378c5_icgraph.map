@@ -12,19 +12,19 @@
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="508,209,452,216,451,211,507,203"/>
 <area shape="rect" id="Node000008" href="$class_system_impl.html#a3f663cc9e643b456f5f5862c097f3446" title=" " alt="" coords="307,259,474,285"/>
 <area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="544,219,475,249,442,261,440,256,473,244,542,214"/>
-<area shape="rect" id="Node000009" href="$_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="312,309,468,336"/>
+<area shape="rect" id="Node000009" href="$_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="312,309,468,336"/>
 <area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="565,223,526,262,476,300,450,311,448,306,473,295,522,258,561,220"/>
-<area shape="rect" id="Node000012" href="$_unit_system_8cpp.html#a094d376fe28d77accfef78b6e70d658d" title=" " alt="" coords="324,360,456,387"/>
+<area shape="rect" id="Node000012" href="$_unit_system_8cpp.html#a094d376fe28d77accfef78b6e70d658d" title="Testa o método clone da classe System." alt="" coords="324,360,456,387"/>
 <area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="574,224,536,288,508,321,476,350,455,362,452,357,473,346,505,318,532,284,569,222"/>
 <area shape="rect" id="Node000003" href="$test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="156,56,205,83"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,39,206,66,205,61,316,34"/>
 <area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="291,72,205,72,205,67,291,67"/>
 <area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="316,105,205,78,206,72,318,100"/>
-<area shape="rect" id="Node000010" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,309,253,336"/>
+<area shape="rect" id="Node000010" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="108,309,253,336"/>
 <area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="297,325,253,325,253,320,297,320"/>
 <area shape="rect" id="Node000011" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,335,55,361"/>
 <area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="93,340,56,347,55,341,92,335"/>
-<area shape="rect" id="Node000013" href="$_unit_system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title=" " alt="" coords="103,360,258,387"/>
+<area shape="rect" id="Node000013" href="$_unit_system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Função para executar todos os testes unitários para a classe System." alt="" coords="103,360,258,387"/>
 <area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="309,376,258,376,258,371,309,371"/>
 <area shape="poly" id="edge15_Node000013_Node000011" title=" " alt="" coords="87,360,55,355,56,349,88,355"/>
 </map>

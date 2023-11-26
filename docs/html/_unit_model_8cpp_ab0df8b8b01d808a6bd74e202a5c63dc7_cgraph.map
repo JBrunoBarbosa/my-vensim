@@ -1,5 +1,5 @@
 <map id="unit_Model_setInitialHistory" name="unit_Model_setInitialHistory">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,186,57"/>
+<area shape="rect" id="Node000001" title="Testa o método setInitialHistory da classe Model." alt="" coords="5,31,186,57"/>
 <area shape="rect" id="Node000002" href="$class_model_impl.html#a2b9e1522d14c0fddd5eb117f1c81e0c9" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="242,5,403,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,31,227,27,227,32,186,37"/>
 <area shape="rect" id="Node000003" href="$class_model_impl.html#ae391fb4f23c1a4ac810167c36ae0fe32" title="Define o histórico inicial com valores padrão." alt="" coords="234,56,411,83"/>
