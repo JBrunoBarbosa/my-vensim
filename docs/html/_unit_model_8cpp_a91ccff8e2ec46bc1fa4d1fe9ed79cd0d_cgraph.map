@@ -1,9 +1,15 @@
 <map id="unit_Model_endSystems" name="unit_Model_endSystems">
-<area shape="rect" id="Node000001" title="Testa o método endSystems da classe Model." alt="" coords="5,56,170,83"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a3e8843e5353f40ab30afcf19b4f13a67" title="Adiciona um flow no model." alt="" coords="249,5,358,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,53,233,32,234,38,148,58"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a4a03adec9113f93ad2504ad67859ebb6" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="218,56,389,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,67,202,67,202,72,170,72"/>
-<area shape="rect" id="Node000004" href="$class_model_impl.html#a36b84959d5586b53b7dfade16d5e6c2e" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="223,107,384,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,81,229,100,228,105,147,86"/>
+<area shape="rect" id="Node000001" title="Testa o método endSystems da classe Model." alt="" coords="5,107,170,133"/>
+<area shape="rect" id="Node000002" href="$class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="230,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,104,156,73,217,42,234,35,235,40,219,46,159,78,110,108"/>
+<area shape="rect" id="Node000003" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="223,56,385,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,103,228,84,230,89,148,109"/>
+<area shape="rect" id="Node000004" href="$class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="218,107,390,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,117,202,117,202,123,170,123"/>
+<area shape="rect" id="Node000005" href="$class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="235,157,373,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="148,131,230,151,228,156,147,137"/>
+<area shape="rect" id="Node000006" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="225,208,383,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="110,132,159,162,219,194,235,200,234,205,217,198,156,167,108,136"/>
+<area shape="rect" id="Node000007" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="438,208,638,235"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="384,219,422,219,422,224,384,224"/>
 </map>

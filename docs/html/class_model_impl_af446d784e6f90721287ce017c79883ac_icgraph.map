@@ -1,17 +1,5 @@
 <map id="ModelImpl::endHistory" name="ModelImpl::endHistory">
-<area shape="rect" id="Node000001" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="507,81,658,108"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a074977f721b0605a6d0407f15511ca5b" title="Gera um relatório do modelo." alt="" coords="317,5,438,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="535,77,458,47,425,35,426,30,460,41,537,72"/>
-<area shape="rect" id="Node000003" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="296,56,459,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="492,86,460,82,460,77,492,81"/>
-<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="301,107,454,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="492,108,455,113,454,108,492,103"/>
-<area shape="rect" id="Node000007" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="309,157,446,184"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="537,117,460,148,426,159,425,154,458,143,535,112"/>
-<area shape="rect" id="Node000004" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,107,248,133"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,90,232,109,231,103,306,84"/>
-<area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,55,133"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,123,55,123,55,117,87,117"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="286,123,248,123,248,117,286,117"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="306,156,231,137,232,131,307,150"/>
+<area shape="rect" id="Node000001" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="175,5,325,32"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a074977f721b0605a6d0407f15511ca5b" title="Gera um relatório do modelo." alt="" coords="5,5,127,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,21,127,21,127,16,159,16"/>
 </map>

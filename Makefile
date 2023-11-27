@@ -1,40 +1,43 @@
 all: build_funcional build_unit
 
-build_funcional: FunctionalTests.o ModelImpl.o FlowImpl.o FlowExponential.o FlowLogistic.o SystemImpl.o MainFuncional.o
-	g++ ./bin/FunctionalTests.o ./bin/SystemImpl.o ./bin/FlowImpl.o ./bin/FlowExponential.o ./bin/FlowLogistic.o ./bin/ModelImpl.o ./bin/MainFuncional.o -o ./bin/FunctionalTests
+build_funcional: FunctionalTests.o FlowExponential.o FlowLogistic.o MainFuncional.o System.dll Flow.dll Model.dll MyVensim.dll
+	g++ -Wall -g ./bin/FunctionalTests.o ./bin/FlowExponential.o ./bin/FlowLogistic.o ./bin/MainFuncional.o -o ./bin/FunctionalTests -L./bin -lFlow -lModel -lMyVensim
 
-build_unit: UnitFlow.o UnitSystem.o UnitModel.o SystemImpl.o FlowImpl.o FlowExponential.o FlowLogistic.o ModelImpl.o MainUnit.o
-	g++ ./bin/UnitFlow.o ./bin/UnitSystem.o ./bin/UnitModel.o ./bin/SystemImpl.o ./bin/FlowImpl.o ./bin/FlowExponential.o ./bin/FlowLogistic.o ./bin/ModelImpl.o ./bin/MainUnit.o -o ./bin/UnitTests
+build_unit: UnitFlow.o UnitSystem.o UnitModel.o MainUnit.o FlowLogistic.o FlowExponential.o System.dll Flow.dll Model.dll MyVensim.dll
+	g++ -Wall -g ./bin/UnitFlow.o ./bin/FlowExponential.o ./bin/FlowLogistic.o ./bin/UnitSystem.o ./bin/UnitModel.o ./bin/MainUnit.o -o ./bin/UnitTests -L./bin -lSystem -lFlow -lModel -lMyVensim
 
-SystemImpl.o: ./src/SystemImpl.cpp ./src/SystemImpl.hpp
-	g++ -Wall -g -c ./src/SystemImpl.cpp -o ./bin/SystemImpl.o
+System.dll: ./src/SystemImpl.cpp 
+	g++ -Wall -g -shared ./src/SystemImpl.cpp -o ./bin/System.dll
 
-FlowImpl.o: ./src/FlowImpl.cpp ./src/FlowImpl.hpp
-	g++ -Wall -g -c ./src/FlowImpl.cpp -o ./bin/FlowImpl.o
+Flow.dll: ./src/FlowImpl.cpp
+	g++ -Wall -g -shared ./src/FlowImpl.cpp -o ./bin/Flow.dll 
 
-FlowExponential.o: ./test/models/FlowExponential.cpp ./test/models/FlowExponential.hpp 
-	g++ -Wall -g -c ./test/models/FlowExponential.cpp -o ./bin/FlowExponential.o
+Model.dll: ./src/ModelImpl.cpp 
+	g++ -Wall -g -shared ./src/ModelImpl.cpp -o ./bin/Model.dll 
 
-FlowLogistic.o: ./test/models/FlowLogistic.cpp ./test/models/FlowLogistic.hpp 
+MyVensim.dll: ./src/MyVensimImpl.cpp 
+	g++ -Wall -g -shared ./src/MyVensimImpl.cpp -o ./bin/MyVensim.dll -L./bin -lSystem -lFlow -lModel
+
+FlowLogistic.o: ./test/models/FlowLogistic.cpp 
 	g++ -Wall -g -c ./test/models/FlowLogistic.cpp -o ./bin/FlowLogistic.o
 
-ModelImpl.o: ./src/ModelImpl.cpp ./src/ModelImpl.hpp 
-	g++ -Wall -g -c ./src/ModelImpl.cpp -o ./bin/ModelImpl.o
+FlowExponential.o: ./test/models/FlowExponential.cpp 
+	g++ -Wall -g -c ./test/models/FlowExponential.cpp -o ./bin/FlowExponential.o
 
-FunctionalTests.o: ./test/functional/FunctionalTests.cpp ./test/functional/FunctionalTests.hpp
+FunctionalTests.o: ./test/functional/FunctionalTests.cpp
 	g++ -Wall -g -c ./test/functional/FunctionalTests.cpp -o ./bin/FunctionalTests.o
 
 MainFuncional.o: ./test/functional/Main.cpp
-	g++ -Wall -g -c ./test/functional/Main.cpp -o ./bin/MainFuncional.o
+	g++ -Wall -g -c ./test/functional/Main.cpp -o ./bin/MainFuncional.o 
 
-UnitFlow.o: ./test/unit/UnitFlow.cpp ./test/unit/UnitFlow.hpp
-	g++ -Wall -g -c ./test/unit/UnitFlow.cpp -o ./bin/UnitFlow.o
+UnitFlow.o: ./test/unit/UnitFlow.cpp FlowExponential.o 
+	g++ -Wall -g -c ./test/unit/UnitFlow.cpp -o ./bin/UnitFlow.o 
 
-UnitSystem.o: ./test/unit/UnitSystem.cpp ./test/unit/UnitSystem.hpp
-	g++ -Wall -g -c ./test/unit/UnitSystem.cpp -o ./bin/UnitSystem.o
+UnitSystem.o: ./test/unit/UnitSystem.cpp 
+	g++ -Wall -g -c ./test/unit/UnitSystem.cpp -o ./bin/UnitSystem.o 
 
-UnitModel.o: ./test/unit/UnitModel.cpp ./test/unit/UnitModel.hpp
-	g++ -Wall -g -c ./test/unit/UnitModel.cpp -o ./bin/UnitModel.o
+UnitModel.o: ./test/unit/UnitModel.cpp 
+	g++ -Wall -g -c ./test/unit/UnitModel.cpp -o ./bin/UnitModel.o 
 
 MainUnit.o: ./test/unit/Main.cpp
 	g++ -Wall -g -c ./test/unit/Main.cpp -o ./bin/MainUnit.o

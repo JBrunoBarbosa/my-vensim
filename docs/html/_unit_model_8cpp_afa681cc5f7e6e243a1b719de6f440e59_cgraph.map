@@ -1,32 +1,15 @@
 <map id="unit_Model_execute" name="unit_Model_execute">
-<area shape="rect" id="Node000001" title="Testa o método execute da classe Model." alt="" coords="5,183,143,209"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a2b9e1522d14c0fddd5eb117f1c81e0c9" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="191,132,351,159"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,179,201,161,202,166,130,185"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#af446d784e6f90721287ce017c79883ac" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="196,183,346,209"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,193,180,193,180,199,143,199"/>
-<area shape="rect" id="Node000004" href="$class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="204,233,338,260"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,207,202,226,201,231,128,213"/>
-<area shape="rect" id="Node000005" href="$class_model_impl.html#a8e509150d002455a7e29d94ce45f4118" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="411,5,564,32"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,231,349,219,364,199,371,178,373,136,374,93,381,71,397,49,410,38,414,42,401,52,386,73,379,94,378,136,377,179,369,201,353,223,337,235"/>
-<area shape="rect" id="Node000006" href="$class_model_impl.html#a4a03adec9113f93ad2504ad67859ebb6" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="624,69,796,96"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="333,230,349,219,361,204,367,188,370,155,374,123,383,107,397,93,426,76,457,64,522,53,586,55,643,63,642,68,586,60,522,59,458,69,428,81,401,97,387,110,380,124,376,156,373,190,366,207,353,223,336,235"/>
-<area shape="rect" id="Node000007" href="$class_model_impl.html#a06dbf2c33ca4c1e0b4f46a7ad48da74b" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="416,259,559,285"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="338,252,401,259,400,264,338,257"/>
-<area shape="rect" id="Node000008" href="$class_model_impl.html#a36b84959d5586b53b7dfade16d5e6c2e" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="629,132,791,159"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="316,230,350,219,398,201,510,175,614,157,615,162,511,181,400,207,352,224,317,235"/>
-<area shape="rect" id="Node000009" href="$class_flow.html#a619be0b590c78202127bc6ac7fb04029" title="Executa o fluxo." alt="" coords="437,309,539,336"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="305,258,400,295,422,302,421,307,398,300,303,263"/>
-<area shape="rect" id="Node000010" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Obtém o sistema de origem do fluxo." alt="" coords="430,360,545,387"/>
-<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="287,259,335,301,366,325,400,346,417,353,414,358,398,350,363,330,332,306,284,263"/>
-<area shape="rect" id="Node000011" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Obtém o sistema de destino do fluxo." alt="" coords="433,411,543,437"/>
-<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="282,259,326,325,360,364,400,396,419,406,417,411,398,401,357,367,322,328,278,262"/>
-<area shape="rect" id="Node000012" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="647,183,773,209"/>
-<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="338,236,631,202,632,208,339,242"/>
-<area shape="rect" id="Node000013" href="$class_model_impl.html#ae391fb4f23c1a4ac810167c36ae0fe32" title="Define o histórico inicial com valores padrão." alt="" coords="399,107,576,133"/>
-<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="329,230,349,219,365,203,373,186,381,168,397,150,417,138,420,142,401,154,385,171,378,188,369,206,353,223,332,235"/>
-<area shape="rect" id="Node000014" href="$class_system.html#a7a5373e631e0b9f63423b2c9fbcef253" title="Define o valor associado ao sistema." alt="" coords="425,461,550,488"/>
-<area shape="poly" id="edge16_Node000004_Node000014" title=" " alt="" coords="279,259,294,297,319,348,355,401,376,426,401,447,412,455,409,459,397,451,373,430,351,405,315,351,289,299,274,261"/>
-<area shape="poly" id="edge13_Node000013_Node000006" title=" " alt="" coords="570,103,611,97,612,102,571,109"/>
-<area shape="poly" id="edge14_Node000013_Node000008" title=" " alt="" coords="577,127,614,132,614,137,576,133"/>
-<area shape="poly" id="edge15_Node000013_Node000012" title=" " alt="" coords="525,131,625,168,646,175,645,180,623,173,523,136"/>
+<area shape="rect" id="Node000001" title="Testa o método execute da classe Model." alt="" coords="5,107,143,133"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a23cce9625a3ac948b976c99201a1a8f7" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="204,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,104,135,73,189,42,204,35,206,40,192,46,137,78,94,108"/>
+<area shape="rect" id="Node000003" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="191,56,353,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,103,202,84,203,90,130,109"/>
+<area shape="rect" id="Node000004" href="$class_model.html#ad2edbf30bc599d9c82182b1d3b778d31" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="209,107,335,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,117,193,117,193,123,143,123"/>
+<area shape="rect" id="Node000005" href="$class_model.html#a686edecbb77beb3000f1bd6c1ac6b251" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="217,157,327,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="130,131,203,150,202,156,129,137"/>
+<area shape="rect" id="Node000006" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="193,208,351,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="94,132,137,162,192,194,206,200,204,205,189,198,135,167,91,136"/>
+<area shape="rect" id="Node000007" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="401,208,601,235"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="351,219,385,219,385,224,351,224"/>
 </map>

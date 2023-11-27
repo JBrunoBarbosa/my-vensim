@@ -1,87 +1,89 @@
 <map id="run_unit_tests_Model" name="run_unit_tests_Model">
-<area shape="rect" id="Node000001" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="5,434,151,460"/>
-<area shape="rect" id="Node000002" href="$_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="458,139,570,166"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,432,95,396,119,347,153,294,174,270,197,249,256,212,321,186,385,168,443,157,444,162,387,173,323,191,259,217,200,253,178,274,157,297,124,349,100,398,86,434"/>
-<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="436,190,592,216"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="85,432,128,371,160,336,197,305,251,274,309,249,367,230,421,217,422,222,369,235,311,254,254,278,200,309,164,340,132,375,90,435"/>
-<area shape="rect" id="Node000008" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="207,586,371,612"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="91,459,134,514,165,545,200,571,210,577,208,582,197,576,161,549,130,517,86,462"/>
-<area shape="rect" id="Node000019" href="$_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Testa o método beginSystems da classe Model." alt="" coords="427,63,601,90"/>
-<area shape="poly" id="edge26_Node000001_Node000019" title=" " alt="" coords="79,433,91,387,113,323,147,253,170,221,197,192,246,155,301,127,357,106,411,91,412,96,359,111,303,132,249,160,200,196,174,224,152,256,118,325,96,389,85,434"/>
-<area shape="rect" id="Node000020" href="$_unit_model_8cpp.html#afb61439c4f930cc4d2c41574f0b59f38" title="Testa o método clearModel da classe Model." alt="" coords="437,291,591,318"/>
-<area shape="poly" id="edge30_Node000001_Node000020" title=" " alt="" coords="121,430,455,321,457,326,123,436"/>
-<area shape="rect" id="Node000022" href="$_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="211,950,367,976"/>
-<area shape="poly" id="edge37_Node000001_Node000022" title=" " alt="" coords="87,460,279,935,274,937,82,462"/>
-<area shape="rect" id="Node000024" href="$_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="441,240,587,267"/>
-<area shape="poly" id="edge40_Node000001_Node000024" title=" " alt="" coords="93,431,138,395,197,357,258,328,322,304,437,269,439,274,324,309,261,333,200,361,141,399,97,435"/>
-<area shape="rect" id="Node000025" href="$_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="212,535,366,562"/>
-<area shape="poly" id="edge44_Node000001_Node000025" title=" " alt="" coords="99,459,144,489,200,521,216,527,214,532,198,525,141,494,96,463"/>
-<area shape="rect" id="Node000026" href="$_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Testa o método endSystems da classe Model." alt="" coords="432,434,596,460"/>
-<area shape="poly" id="edge47_Node000001_Node000026" title=" " alt="" coords="151,444,416,444,416,450,151,450"/>
-<area shape="rect" id="Node000027" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="220,636,358,663"/>
-<area shape="poly" id="edge51_Node000001_Node000027" title=" " alt="" coords="87,460,102,493,126,537,159,583,200,622,208,627,205,631,197,626,155,587,122,540,97,496,82,462"/>
-<area shape="rect" id="Node000028" href="$_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title="Testa o método setInitialHistory da classe Model." alt="" coords="199,484,379,511"/>
-<area shape="poly" id="edge55_Node000001_Node000028" title=" " alt="" coords="137,458,216,477,215,483,136,464"/>
-<area shape="rect" id="Node000003" href="$class_model_impl.html#a3e8843e5353f40ab30afcf19b4f13a67" title="Adiciona um flow no model." alt="" coords="683,139,793,166"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,150,668,150,668,155,571,155"/>
-<area shape="rect" id="Node000004" href="$class_model_impl.html#a8e509150d002455a7e29d94ce45f4118" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="661,190,815,216"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="571,162,662,183,661,188,570,168"/>
-<area shape="rect" id="Node000005" href="$class_model_impl.html#a4a03adec9113f93ad2504ad67859ebb6" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="875,367,1046,394"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="546,136,602,116,675,101,715,98,754,100,792,108,828,125,857,147,882,174,902,204,919,236,943,299,957,351,951,352,938,301,914,238,898,207,878,177,854,151,825,129,791,113,753,105,715,103,676,106,604,121,548,141"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="576,186,668,165,669,171,577,192"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="593,200,646,200,646,206,593,206"/>
-<area shape="rect" id="Node000007" href="$class_model_impl.html#a06dbf2c33ca4c1e0b4f46a7ad48da74b" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="666,240,810,267"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="577,214,662,234,660,239,576,220"/>
-<area shape="rect" id="Node000009" href="$class_model_impl.html#a2b9e1522d14c0fddd5eb117f1c81e0c9" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="434,535,594,562"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="351,582,436,563,438,568,352,588"/>
-<area shape="rect" id="Node000010" href="$class_model_impl.html#af446d784e6f90721287ce017c79883ac" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="439,586,589,612"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="371,596,423,596,423,602,371,602"/>
-<area shape="rect" id="Node000011" href="$class_model_impl.html#ab789ed5660865d28a29d572285a73bf2" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="447,639,581,666"/>
-<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="349,610,440,632,439,637,347,615"/>
-<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="580,637,599,622,617,597,629,573,635,548,638,524,633,475,622,426,611,377,607,328,609,303,616,278,629,252,647,227,649,224,653,228,651,230,633,255,621,279,615,304,612,328,616,376,627,425,638,474,643,524,640,549,634,574,621,600,603,626,584,642"/>
-<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="568,636,600,622,624,603,648,581,798,477,921,400,924,404,801,481,651,585,628,607,603,627,570,641"/>
-<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="580,637,599,622,623,586,634,552,635,517,631,483,626,447,624,410,630,371,647,328,671,298,699,274,702,278,675,301,652,331,635,372,629,411,631,447,636,482,640,517,639,552,628,589,603,626,583,641"/>
-<area shape="rect" id="Node000012" href="$class_model_impl.html#a36b84959d5586b53b7dfade16d5e6c2e" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="880,494,1041,520"/>
-<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="582,658,636,661,699,660,764,651,826,631,861,611,892,585,939,531,943,535,896,588,864,615,828,636,765,656,699,665,636,667,582,664"/>
-<area shape="rect" id="Node000013" href="$class_flow.html#a619be0b590c78202127bc6ac7fb04029" title="Executa o fluxo." alt="" coords="687,696,789,723"/>
-<area shape="poly" id="edge17_Node000011_Node000013" title=" " alt="" coords="570,664,672,690,671,695,568,669"/>
-<area shape="rect" id="Node000014" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Obtém o sistema de origem do fluxo." alt="" coords="680,747,796,774"/>
-<area shape="poly" id="edge18_Node000011_Node000014" title=" " alt="" coords="536,664,586,698,650,733,667,739,665,744,648,737,583,702,533,668"/>
-<area shape="rect" id="Node000015" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Obtém o sistema de destino do fluxo." alt="" coords="683,798,793,824"/>
-<area shape="poly" id="edge19_Node000011_Node000015" title=" " alt="" coords="528,665,576,722,611,755,651,783,669,792,667,797,648,788,608,759,573,726,524,668"/>
-<area shape="rect" id="Node000016" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="898,899,1023,926"/>
-<area shape="poly" id="edge20_Node000011_Node000016" title=" " alt="" coords="521,665,534,710,559,771,576,803,597,834,622,862,651,885,678,899,706,910,767,922,827,925,882,922,882,928,827,931,766,928,705,915,675,904,648,889,618,866,593,837,571,806,554,773,529,711,516,667"/>
-<area shape="rect" id="Node000017" href="$class_model_impl.html#ae391fb4f23c1a4ac810167c36ae0fe32" title="Define o histórico inicial com valores padrão." alt="" coords="649,595,827,622"/>
-<area shape="poly" id="edge21_Node000011_Node000017" title=" " alt="" coords="581,636,651,623,652,628,582,642"/>
-<area shape="rect" id="Node000018" href="$class_system.html#a7a5373e631e0b9f63423b2c9fbcef253" title="Define o valor associado ao sistema." alt="" coords="675,848,801,875"/>
-<area shape="poly" id="edge25_Node000011_Node000018" title=" " alt="" coords="524,665,541,700,569,745,606,793,651,834,663,841,660,846,648,838,602,797,565,748,537,702,519,667"/>
-<area shape="poly" id="edge22_Node000017_Node000005" title=" " alt="" coords="795,592,825,574,843,552,852,531,859,508,872,480,903,439,934,403,938,407,907,442,877,483,864,510,857,533,848,555,828,578,798,597"/>
-<area shape="poly" id="edge23_Node000017_Node000012" title=" " alt="" coords="780,592,826,574,921,526,923,530,828,579,782,597"/>
-<area shape="poly" id="edge24_Node000017_Node000016" title=" " alt="" coords="760,620,794,647,829,683,867,735,901,791,949,883,944,886,897,793,863,738,825,686,790,651,757,624"/>
-<area shape="poly" id="edge27_Node000019_Node000003" title=" " alt="" coords="557,88,683,131,681,136,555,93"/>
-<area shape="poly" id="edge28_Node000019_Node000005" title=" " alt="" coords="539,60,595,34,670,10,711,4,752,4,792,12,828,30,865,63,895,102,917,146,934,193,954,282,961,351,956,351,949,283,929,194,912,149,890,105,861,66,825,34,790,17,751,9,711,9,671,15,597,39,541,65"/>
-<area shape="poly" id="edge29_Node000019_Node000012" title=" " alt="" coords="602,63,658,63,719,71,778,90,805,105,829,125,855,158,867,191,870,224,867,257,860,326,864,364,877,404,904,447,934,481,930,484,899,450,872,407,859,365,855,326,862,256,865,224,862,192,850,161,825,129,802,110,776,95,718,76,658,68,602,68"/>
-<area shape="poly" id="edge31_Node000020_Node000003" title=" " alt="" coords="582,288,600,277,611,265,617,253,623,228,629,202,636,188,648,176,667,163,670,168,651,180,640,191,634,203,628,229,622,255,615,268,603,281,585,293"/>
-<area shape="poly" id="edge32_Node000020_Node000004" title=" " alt="" coords="576,288,600,277,614,265,623,252,632,239,648,226,658,220,661,225,651,230,636,243,627,255,618,268,603,281,578,293"/>
-<area shape="poly" id="edge33_Node000020_Node000005" title=" " alt="" coords="592,302,704,308,766,316,827,327,874,341,917,358,915,363,872,346,826,332,765,321,703,314,592,307"/>
-<area shape="poly" id="edge35_Node000020_Node000007" title=" " alt="" coords="576,288,660,268,662,274,577,293"/>
-<area shape="poly" id="edge36_Node000020_Node000012" title=" " alt="" coords="539,316,651,378,789,439,908,485,906,490,787,444,648,383,536,320"/>
-<area shape="rect" id="Node000021" href="$class_model_impl.html#ae89af8582d85c03a1b63e281e2f0138c" title="Limpa o modelo, removendo todos os sistemas e fluxos." alt="" coords="662,342,814,368"/>
-<area shape="poly" id="edge34_Node000020_Node000021" title=" " alt="" coords="577,316,662,335,660,340,576,321"/>
-<area shape="poly" id="edge39_Node000022_Node000016" title=" " alt="" coords="368,958,575,949,826,930,882,922,883,928,827,935,575,954,368,963"/>
-<area shape="rect" id="Node000023" href="$class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="451,1000,577,1027"/>
-<area shape="poly" id="edge38_Node000022_Node000023" title=" " alt="" coords="352,974,438,994,436,999,351,980"/>
-<area shape="poly" id="edge41_Node000024_Node000003" title=" " alt="" coords="576,237,600,226,614,214,623,201,632,188,648,175,668,166,670,170,651,180,636,192,627,204,618,218,603,231,578,242"/>
-<area shape="poly" id="edge42_Node000024_Node000004" title=" " alt="" coords="576,237,660,218,662,223,577,242"/>
-<area shape="poly" id="edge43_Node000024_Node000007" title=" " alt="" coords="588,251,651,251,651,256,588,256"/>
-<area shape="poly" id="edge45_Node000025_Node000009" title=" " alt="" coords="366,546,418,546,418,551,366,551"/>
-<area shape="poly" id="edge46_Node000025_Node000010" title=" " alt="" coords="352,560,438,579,436,584,351,565"/>
-<area shape="poly" id="edge48_Node000026_Node000003" title=" " alt="" coords="526,431,562,387,599,328,608,306,613,286,616,248,622,212,632,194,648,176,667,162,670,167,651,180,636,197,627,214,621,249,618,287,613,308,604,331,566,390,530,435"/>
-<area shape="poly" id="edge49_Node000026_Node000005" title=" " alt="" coords="596,432,859,393,860,398,597,437"/>
-<area shape="poly" id="edge50_Node000026_Node000012" title=" " alt="" coords="576,458,650,472,761,487,864,497,864,502,760,492,649,478,575,464"/>
-<area shape="poly" id="edge52_Node000027_Node000009" title=" " alt="" coords="353,633,378,622,392,610,401,597,410,584,426,571,436,566,438,570,428,576,414,588,405,601,396,614,380,627,356,638"/>
-<area shape="poly" id="edge53_Node000027_Node000010" title=" " alt="" coords="351,633,436,614,438,619,352,638"/>
-<area shape="poly" id="edge54_Node000027_Node000011" title=" " alt="" coords="358,648,431,649,431,654,358,653"/>
-<area shape="poly" id="edge56_Node000028_Node000009" title=" " alt="" coords="352,509,438,528,436,534,351,514"/>
-<area shape="poly" id="edge57_Node000028_Node000017" title=" " alt="" coords="380,491,488,497,546,506,602,520,633,533,662,549,710,583,707,587,659,554,630,538,600,525,545,511,487,502,379,496"/>
+<area shape="rect" id="Node000001" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="5,309,151,336"/>
+<area shape="rect" id="Node000002" href="$_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="233,183,345,209"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,307,135,264,165,240,197,219,217,210,219,215,200,224,168,244,138,268,94,311"/>
+<area shape="rect" id="Node000011" href="$_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="211,132,367,159"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="84,308,125,241,158,202,197,169,206,163,208,168,200,173,162,206,130,244,88,310"/>
+<area shape="rect" id="Node000013" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="207,436,371,463"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="94,335,138,378,168,401,200,422,212,428,210,432,197,426,165,406,135,382,90,339"/>
+<area shape="rect" id="Node000017" href="$_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Testa o método beginSystems da classe Model." alt="" coords="202,284,376,311"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="151,311,186,307,187,312,151,317"/>
+<area shape="rect" id="Node000019" href="$_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="211,537,367,564"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="86,336,99,373,123,424,156,478,177,502,200,523,207,528,204,532,197,527,173,506,152,481,118,426,94,375,81,337"/>
+<area shape="rect" id="Node000022" href="$_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="216,81,362,108"/>
+<area shape="poly" id="edge33_Node000001_Node000022" title=" " alt="" coords="81,308,94,270,118,219,152,165,173,140,197,118,204,113,207,118,200,122,177,143,156,168,123,221,99,272,86,310"/>
+<area shape="rect" id="Node000023" href="$_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="212,385,366,412"/>
+<area shape="poly" id="edge39_Node000001_Node000023" title=" " alt="" coords="110,334,200,371,221,378,219,383,198,376,108,339"/>
+<area shape="rect" id="Node000024" href="$_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Testa o método endSystems da classe Model." alt="" coords="207,233,371,260"/>
+<area shape="poly" id="edge44_Node000001_Node000024" title=" " alt="" coords="108,306,198,269,219,262,221,268,200,275,110,311"/>
+<area shape="rect" id="Node000025" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="220,487,358,513"/>
+<area shape="poly" id="edge50_Node000001_Node000025" title=" " alt="" coords="88,335,130,401,162,440,200,473,208,477,206,482,197,477,158,443,125,404,84,338"/>
+<area shape="rect" id="Node000026" href="$_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title="Testa o método setInitialHistory da classe Model." alt="" coords="199,335,379,361"/>
+<area shape="poly" id="edge56_Node000001_Node000026" title=" " alt="" coords="151,329,183,333,183,338,151,334"/>
+<area shape="rect" id="Node000003" href="$class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="449,107,578,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,180,378,168,426,143,444,136,446,141,428,148,380,173,346,185"/>
+<area shape="rect" id="Node000004" href="$class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="440,157,587,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="345,187,424,178,425,183,346,192"/>
+<area shape="rect" id="Node000005" href="$class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="436,56,590,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="344,185,377,169,393,151,401,132,408,112,425,93,432,88,435,92,429,97,413,115,406,134,398,153,381,173,346,189"/>
+<area shape="rect" id="Node000007" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="432,259,594,285"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="346,207,380,219,428,244,446,251,444,256,426,249,378,224,344,212"/>
+<area shape="rect" id="Node000008" href="$class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="427,360,599,387"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="346,201,365,208,381,219,394,235,402,252,406,284,410,316,416,331,429,346,433,349,429,353,425,350,412,334,405,317,400,285,396,253,390,238,377,223,362,213,344,206"/>
+<area shape="rect" id="Node000009" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="434,309,592,336"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="346,203,381,219,398,239,406,258,413,277,429,295,435,300,432,304,425,299,408,280,401,260,393,241,377,223,344,207"/>
+<area shape="rect" id="Node000006" href="$class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="691,56,804,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="591,67,676,67,676,72,591,72"/>
+<area shape="rect" id="Node000010" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="647,309,848,336"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="593,320,632,320,632,325,593,325"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="367,134,432,126,433,132,367,139"/>
+<area shape="poly" id="edge12_Node000011_Node000005" title=" " alt="" coords="345,129,378,118,426,92,444,85,446,90,428,97,380,122,347,134"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="360,157,381,169,398,188,406,208,413,227,429,245,435,249,432,253,425,249,408,229,401,210,393,191,377,173,357,162"/>
+<area shape="poly" id="edge15_Node000011_Node000009" title=" " alt="" coords="364,157,381,169,394,185,402,201,406,234,410,265,416,280,429,295,433,299,429,303,425,299,412,283,405,267,400,234,396,203,390,188,377,173,361,161"/>
+<area shape="rect" id="Node000012" href="$class_model.html#a27d6c506e46555299b4b4c8ae0990a7c" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="454,5,573,32"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="357,129,377,118,393,100,401,81,408,61,425,42,438,34,440,39,429,46,413,64,406,83,398,103,381,122,360,134"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="361,433,377,422,390,407,396,392,400,360,405,328,412,311,425,295,429,292,433,296,429,299,416,314,410,329,406,361,402,394,394,410,381,426,364,438"/>
+<area shape="poly" id="edge21_Node000013_Node000009" title=" " alt="" coords="357,433,377,422,393,404,401,385,408,365,425,346,432,341,435,346,429,350,413,368,406,387,398,407,381,426,360,438"/>
+<area shape="rect" id="Node000014" href="$class_model.html#a23cce9625a3ac948b976c99201a1a8f7" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="445,461,581,488"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="371,456,430,463,429,468,371,461"/>
+<area shape="rect" id="Node000015" href="$class_model.html#ad2edbf30bc599d9c82182b1d3b778d31" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="450,512,576,539"/>
+<area shape="poly" id="edge19_Node000013_Node000015" title=" " alt="" coords="347,461,380,472,428,498,446,504,444,509,426,502,378,477,345,466"/>
+<area shape="rect" id="Node000016" href="$class_model.html#a686edecbb77beb3000f1bd6c1ac6b251" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="458,563,568,589"/>
+<area shape="poly" id="edge20_Node000013_Node000016" title=" " alt="" coords="360,461,381,473,398,492,406,512,413,531,429,549,445,558,442,563,425,553,408,533,401,514,393,495,377,477,357,466"/>
+<area shape="poly" id="edge23_Node000017_Node000004" title=" " alt="" coords="357,281,377,270,393,252,401,233,408,213,425,194,432,189,435,194,429,198,413,216,406,235,398,255,381,274,360,286"/>
+<area shape="poly" id="edge24_Node000017_Node000007" title=" " alt="" coords="376,285,416,280,417,286,377,290"/>
+<area shape="poly" id="edge25_Node000017_Node000008" title=" " alt="" coords="347,309,380,320,428,346,446,352,444,357,426,350,378,325,345,314"/>
+<area shape="poly" id="edge27_Node000017_Node000009" title=" " alt="" coords="377,305,419,309,418,315,376,310"/>
+<area shape="rect" id="Node000018" href="$class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="445,208,582,235"/>
+<area shape="poly" id="edge26_Node000017_Node000018" title=" " alt="" coords="345,281,378,270,426,244,444,237,446,242,428,249,380,274,347,286"/>
+<area shape="poly" id="edge29_Node000019_Node000008" title=" " alt="" coords="361,535,377,523,390,508,396,493,400,462,405,429,412,413,425,397,429,393,433,397,429,401,416,416,410,431,406,462,402,495,394,511,381,527,364,539"/>
+<area shape="poly" id="edge30_Node000019_Node000009" title=" " alt="" coords="362,535,377,523,393,502,400,481,400,437,401,392,409,369,425,346,428,343,432,347,429,350,413,371,406,393,406,437,405,482,398,505,381,527,365,539"/>
+<area shape="rect" id="Node000020" href="$class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="450,613,576,640"/>
+<area shape="poly" id="edge31_Node000019_Node000020" title=" " alt="" coords="327,562,428,599,450,606,448,611,426,604,325,567"/>
+<area shape="rect" id="Node000021" href="$class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="451,664,576,691"/>
+<area shape="poly" id="edge32_Node000019_Node000021" title=" " alt="" coords="307,562,358,605,392,629,428,650,442,656,440,661,426,654,389,633,355,609,303,566"/>
+<area shape="poly" id="edge34_Node000022_Node000003" title=" " alt="" coords="362,100,434,108,433,114,362,106"/>
+<area shape="poly" id="edge35_Node000022_Node000005" title=" " alt="" coords="362,84,421,77,421,82,362,89"/>
+<area shape="poly" id="edge36_Node000022_Node000007" title=" " alt="" coords="364,106,381,118,394,134,402,150,406,183,410,215,416,230,429,245,433,248,429,252,425,249,412,233,405,216,400,184,396,152,390,137,377,122,361,111"/>
+<area shape="poly" id="edge38_Node000022_Node000009" title=" " alt="" coords="364,106,381,118,398,141,405,164,406,209,406,253,413,274,429,296,432,298,428,302,425,299,409,277,401,254,400,209,400,164,393,143,377,122,361,110"/>
+<area shape="poly" id="edge37_Node000022_Node000012" title=" " alt="" coords="325,78,426,41,448,34,450,39,428,47,327,83"/>
+<area shape="poly" id="edge41_Node000023_Node000007" title=" " alt="" coords="357,382,377,371,393,353,401,334,408,315,425,295,432,291,435,295,429,299,413,317,406,336,398,356,381,375,360,387"/>
+<area shape="poly" id="edge43_Node000023_Node000009" title=" " alt="" coords="345,382,378,371,426,346,444,339,446,344,428,350,380,376,347,387"/>
+<area shape="poly" id="edge40_Node000023_Node000014" title=" " alt="" coords="347,410,380,422,428,447,446,454,444,459,426,452,378,426,345,415"/>
+<area shape="poly" id="edge42_Node000023_Node000015" title=" " alt="" coords="360,410,381,422,398,441,406,461,413,480,429,498,437,504,435,508,425,502,408,483,401,463,393,444,377,426,357,415"/>
+<area shape="poly" id="edge45_Node000024_Node000004" title=" " alt="" coords="345,230,378,219,426,194,444,187,446,192,428,198,380,224,347,235"/>
+<area shape="poly" id="edge46_Node000024_Node000007" title=" " alt="" coords="372,253,417,258,416,264,371,259"/>
+<area shape="poly" id="edge47_Node000024_Node000008" title=" " alt="" coords="360,258,381,270,398,289,406,309,413,328,429,346,435,350,432,355,425,350,408,331,401,311,393,292,377,274,357,263"/>
+<area shape="poly" id="edge49_Node000024_Node000009" title=" " alt="" coords="347,258,380,270,428,295,446,302,444,307,426,300,378,274,345,263"/>
+<area shape="poly" id="edge48_Node000024_Node000018" title=" " alt="" coords="371,235,429,228,429,233,372,240"/>
+<area shape="poly" id="edge52_Node000025_Node000007" title=" " alt="" coords="356,487,377,473,393,452,400,430,400,386,401,341,409,318,425,296,428,292,432,296,429,299,413,321,406,342,406,386,405,431,398,454,381,477,359,491"/>
+<area shape="poly" id="edge55_Node000025_Node000009" title=" " alt="" coords="356,486,377,473,390,458,396,443,400,411,405,379,412,362,425,346,429,343,433,347,429,350,416,365,410,380,406,412,402,444,394,461,381,477,359,490"/>
+<area shape="poly" id="edge51_Node000025_Node000014" title=" " alt="" coords="358,490,429,481,430,487,358,495"/>
+<area shape="poly" id="edge53_Node000025_Node000015" title=" " alt="" coords="358,505,435,514,434,519,358,510"/>
+<area shape="poly" id="edge54_Node000025_Node000016" title=" " alt="" coords="347,511,380,523,428,548,446,555,444,560,426,553,378,528,345,516"/>
+<area shape="poly" id="edge58_Node000026_Node000007" title=" " alt="" coords="345,332,378,320,426,295,444,288,446,293,428,300,380,325,347,337"/>
+<area shape="poly" id="edge59_Node000026_Node000009" title=" " alt="" coords="379,335,418,331,419,336,379,340"/>
+<area shape="poly" id="edge57_Node000026_Node000014" title=" " alt="" coords="360,360,381,371,398,391,406,410,413,429,429,447,435,452,432,456,425,451,408,432,401,412,393,393,377,375,357,364"/>
+<area shape="rect" id="Node000027" href="$class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba" title="Define o histórico inicial com valores padrão." alt="" coords="437,411,590,437"/>
+<area shape="poly" id="edge60_Node000026_Node000027" title=" " alt="" coords="347,359,380,371,428,396,446,403,444,408,426,401,378,376,345,364"/>
 </map>

@@ -1,13 +1,22 @@
 <map id="Model::execute" name="Model::execute">
-<area shape="rect" id="Node000001" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="319,56,429,83"/>
-<area shape="rect" id="Node000002" href="$_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa o teste funcional em modelo complexo." alt="" coords="111,5,263,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,54,238,35,240,30,308,49"/>
-<area shape="rect" id="Node000004" href="$_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa o teste funcional para fluxos exponenciais." alt="" coords="103,56,271,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,72,272,72,272,67,303,67"/>
-<area shape="rect" id="Node000005" href="$_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa o teste funcional para fluxos logísticos." alt="" coords="110,107,264,133"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="308,90,240,109,238,103,307,85"/>
-<area shape="rect" id="Node000003" href="$test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="123,104,102,97,54,81,56,76,104,92,125,99"/>
+<area shape="rect" id="Node000001" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="512,107,623,133"/>
+<area shape="rect" id="Node000002" href="$_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa o teste funcional em modelo complexo." alt="" coords="305,5,456,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="538,98,504,71,463,46,435,35,437,30,466,42,507,67,541,94"/>
+<area shape="rect" id="Node000004" href="$_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa o teste funcional para fluxos exponenciais." alt="" coords="296,56,464,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="500,105,432,86,433,81,502,100"/>
+<area shape="rect" id="Node000005" href="$_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa o teste funcional para fluxos logísticos." alt="" coords="304,107,457,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="497,123,457,123,457,117,497,117"/>
+<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="299,157,462,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="502,140,433,159,432,154,500,135"/>
+<area shape="rect" id="Node000009" href="$_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="312,208,449,235"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="541,146,507,173,466,198,437,210,435,205,463,194,504,169,538,142"/>
+<area shape="rect" id="Node000003" href="$test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,39,201,66,200,61,308,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="280,72,200,72,200,67,280,67"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="308,105,200,78,201,73,309,100"/>
+<area shape="rect" id="Node000007" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,183,248,209"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="284,185,249,190,248,184,283,180"/>
+<area shape="rect" id="Node000008" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,183,55,209"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="87,199,55,199,55,193,87,193"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="296,214,248,208,249,202,296,208"/>
 </map>

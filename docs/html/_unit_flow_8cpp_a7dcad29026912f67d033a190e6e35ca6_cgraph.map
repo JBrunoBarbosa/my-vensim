@@ -1,5 +1,13 @@
 <map id="unit_Flow_getName" name="unit_Flow_getName">
-<area shape="rect" id="Node000001" title="Testa o método getName da classe Flow." alt="" coords="5,5,141,32"/>
-<area shape="rect" id="Node000002" href="$class_flow_impl.html#aff4ced90aedec7ff19ea84086ea0d412" title="Obtém o nome do fluxo." alt="" coords="189,5,321,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,16,173,16,173,21,141,21"/>
+<area shape="rect" id="Node000001" title="Testa o método getName da classe Flow." alt="" coords="5,56,141,83"/>
+<area shape="rect" id="Node000002" href="$class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="191,5,345,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,53,198,34,200,39,128,58"/>
+<area shape="rect" id="Node000004" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="189,56,347,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,67,173,67,173,72,141,72"/>
+<area shape="rect" id="Node000006" href="$class_flow.html#a2d0340d844ab2d275222938234e44169" title="Obtém o nome do fluxo." alt="" coords="214,107,322,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="128,81,200,100,198,105,127,86"/>
+<area shape="rect" id="Node000003" href="$class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="439,5,551,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,16,423,16,423,21,345,21"/>
+<area shape="rect" id="Node000005" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="395,56,595,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="347,67,380,67,380,72,347,72"/>
 </map>

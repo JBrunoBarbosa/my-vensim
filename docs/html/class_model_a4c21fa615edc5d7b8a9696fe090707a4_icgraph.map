@@ -1,5 +1,17 @@
 <map id="Model::beginFlows" name="Model::beginFlows">
-<area shape="rect" id="Node000001" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="201,5,330,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a6f5958c8c1a164751346a284fe0df4a7" title=" " alt="" coords="5,5,153,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+<area shape="rect" id="Node000001" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="500,81,630,108"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a6f5958c8c1a164751346a284fe0df4a7" title=" " alt="" coords="301,5,448,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,77,451,46,420,35,421,30,453,42,523,72"/>
+<area shape="rect" id="Node000003" href="$_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="318,56,430,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="485,87,431,79,431,74,485,81"/>
+<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="296,107,452,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="485,108,453,112,452,107,485,103"/>
+<area shape="rect" id="Node000007" href="$_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="301,157,447,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="523,117,453,148,421,159,420,154,451,143,521,113"/>
+<area shape="rect" id="Node000004" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,107,248,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="305,90,231,109,230,103,303,85"/>
+<area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,123,55,123,55,117,87,117"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="281,123,248,123,248,117,281,117"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="303,155,230,137,231,131,305,150"/>
 </map>
