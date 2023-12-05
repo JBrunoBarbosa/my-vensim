@@ -13,8 +13,6 @@ private:
 
     MyVensimImpl();
     ~MyVensimImpl();
-    
-    void ensureModelExists();
 
 public:
     Model* createModel() override;    

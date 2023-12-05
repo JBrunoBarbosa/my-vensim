@@ -16,12 +16,6 @@ Model* MyVensimImpl::createModel() {
     return model;
 }
 
-void MyVensimImpl::ensureModelExists() {
-    if (!model) {
-        createModel(); 
-    }
-}
-
 MyVensimImpl::MyVensimImpl() {
     model = nullptr; 
 }
