@@ -98,6 +98,28 @@ public:
      * @param timeFinal O tempo final da execução do modelo.
      */
     virtual void execute(const int timeInitial, const int timeFinal) = 0;
+
+    /**
+     * @brief Cria uma instância de System.
+     * @param name Nome do sistema.
+     * @param value Valor associado ao sistema.
+     * @return Um ponteiro para a instância de System criada.
+     */
+    virtual System* createSystem(const std::string name, double value) = 0;
+
+    /**
+     * @brief Cria uma instância de Flow.
+     * @param name Nome do fluxo.
+     * @param source Sistema de origem do fluxo.
+     * @param target Sistema de destino do fluxo.
+     * @return Um ponteiro para a instância de Flow criada.
+     */
+    template <typename FlowType>
+    Flow* createFlow(std::string name = "", System* source = nullptr, System* destiny = nullptr) {
+        Flow* f = new FlowType(name, source, destiny);
+        add(f);
+        return f;
+    }
 };
 
 #endif

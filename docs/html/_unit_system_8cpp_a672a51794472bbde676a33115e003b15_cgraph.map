@@ -1,11 +1,13 @@
 <map id="unit_System_getName" name="unit_System_getName">
-<area shape="rect" id="Node000001" title="Testa o método getName da classe System." alt="" coords="5,56,159,83"/>
-<area shape="rect" id="Node000002" href="$class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="207,5,379,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,53,219,34,220,39,141,58"/>
-<area shape="rect" id="Node000003" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="214,56,372,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,67,198,67,198,72,159,72"/>
-<area shape="rect" id="Node000005" href="$class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="230,107,356,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="141,81,220,100,219,105,140,86"/>
-<area shape="rect" id="Node000004" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="427,56,627,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="373,67,411,67,411,72,373,72"/>
+<area shape="rect" id="Node000001" title="Testa o método getName da classe System." alt="" coords="5,81,159,108"/>
+<area shape="rect" id="Node000002" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="207,5,369,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,78,206,42,225,35,227,40,208,46,116,83"/>
+<area shape="rect" id="Node000003" href="$class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="215,56,361,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,83,199,78,200,83,159,88"/>
+<area shape="rect" id="Node000004" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="209,107,367,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,101,193,106,193,111,159,107"/>
+<area shape="rect" id="Node000006" href="$class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="225,157,351,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="116,106,208,143,227,150,225,155,206,148,114,111"/>
+<area shape="rect" id="Node000005" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="417,107,617,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="367,117,401,117,401,123,367,123"/>
 </map>

@@ -13,7 +13,7 @@ Flow.dll: ./src/FlowImpl.cpp
 	g++ -Wall -g -shared ./src/FlowImpl.cpp -o ./bin/Flow.dll 
 
 Model.dll: ./src/ModelImpl.cpp 
-	g++ -Wall -g -shared ./src/ModelImpl.cpp -o ./bin/Model.dll 
+	g++ -Wall -g -shared ./src/ModelImpl.cpp -o ./bin/Model.dll -L./bin -lSystem -lFlow
 
 MyVensim.dll: ./src/MyVensimImpl.cpp 
 	g++ -Wall -g -shared ./src/MyVensimImpl.cpp -o ./bin/MyVensim.dll -L./bin -lSystem -lFlow -lModel

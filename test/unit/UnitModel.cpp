@@ -6,7 +6,8 @@
 
 void unit_Model_constructor() {
     MyVensim* factory = MyVensim::getInstance();
-    System* q1 = factory->createSystem("Q1", 100.3);
+    Model* model = factory->createModel();
+    System* q1 = model->createSystem("Q1", 100.3);
     assert(q1->getName() == "Q1");
     assert(std::abs(q1->getValue() - 100.3) < 0.001);
 }
@@ -14,7 +15,7 @@ void unit_Model_constructor() {
 void unit_Model_beginSystems() {
     MyVensim* factory = MyVensim::getInstance();
     Model* model = factory->createModel();
-    System* sys1 = factory->createSystem("System1", 100);
+    System* sys1 = model->createSystem("System1", 100);
     auto it = model->beginSystems();
     assert(it != model->endSystems());
     assert(*it == sys1);
@@ -23,7 +24,7 @@ void unit_Model_beginSystems() {
 void unit_Model_endSystems() {
     MyVensim* factory = MyVensim::getInstance();
     Model* model = factory->createModel();
-    factory->createSystem("System1", 100);
+    model->createSystem("System1", 100);
 
     auto it = model->beginSystems();
     while (it != model->endSystems()) {
@@ -36,7 +37,7 @@ void unit_Model_endSystems() {
 void unit_Model_beginFlows() {
     MyVensim* factory = MyVensim::getInstance();
     Model* model = factory->createModel();
-    Flow* flow1 = factory->createFlow<FlowExponential>();
+    Flow* flow1 = model->createFlow<FlowExponential>();
     auto it = model->beginFlows();
     assert(it != model->endFlows());
     assert(*it == flow1);
@@ -45,7 +46,7 @@ void unit_Model_beginFlows() {
 void unit_Model_endFlows() {
     MyVensim* factory = MyVensim::getInstance();
     Model* model = factory->createModel();
-    factory->createFlow<FlowExponential>();
+    model->createFlow<FlowExponential>();
     auto it = model->beginFlows();
     while (it != model->endFlows()) {
         ++it;
@@ -71,8 +72,8 @@ void unit_Model_endHistory() {
 void unit_Model_add() {
     MyVensim* factory = MyVensim::getInstance();
     Model* model = factory->createModel();
-    System* sys = factory->createSystem("System1", 100);
-    Flow* flow = factory->createFlow<FlowExponential>();
+    System* sys = model->createSystem("System1", 100);
+    Flow* flow = model->createFlow<FlowExponential>();
     assert(*model->beginSystems() == sys);
     assert(*model->beginFlows() == flow);
 }

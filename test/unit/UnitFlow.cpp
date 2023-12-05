@@ -5,15 +5,18 @@
 
 void unit_Flow_constructor() {
     MyVensim* factory = MyVensim::getInstance();
-    Flow* flow = factory->createFlow<FlowExponential>("Flow1", nullptr, nullptr);
+    Model* model = factory->createModel();
+    Flow* flow = model->createFlow<FlowExponential>("Flow1", nullptr, nullptr);
     assert(flow->getName() == "Flow1");
     assert(flow->getSource() == nullptr);
     assert(flow->getTarget() == nullptr);
 }
 
 void unit_Flow_execute() {
-    System* source = MyVensim::getInstance()->createSystem("Source", 100);
-    Flow* flow = MyVensim::getInstance()->createFlow<FlowExponential>("", source);
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    Flow* flow = model->createFlow<FlowExponential>("", source);
     
     double result = flow->execute();
     assert(result == 1.0);
@@ -21,53 +24,60 @@ void unit_Flow_execute() {
 
 void unit_Flow_link() {
     MyVensim* factory = MyVensim::getInstance();
-    System* source = factory->createSystem("Source", 100);
-    System* target = factory->createSystem("Target", 200);
-    Flow* flow = factory->createFlow<FlowExponential>("", source, target);
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    System* target = model->createSystem("Target", 200);
+    Flow* flow = model->createFlow<FlowExponential>("", source, target);
     assert(flow->getSource() == source);
     assert(flow->getTarget() == target);
 }
 
 void unit_Flow_setSource() {
     MyVensim* factory = MyVensim::getInstance();
-    System* source = factory->createSystem("Source", 100);
-    Flow* flow = factory->createFlow<FlowExponential>();
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    Flow* flow = model->createFlow<FlowExponential>();
     flow->setSource(source);
     assert(flow->getSource() == source);
 }
 
 void unit_Flow_setTarget() {
     MyVensim* factory = MyVensim::getInstance();
-    System* target = factory->createSystem("Target", 200);
-    Flow* flow = factory->createFlow<FlowExponential>();
+    Model* model = factory->createModel();
+    System* target = model->createSystem("Target", 200);
+    Flow* flow = model->createFlow<FlowExponential>();
     flow->setTarget(target);
     assert(flow->getTarget() == target);
 }
 
 void unit_Flow_setName() {
     MyVensim* factory = MyVensim::getInstance();
-    Flow* flow = factory->createFlow<FlowExponential>();
+    Model* model = factory->createModel();
+    Flow* flow =  model->createFlow<FlowExponential>();
     flow->setName("Flow1");
     assert(flow->getName() == "Flow1");
 }
 
 void unit_Flow_getName() {
     MyVensim* factory = MyVensim::getInstance();
-    Flow* flow = factory->createFlow<FlowExponential>("Flow1");
+    Model* model = factory->createModel();
+    Flow* flow = model->createFlow<FlowExponential>("Flow1");
     assert(flow->getName() == "Flow1");
 }
 
 void unit_Flow_getSource() {
     MyVensim* factory = MyVensim::getInstance();
-    System* source = factory->createSystem("Source", 100);
-    Flow* flow = factory->createFlow<FlowExponential>("", source);
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    Flow* flow = model->createFlow<FlowExponential>("", source);
     assert(flow->getSource() == source);
 }
 
 void unit_Flow_getTarget() {
     MyVensim* factory = MyVensim::getInstance();
-    System* target = factory->createSystem("Target", 200);
-    Flow* flow = factory->createFlow<FlowExponential>("", nullptr, target);
+    Model* model = factory->createModel();
+    System* target = model->createSystem("Target", 200);
+    Flow* flow = model->createFlow<FlowExponential>("", nullptr, target);
     assert(flow->getTarget() == target);
 }
 

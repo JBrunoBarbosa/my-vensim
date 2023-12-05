@@ -193,121 +193,122 @@ Functions</h2></td></tr>
 
 <p>Função para executar todos os testes unitários para a classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Esta função chama todos os testes unitários definidos para a classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                            {</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b">unit_Model_constructor</a>();</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8">unit_Model_beginSystems</a>();</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d">unit_Model_endSystems</a>();</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a">unit_Model_beginFlows</a>();</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177">unit_Model_endFlows</a>();</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa">unit_Model_beginHistory</a>();</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64">unit_Model_endHistory</a>();</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447">unit_Model_add</a>();</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7">unit_Model_setInitialHistory</a>();</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59">unit_Model_execute</a>();</div>
-<div class="line"><span class="lineno">  105</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All Model unit tests passed!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="a_unit_model_8cpp_html_a0e9ac246464949279864e6af420214c8"><div class="ttname"><a href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8">unit_Model_beginSystems</a></div><div class="ttdeci">void unit_Model_beginSystems()</div><div class="ttdoc">Testa o método beginSystems da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:14</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_a2caa8746d7db550542ee498d21db2b64"><div class="ttname"><a href="_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64">unit_Model_endHistory</a></div><div class="ttdeci">void unit_Model_endHistory()</div><div class="ttdoc">Testa o método endHistory da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:65</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_a313719ad23caf6695516a1cdcce2369a"><div class="ttname"><a href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a">unit_Model_beginFlows</a></div><div class="ttdeci">void unit_Model_beginFlows()</div><div class="ttdoc">Testa o método beginFlows da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:36</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                            {</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b">unit_Model_constructor</a>();</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8">unit_Model_beginSystems</a>();</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d">unit_Model_endSystems</a>();</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a">unit_Model_beginFlows</a>();</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177">unit_Model_endFlows</a>();</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_function" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa">unit_Model_beginHistory</a>();</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64">unit_Model_endHistory</a>();</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447">unit_Model_add</a>();</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7">unit_Model_setInitialHistory</a>();</div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59">unit_Model_execute</a>();</div>
+<div class="line"><span class="lineno">  106</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;All Model unit tests passed!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+<div class="ttc" id="a_unit_model_8cpp_html_a0e9ac246464949279864e6af420214c8"><div class="ttname"><a href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8">unit_Model_beginSystems</a></div><div class="ttdeci">void unit_Model_beginSystems()</div><div class="ttdoc">Testa o método beginSystems da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:15</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_a2caa8746d7db550542ee498d21db2b64"><div class="ttname"><a href="_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64">unit_Model_endHistory</a></div><div class="ttdeci">void unit_Model_endHistory()</div><div class="ttdoc">Testa o método endHistory da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:66</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_a313719ad23caf6695516a1cdcce2369a"><div class="ttname"><a href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a">unit_Model_beginFlows</a></div><div class="ttdeci">void unit_Model_beginFlows()</div><div class="ttdoc">Testa o método beginFlows da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:37</div></div>
 <div class="ttc" id="a_unit_model_8cpp_html_a33c89b15c9a9fa91b3753cba55af695b"><div class="ttname"><a href="_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b">unit_Model_constructor</a></div><div class="ttdeci">void unit_Model_constructor()</div><div class="ttdoc">Arquivo de testes unitários para a classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:7</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_a4538fa3ccde8f5b3e1006f9a1b6db177"><div class="ttname"><a href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177">unit_Model_endFlows</a></div><div class="ttdeci">void unit_Model_endFlows()</div><div class="ttdoc">Testa o método endFlows da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:45</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_a70af8f6763c09dd3ff71d65394614447"><div class="ttname"><a href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447">unit_Model_add</a></div><div class="ttdeci">void unit_Model_add()</div><div class="ttdoc">Testa o método add da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:71</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_a91ccff8e2ec46bc1fa4d1fe9ed79cd0d"><div class="ttname"><a href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d">unit_Model_endSystems</a></div><div class="ttdeci">void unit_Model_endSystems()</div><div class="ttdoc">Testa o método endSystems da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:23</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_ab0df8b8b01d808a6bd74e202a5c63dc7"><div class="ttname"><a href="_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7">unit_Model_setInitialHistory</a></div><div class="ttdeci">void unit_Model_setInitialHistory()</div><div class="ttdoc">Testa o método setInitialHistory da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:80</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_ae65c2174934f93534dfa34df921758fa"><div class="ttname"><a href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa">unit_Model_beginHistory</a></div><div class="ttdeci">void unit_Model_beginHistory()</div><div class="ttdoc">Testa o método beginHistory da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:57</div></div>
-<div class="ttc" id="a_unit_model_8cpp_html_afa681cc5f7e6e243a1b719de6f440e59"><div class="ttname"><a href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59">unit_Model_execute</a></div><div class="ttdeci">void unit_Model_execute()</div><div class="ttdoc">Testa o método execute da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:87</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_a4538fa3ccde8f5b3e1006f9a1b6db177"><div class="ttname"><a href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177">unit_Model_endFlows</a></div><div class="ttdeci">void unit_Model_endFlows()</div><div class="ttdoc">Testa o método endFlows da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:46</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_a70af8f6763c09dd3ff71d65394614447"><div class="ttname"><a href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447">unit_Model_add</a></div><div class="ttdeci">void unit_Model_add()</div><div class="ttdoc">Testa o método add da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:72</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_a91ccff8e2ec46bc1fa4d1fe9ed79cd0d"><div class="ttname"><a href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d">unit_Model_endSystems</a></div><div class="ttdeci">void unit_Model_endSystems()</div><div class="ttdoc">Testa o método endSystems da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:24</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_ab0df8b8b01d808a6bd74e202a5c63dc7"><div class="ttname"><a href="_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7">unit_Model_setInitialHistory</a></div><div class="ttdeci">void unit_Model_setInitialHistory()</div><div class="ttdoc">Testa o método setInitialHistory da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:81</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_ae65c2174934f93534dfa34df921758fa"><div class="ttname"><a href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa">unit_Model_beginHistory</a></div><div class="ttdeci">void unit_Model_beginHistory()</div><div class="ttdoc">Testa o método beginHistory da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:58</div></div>
+<div class="ttc" id="a_unit_model_8cpp_html_afa681cc5f7e6e243a1b719de6f440e59"><div class="ttname"><a href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59">unit_Model_execute</a></div><div class="ttdeci">void unit_Model_execute()</div><div class="ttdoc">Testa o método execute da classe Model.</div><div class="ttdef"><b>Definition</b> UnitModel.cpp:88</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_unit_model_8hpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph.png" border="0" usemap="#a_unit_model_8hpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph" alt=""/></div>
 <map name="a_unit_model_8hpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph" id="a_unit_model_8hpp_a8a49913008ee3aede79ca904bcb8cd51_cgraph">
-<area shape="rect" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="5,309,151,336"/>
-<area shape="rect" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="233,183,345,209"/>
-<area shape="poly" title=" " alt="" coords="90,307,135,264,165,240,197,219,217,210,219,215,200,224,168,244,138,268,94,311"/>
-<area shape="rect" href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="211,132,367,159"/>
-<area shape="poly" title=" " alt="" coords="84,308,125,241,158,202,197,169,206,163,208,168,200,173,162,206,130,244,88,310"/>
-<area shape="rect" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="207,436,371,463"/>
-<area shape="poly" title=" " alt="" coords="94,335,138,378,168,401,200,422,212,428,210,432,197,426,165,406,135,382,90,339"/>
-<area shape="rect" href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Testa o método beginSystems da classe Model." alt="" coords="202,284,376,311"/>
-<area shape="poly" title=" " alt="" coords="151,311,186,307,187,312,151,317"/>
-<area shape="rect" href="_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="211,537,367,564"/>
-<area shape="poly" title=" " alt="" coords="86,336,99,373,123,424,156,478,177,502,200,523,207,528,204,532,197,527,173,506,152,481,118,426,94,375,81,337"/>
-<area shape="rect" href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="216,81,362,108"/>
-<area shape="poly" title=" " alt="" coords="81,308,94,270,118,219,152,165,173,140,197,118,204,113,207,118,200,122,177,143,156,168,123,221,99,272,86,310"/>
-<area shape="rect" href="_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="212,385,366,412"/>
-<area shape="poly" title=" " alt="" coords="110,334,200,371,221,378,219,383,198,376,108,339"/>
-<area shape="rect" href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Testa o método endSystems da classe Model." alt="" coords="207,233,371,260"/>
-<area shape="poly" title=" " alt="" coords="108,306,198,269,219,262,221,268,200,275,110,311"/>
-<area shape="rect" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="220,487,358,513"/>
-<area shape="poly" title=" " alt="" coords="88,335,130,401,162,440,200,473,208,477,206,482,197,477,158,443,125,404,84,338"/>
-<area shape="rect" href="_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title="Testa o método setInitialHistory da classe Model." alt="" coords="199,335,379,361"/>
-<area shape="poly" title=" " alt="" coords="151,329,183,333,183,338,151,334"/>
-<area shape="rect" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="449,107,578,133"/>
-<area shape="poly" title=" " alt="" coords="344,180,378,168,426,143,444,136,446,141,428,148,380,173,346,185"/>
-<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="440,157,587,184"/>
-<area shape="poly" title=" " alt="" coords="345,187,424,178,425,183,346,192"/>
-<area shape="rect" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="436,56,590,83"/>
-<area shape="poly" title=" " alt="" coords="344,185,377,169,393,151,401,132,408,112,425,93,432,88,435,92,429,97,413,115,406,134,398,153,381,173,346,189"/>
-<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="432,259,594,285"/>
-<area shape="poly" title=" " alt="" coords="346,207,380,219,428,244,446,251,444,256,426,249,378,224,344,212"/>
-<area shape="rect" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="427,360,599,387"/>
-<area shape="poly" title=" " alt="" coords="346,201,365,208,381,219,394,235,402,252,406,284,410,316,416,331,429,346,433,349,429,353,425,350,412,334,405,317,400,285,396,253,390,238,377,223,362,213,344,206"/>
-<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="434,309,592,336"/>
-<area shape="poly" title=" " alt="" coords="346,203,381,219,398,239,406,258,413,277,429,295,435,300,432,304,425,299,408,280,401,260,393,241,377,223,344,207"/>
-<area shape="rect" href="class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="691,56,804,83"/>
-<area shape="poly" title=" " alt="" coords="591,67,676,67,676,72,591,72"/>
-<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="647,309,848,336"/>
-<area shape="poly" title=" " alt="" coords="593,320,632,320,632,325,593,325"/>
-<area shape="poly" title=" " alt="" coords="367,134,432,126,433,132,367,139"/>
-<area shape="poly" title=" " alt="" coords="345,129,378,118,426,92,444,85,446,90,428,97,380,122,347,134"/>
-<area shape="poly" title=" " alt="" coords="360,157,381,169,398,188,406,208,413,227,429,245,435,249,432,253,425,249,408,229,401,210,393,191,377,173,357,162"/>
-<area shape="poly" title=" " alt="" coords="364,157,381,169,394,185,402,201,406,234,410,265,416,280,429,295,433,299,429,303,425,299,412,283,405,267,400,234,396,203,390,188,377,173,361,161"/>
-<area shape="rect" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="454,5,573,32"/>
-<area shape="poly" title=" " alt="" coords="357,129,377,118,393,100,401,81,408,61,425,42,438,34,440,39,429,46,413,64,406,83,398,103,381,122,360,134"/>
-<area shape="poly" title=" " alt="" coords="361,433,377,422,390,407,396,392,400,360,405,328,412,311,425,295,429,292,433,296,429,299,416,314,410,329,406,361,402,394,394,410,381,426,364,438"/>
-<area shape="poly" title=" " alt="" coords="357,433,377,422,393,404,401,385,408,365,425,346,432,341,435,346,429,350,413,368,406,387,398,407,381,426,360,438"/>
-<area shape="rect" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="445,461,581,488"/>
-<area shape="poly" title=" " alt="" coords="371,456,430,463,429,468,371,461"/>
-<area shape="rect" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="450,512,576,539"/>
-<area shape="poly" title=" " alt="" coords="347,461,380,472,428,498,446,504,444,509,426,502,378,477,345,466"/>
-<area shape="rect" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="458,563,568,589"/>
-<area shape="poly" title=" " alt="" coords="360,461,381,473,398,492,406,512,413,531,429,549,445,558,442,563,425,553,408,533,401,514,393,495,377,477,357,466"/>
-<area shape="poly" title=" " alt="" coords="357,281,377,270,393,252,401,233,408,213,425,194,432,189,435,194,429,198,413,216,406,235,398,255,381,274,360,286"/>
-<area shape="poly" title=" " alt="" coords="376,285,416,280,417,286,377,290"/>
-<area shape="poly" title=" " alt="" coords="347,309,380,320,428,346,446,352,444,357,426,350,378,325,345,314"/>
-<area shape="poly" title=" " alt="" coords="377,305,419,309,418,315,376,310"/>
-<area shape="rect" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="445,208,582,235"/>
-<area shape="poly" title=" " alt="" coords="345,281,378,270,426,244,444,237,446,242,428,249,380,274,347,286"/>
-<area shape="poly" title=" " alt="" coords="361,535,377,523,390,508,396,493,400,462,405,429,412,413,425,397,429,393,433,397,429,401,416,416,410,431,406,462,402,495,394,511,381,527,364,539"/>
-<area shape="poly" title=" " alt="" coords="362,535,377,523,393,502,400,481,400,437,401,392,409,369,425,346,428,343,432,347,429,350,413,371,406,393,406,437,405,482,398,505,381,527,365,539"/>
-<area shape="rect" href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="450,613,576,640"/>
-<area shape="poly" title=" " alt="" coords="327,562,428,599,450,606,448,611,426,604,325,567"/>
-<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="451,664,576,691"/>
-<area shape="poly" title=" " alt="" coords="307,562,358,605,392,629,428,650,442,656,440,661,426,654,389,633,355,609,303,566"/>
-<area shape="poly" title=" " alt="" coords="362,100,434,108,433,114,362,106"/>
-<area shape="poly" title=" " alt="" coords="362,84,421,77,421,82,362,89"/>
-<area shape="poly" title=" " alt="" coords="364,106,381,118,394,134,402,150,406,183,410,215,416,230,429,245,433,248,429,252,425,249,412,233,405,216,400,184,396,152,390,137,377,122,361,111"/>
-<area shape="poly" title=" " alt="" coords="364,106,381,118,398,141,405,164,406,209,406,253,413,274,429,296,432,298,428,302,425,299,409,277,401,254,400,209,400,164,393,143,377,122,361,110"/>
-<area shape="poly" title=" " alt="" coords="325,78,426,41,448,34,450,39,428,47,327,83"/>
-<area shape="poly" title=" " alt="" coords="357,382,377,371,393,353,401,334,408,315,425,295,432,291,435,295,429,299,413,317,406,336,398,356,381,375,360,387"/>
-<area shape="poly" title=" " alt="" coords="345,382,378,371,426,346,444,339,446,344,428,350,380,376,347,387"/>
-<area shape="poly" title=" " alt="" coords="347,410,380,422,428,447,446,454,444,459,426,452,378,426,345,415"/>
-<area shape="poly" title=" " alt="" coords="360,410,381,422,398,441,406,461,413,480,429,498,437,504,435,508,425,502,408,483,401,463,393,444,377,426,357,415"/>
-<area shape="poly" title=" " alt="" coords="345,230,378,219,426,194,444,187,446,192,428,198,380,224,347,235"/>
-<area shape="poly" title=" " alt="" coords="372,253,417,258,416,264,371,259"/>
-<area shape="poly" title=" " alt="" coords="360,258,381,270,398,289,406,309,413,328,429,346,435,350,432,355,425,350,408,331,401,311,393,292,377,274,357,263"/>
-<area shape="poly" title=" " alt="" coords="347,258,380,270,428,295,446,302,444,307,426,300,378,274,345,263"/>
-<area shape="poly" title=" " alt="" coords="371,235,429,228,429,233,372,240"/>
-<area shape="poly" title=" " alt="" coords="356,487,377,473,393,452,400,430,400,386,401,341,409,318,425,296,428,292,432,296,429,299,413,321,406,342,406,386,405,431,398,454,381,477,359,491"/>
-<area shape="poly" title=" " alt="" coords="356,486,377,473,390,458,396,443,400,411,405,379,412,362,425,346,429,343,433,347,429,350,416,365,410,380,406,412,402,444,394,461,381,477,359,490"/>
-<area shape="poly" title=" " alt="" coords="358,490,429,481,430,487,358,495"/>
-<area shape="poly" title=" " alt="" coords="358,505,435,514,434,519,358,510"/>
-<area shape="poly" title=" " alt="" coords="347,511,380,523,428,548,446,555,444,560,426,553,378,528,345,516"/>
-<area shape="poly" title=" " alt="" coords="345,332,378,320,426,295,444,288,446,293,428,300,380,325,347,337"/>
-<area shape="poly" title=" " alt="" coords="379,335,418,331,419,336,379,340"/>
-<area shape="poly" title=" " alt="" coords="360,360,381,371,398,391,406,410,413,429,429,447,435,452,432,456,425,451,408,432,401,412,393,393,377,375,357,364"/>
-<area shape="rect" href="class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba" title="Define o histórico inicial com valores padrão." alt="" coords="437,411,590,437"/>
-<area shape="poly" title=" " alt="" coords="347,359,380,371,428,396,446,403,444,408,426,401,378,376,345,364"/>
+<area shape="rect" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="5,335,151,361"/>
+<area shape="rect" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="233,208,345,235"/>
+<area shape="poly" title=" " alt="" coords="90,332,135,289,165,265,197,244,217,236,219,241,200,249,168,269,138,293,94,336"/>
+<area shape="rect" href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="211,107,367,133"/>
+<area shape="poly" title=" " alt="" coords="81,333,94,296,118,244,152,190,173,165,197,143,204,139,207,143,200,147,177,169,156,193,123,247,99,298,86,335"/>
+<area shape="rect" href="_unit_model_8cpp.html#ae65c2174934f93534dfa34df921758fa" title="Testa o método beginHistory da classe Model." alt="" coords="207,512,371,539"/>
+<area shape="poly" title=" " alt="" coords="88,360,130,427,162,465,200,498,208,503,206,507,197,502,158,469,125,430,84,363"/>
+<area shape="rect" href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Testa o método beginSystems da classe Model." alt="" coords="202,259,376,285"/>
+<area shape="poly" title=" " alt="" coords="108,332,198,295,219,288,221,293,200,300,110,337"/>
+<area shape="rect" href="_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="211,360,367,387"/>
+<area shape="poly" title=" " alt="" coords="151,354,195,359,195,365,151,359"/>
+<area shape="rect" href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="216,157,362,184"/>
+<area shape="poly" title=" " alt="" coords="84,333,125,266,158,227,197,194,206,189,208,193,200,198,162,231,130,269,88,336"/>
+<area shape="rect" href="_unit_model_8cpp.html#a2caa8746d7db550542ee498d21db2b64" title="Testa o método endHistory da classe Model." alt="" coords="212,461,366,488"/>
+<area shape="poly" title=" " alt="" coords="94,360,138,403,168,427,200,447,212,453,210,458,197,452,165,431,135,407,90,364"/>
+<area shape="rect" href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Testa o método endSystems da classe Model." alt="" coords="207,309,371,336"/>
+<area shape="poly" title=" " alt="" coords="151,337,191,332,191,337,151,342"/>
+<area shape="rect" href="_unit_model_8cpp.html#afa681cc5f7e6e243a1b719de6f440e59" title="Testa o método execute da classe Model." alt="" coords="220,563,358,589"/>
+<area shape="poly" title=" " alt="" coords="86,361,99,398,123,449,156,503,177,527,200,549,208,554,205,558,197,553,173,531,152,506,118,452,94,400,81,363"/>
+<area shape="rect" href="_unit_model_8cpp.html#ab0df8b8b01d808a6bd74e202a5c63dc7" title="Testa o método setInitialHistory da classe Model." alt="" coords="199,411,379,437"/>
+<area shape="poly" title=" " alt="" coords="110,359,200,396,221,403,219,408,198,401,108,364"/>
+<area shape="rect" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="444,56,573,83"/>
+<area shape="poly" title=" " alt="" coords="344,211,362,204,377,194,388,182,395,170,401,145,407,119,414,106,425,93,430,89,433,93,429,97,418,109,412,121,406,146,400,172,393,185,381,198,364,209,346,216"/>
+<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="435,157,582,184"/>
+<area shape="poly" title=" " alt="" coords="345,206,432,185,433,191,346,211"/>
+<area shape="rect" href="class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="445,107,572,133"/>
+<area shape="poly" title=" " alt="" coords="345,208,378,194,392,182,401,169,410,156,425,143,435,138,438,142,429,148,414,160,405,172,396,185,380,198,347,213"/>
+<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="427,309,589,336"/>
+<area shape="poly" title=" " alt="" coords="347,230,380,244,396,257,405,270,414,283,429,295,438,300,435,305,425,300,410,287,401,273,392,261,378,249,345,235"/>
+<area shape="rect" href="class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="436,208,581,235"/>
+<area shape="poly" title=" " alt="" coords="345,219,420,219,420,224,345,224"/>
+<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="429,360,587,387"/>
+<area shape="poly" title=" " alt="" coords="346,227,364,234,381,245,393,257,400,271,406,297,412,322,418,334,429,346,433,350,430,354,425,350,414,337,407,324,401,298,395,272,388,260,377,249,362,239,344,232"/>
+<area shape="rect" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="695,107,780,133"/>
+<area shape="poly" title=" " alt="" coords="572,117,679,117,679,123,572,123"/>
+<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="637,360,838,387"/>
+<area shape="poly" title=" " alt="" coords="588,371,622,371,622,376,588,376"/>
+<area shape="poly" title=" " alt="" coords="349,103,432,84,433,89,351,109"/>
+<area shape="poly" title=" " alt="" coords="367,117,429,117,429,123,367,123"/>
+<area shape="poly" title=" " alt="" coords="364,132,381,143,396,163,403,182,406,221,408,259,415,277,429,296,432,299,429,303,425,299,410,280,403,260,401,221,398,183,391,165,377,147,361,136"/>
+<area shape="poly" title=" " alt="" coords="365,132,381,143,399,169,407,195,408,221,406,247,404,272,405,297,412,321,429,346,431,349,428,352,425,350,407,324,399,298,398,272,401,246,403,221,402,196,394,172,377,147,362,136"/>
+<area shape="rect" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="449,5,568,32"/>
+<area shape="poly" title=" " alt="" coords="310,104,362,73,426,42,443,35,445,40,428,46,365,78,313,109"/>
+<area shape="poly" title=" " alt="" coords="361,509,377,498,391,480,398,462,401,424,403,385,410,366,425,346,429,343,432,347,429,350,415,368,408,387,406,424,403,463,396,483,381,502,364,514"/>
+<area shape="poly" title=" " alt="" coords="360,509,377,498,388,486,395,474,401,449,407,423,414,410,425,397,430,393,433,397,429,401,418,413,412,425,406,450,400,476,393,489,381,502,362,514"/>
+<area shape="rect" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7" title="Retorna um iterador para o início do histórico no modelo." alt="" coords="440,563,576,589"/>
+<area shape="poly" title=" " alt="" coords="351,537,433,556,432,561,349,542"/>
+<area shape="rect" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31" title="Retorna um iterador para o final do histórico no modelo." alt="" coords="445,613,571,640"/>
+<area shape="poly" title=" " alt="" coords="356,537,380,548,396,561,405,574,414,587,429,599,438,604,435,609,425,604,410,591,401,577,392,565,378,553,353,542"/>
+<area shape="rect" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251" title="Executa o modelo de tempo inicial a tempo final." alt="" coords="453,664,563,691"/>
+<area shape="poly" title=" " alt="" coords="362,537,381,549,393,561,400,575,406,601,412,626,418,638,429,650,441,658,438,663,425,654,414,641,407,628,401,602,395,576,388,564,377,553,360,542"/>
+<area shape="poly" title=" " alt="" coords="353,256,378,244,392,232,401,220,410,207,425,194,435,188,438,193,429,198,414,210,405,223,396,236,380,249,356,261"/>
+<area shape="poly" title=" " alt="" coords="351,283,433,303,432,308,349,289"/>
+<area shape="poly" title=" " alt="" coords="349,255,432,236,433,241,351,261"/>
+<area shape="poly" title=" " alt="" coords="356,283,380,295,396,308,405,321,414,334,429,346,438,351,435,356,425,350,410,337,401,324,392,312,378,300,353,288"/>
+<area shape="rect" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="440,259,577,285"/>
+<area shape="poly" title=" " alt="" coords="376,269,424,269,424,275,376,275"/>
+<area shape="poly" title=" " alt="" coords="349,357,432,337,433,343,351,362"/>
+<area shape="poly" title=" " alt="" coords="360,357,377,346,388,334,395,322,401,297,407,271,414,258,425,245,430,241,433,245,429,249,418,261,412,273,406,298,400,324,393,337,381,350,362,362"/>
+<area shape="poly" title=" " alt="" coords="367,371,413,371,413,376,367,376"/>
+<area shape="rect" href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="445,411,571,437"/>
+<area shape="poly" title=" " alt="" coords="351,385,433,404,432,409,349,390"/>
+<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="446,461,571,488"/>
+<area shape="poly" title=" " alt="" coords="356,385,380,396,396,409,405,422,414,435,429,447,438,452,435,457,425,452,410,439,401,425,392,413,378,401,353,390"/>
+<area shape="poly" title=" " alt="" coords="353,154,378,143,392,131,401,119,410,105,425,92,435,87,438,92,429,97,414,109,405,122,396,135,380,148,356,159"/>
+<area shape="poly" title=" " alt="" coords="349,154,432,135,433,140,351,159"/>
+<area shape="poly" title=" " alt="" coords="362,182,381,194,393,207,400,220,406,246,412,271,418,283,429,295,433,299,430,303,425,299,414,286,407,273,401,247,395,222,388,210,377,198,360,187"/>
+<area shape="poly" title=" " alt="" coords="364,182,381,194,396,213,403,233,406,272,408,309,415,328,429,346,432,349,429,353,425,350,410,330,403,311,401,272,398,234,391,216,377,198,361,187"/>
+<area shape="poly" title=" " alt="" coords="360,154,377,143,388,132,395,120,401,94,407,68,414,55,425,42,433,36,437,40,429,46,418,58,412,70,406,95,400,121,393,135,381,147,362,159"/>
+<area shape="poly" title=" " alt="" coords="360,458,377,447,388,436,395,424,401,398,407,372,414,359,425,346,430,342,433,346,429,350,418,362,412,374,406,399,400,425,393,439,381,451,362,463"/>
+<area shape="poly" title=" " alt="" coords="353,458,378,447,392,435,401,423,410,409,425,396,435,391,438,396,429,401,414,413,405,426,396,439,380,452,356,463"/>
+<area shape="poly" title=" " alt="" coords="356,486,380,498,396,511,405,524,414,536,429,548,438,554,435,558,425,553,410,540,401,527,392,514,378,502,353,491"/>
+<area shape="poly" title=" " alt="" coords="362,486,381,498,393,511,400,524,406,550,412,575,418,587,429,599,433,603,430,607,425,603,414,590,407,577,401,551,395,526,388,514,377,502,360,491"/>
+<area shape="poly" title=" " alt="" coords="360,306,377,295,388,284,395,272,401,246,407,220,414,207,425,194,430,190,433,194,429,198,418,210,412,222,406,247,400,273,393,287,381,299,362,311"/>
+<area shape="poly" title=" " alt="" coords="371,320,412,320,412,325,371,325"/>
+<area shape="poly" title=" " alt="" coords="353,306,378,295,392,283,401,271,410,257,425,244,435,239,438,244,429,249,414,261,405,274,396,287,380,300,356,311"/>
+<area shape="poly" title=" " alt="" coords="351,334,433,353,432,359,349,339"/>
+<area shape="poly" title=" " alt="" coords="349,306,432,287,433,292,351,311"/>
+<area shape="poly" title=" " alt="" coords="357,563,377,549,394,524,402,500,403,475,401,450,398,424,399,398,407,372,425,346,428,344,431,347,429,350,412,375,405,399,404,424,406,449,408,475,407,501,399,527,381,553,360,567"/>
+<area shape="poly" title=" " alt="" coords="357,562,377,549,391,531,398,513,401,475,403,436,410,416,425,397,429,393,432,397,429,400,415,419,408,437,406,475,403,514,396,533,381,553,360,567"/>
+<area shape="poly" title=" " alt="" coords="358,573,425,573,425,579,358,579"/>
+<area shape="poly" title=" " alt="" coords="351,587,433,607,432,612,349,593"/>
+<area shape="poly" title=" " alt="" coords="313,587,365,618,428,650,445,656,443,661,426,654,362,623,310,592"/>
+<area shape="poly" title=" " alt="" coords="353,408,378,396,392,384,401,372,410,359,425,346,435,340,438,345,429,350,414,362,405,375,396,388,380,401,356,413"/>
+<area shape="poly" title=" " alt="" coords="349,407,432,388,433,393,351,413"/>
+<area shape="poly" title=" " alt="" coords="362,436,381,447,393,460,400,473,406,499,412,525,418,537,429,549,433,552,430,556,425,553,414,540,407,526,401,500,395,475,388,463,377,451,360,440"/>
+<area shape="rect" href="class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba" title="Define o histórico inicial com valores padrão." alt="" coords="432,512,585,539"/>
+<area shape="poly" title=" " alt="" coords="356,435,380,447,396,460,405,473,414,486,429,498,438,503,435,508,425,502,410,489,401,476,392,464,378,452,353,440"/>
 </map>
 </div>
 <div class="dynheader">
@@ -340,23 +341,23 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método add da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método add adiciona corretamente um elemento ao modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>                      {</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_class" href="class_system.html">System</a>* sys = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557">createSystem</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_class" href="class_flow.html">Flow</a>* flow = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760">createFlow</a>&lt;<a class="code hl_class" href="class_flow_exponential.html">FlowExponential</a>&gt;();</div>
-<div class="line"><span class="lineno">   76</span>    assert(*model-&gt;<a class="code hl_function" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>() == sys);</div>
-<div class="line"><span class="lineno">   77</span>    assert(*model-&gt;<a class="code hl_function" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>() == flow);</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                      {</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_class" href="class_system.html">System</a>* sys = model-&gt;<a class="code hl_function" href="class_model.html#a851720e25fa19a32e59e5ca12be23901">createSystem</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_class" href="class_flow.html">Flow</a>* flow = model-&gt;<a class="code hl_function" href="class_model.html#a837d1676759dfb5cd1279260966c06c7">createFlow</a>&lt;<a class="code hl_class" href="class_flow_exponential.html">FlowExponential</a>&gt;();</div>
+<div class="line"><span class="lineno">   77</span>    assert(*model-&gt;<a class="code hl_function" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>() == sys);</div>
+<div class="line"><span class="lineno">   78</span>    assert(*model-&gt;<a class="code hl_function" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>() == flow);</div>
+<div class="line"><span class="lineno">   79</span>}</div>
 <div class="ttc" id="aclass_flow_exponential_html"><div class="ttname"><a href="class_flow_exponential.html">FlowExponential</a></div><div class="ttdoc">Classe que representa um fluxo exponencial em um sistema.</div><div class="ttdef"><b>Definition</b> FlowExponential.hpp:14</div></div>
 <div class="ttc" id="aclass_flow_html"><div class="ttname"><a href="class_flow.html">Flow</a></div><div class="ttdoc">Classe que representa um fluxo de sistema puramente virtual.</div><div class="ttdef"><b>Definition</b> Flow.hpp:15</div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Classe que representa um modelo de sistema puramente virtual.</div><div class="ttdef"><b>Definition</b> Model.hpp:17</div></div>
 <div class="ttc" id="aclass_model_html_a4c21fa615edc5d7b8a9696fe090707a4"><div class="ttname"><a href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">Model::beginFlows</a></div><div class="ttdeci">virtual flowIterator beginFlows()=0</div><div class="ttdoc">Retorna um iterador para o início dos fluxos no modelo.</div></div>
+<div class="ttc" id="aclass_model_html_a837d1676759dfb5cd1279260966c06c7"><div class="ttname"><a href="class_model.html#a837d1676759dfb5cd1279260966c06c7">Model::createFlow</a></div><div class="ttdeci">Flow * createFlow(std::string name=&quot;&quot;, System *source=nullptr, System *destiny=nullptr)</div><div class="ttdoc">Cria uma instância de Flow.</div><div class="ttdef"><b>Definition</b> Model.hpp:118</div></div>
+<div class="ttc" id="aclass_model_html_a851720e25fa19a32e59e5ca12be23901"><div class="ttname"><a href="class_model.html#a851720e25fa19a32e59e5ca12be23901">Model::createSystem</a></div><div class="ttdeci">virtual System * createSystem(const std::string name, double value)=0</div><div class="ttdoc">Cria uma instância de System.</div></div>
 <div class="ttc" id="aclass_model_html_af44c12bce2645f91b796e750ddbacbd2"><div class="ttname"><a href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">Model::beginSystems</a></div><div class="ttdeci">virtual systemIterator beginSystems()=0</div><div class="ttdoc">Retorna um iterador para o início dos sistemas no modelo.</div></div>
-<div class="ttc" id="aclass_my_vensim_html"><div class="ttname"><a href="class_my_vensim.html">MyVensim</a></div><div class="ttdoc">Interface para a fábrica de objetos Vensim.</div><div class="ttdef"><b>Definition</b> MyVensim.hpp:13</div></div>
-<div class="ttc" id="aclass_my_vensim_html_a07b80121d996d6ec25267e039197a557"><div class="ttname"><a href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557">MyVensim::createSystem</a></div><div class="ttdeci">virtual System * createSystem(const std::string &amp;name, double value)=0</div><div class="ttdoc">Cria uma instância de System.</div></div>
-<div class="ttc" id="aclass_my_vensim_html_a4fa77c524863cdeacc0f08c8e96cf209"><div class="ttname"><a href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a></div><div class="ttdeci">static MyVensim * getInstance()</div><div class="ttdef"><b>Definition</b> MyVensimImpl.cpp:5</div></div>
-<div class="ttc" id="aclass_my_vensim_html_a646f0de3118cc569e9c9a3c45175e760"><div class="ttname"><a href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760">MyVensim::createFlow</a></div><div class="ttdeci">Flow * createFlow(std::string name=&quot;&quot;, System *source=nullptr, System *destiny=nullptr)</div><div class="ttdoc">Cria uma instância de Flow.</div><div class="ttdef"><b>Definition</b> MyVensim.hpp:41</div></div>
+<div class="ttc" id="aclass_my_vensim_html"><div class="ttname"><a href="class_my_vensim.html">MyVensim</a></div><div class="ttdoc">Interface para a fábrica de objetos Vensim.</div><div class="ttdef"><b>Definition</b> MyVensim.hpp:11</div></div>
+<div class="ttc" id="aclass_my_vensim_html_a4fa77c524863cdeacc0f08c8e96cf209"><div class="ttname"><a href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a></div><div class="ttdeci">static MyVensim * getInstance()</div><div class="ttdef"><b>Definition</b> MyVensimImpl.cpp:4</div></div>
 <div class="ttc" id="aclass_my_vensim_html_a7364cd2d39a32f921181e3ceee2bf2cf"><div class="ttname"><a href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">MyVensim::createModel</a></div><div class="ttdeci">virtual Model * createModel()=0</div><div class="ttdoc">Cria uma instância de Model.</div></div>
 <div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdoc">Classe que representa um sistema puramente virtual.</div><div class="ttdef"><b>Definition</b> System.hpp:14</div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -365,22 +366,22 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="_unit_model_8hpp_a70af8f6763c09dd3ff71d65394614447_cgraph.png" border="0" usemap="#a_unit_model_8hpp_a70af8f6763c09dd3ff71d65394614447_cgraph" alt=""/></div>
 <map name="a_unit_model_8hpp_a70af8f6763c09dd3ff71d65394614447_cgraph" id="a_unit_model_8hpp_a70af8f6763c09dd3ff71d65394614447_cgraph">
 <area shape="rect" title="Testa o método add da classe Model." alt="" coords="5,132,118,159"/>
-<area shape="rect" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="187,5,317,32"/>
-<area shape="poly" title=" " alt="" coords="71,130,109,86,135,62,164,42,175,36,178,41,167,46,139,67,113,90,75,133"/>
-<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="178,56,326,83"/>
-<area shape="poly" title=" " alt="" coords="87,129,165,92,184,85,186,90,167,97,89,134"/>
-<area shape="rect" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="175,107,329,133"/>
-<area shape="poly" title=" " alt="" coords="118,135,159,130,159,135,118,141"/>
-<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="171,157,333,184"/>
-<area shape="poly" title=" " alt="" coords="118,150,156,155,155,160,118,155"/>
-<area shape="rect" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="166,208,338,235"/>
-<area shape="poly" title=" " alt="" coords="89,157,167,194,186,200,184,205,165,198,87,162"/>
-<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="173,259,331,285"/>
-<area shape="poly" title=" " alt="" coords="75,158,113,200,139,224,167,244,178,250,175,255,164,249,135,228,109,204,71,161"/>
-<area shape="rect" href="class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="430,107,542,133"/>
-<area shape="poly" title=" " alt="" coords="330,117,414,117,414,123,330,123"/>
-<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="386,259,586,285"/>
-<area shape="poly" title=" " alt="" coords="332,269,370,269,370,275,332,275"/>
+<area shape="rect" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="182,5,312,32"/>
+<area shape="poly" title=" " alt="" coords="71,130,109,87,135,63,164,42,175,36,177,41,167,46,139,67,113,90,75,133"/>
+<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="173,56,321,83"/>
+<area shape="poly" title=" " alt="" coords="87,129,165,92,182,86,184,91,167,97,89,134"/>
+<area shape="rect" href="class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="183,107,311,133"/>
+<area shape="poly" title=" " alt="" coords="118,135,167,128,168,133,119,140"/>
+<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="166,157,328,184"/>
+<area shape="poly" title=" " alt="" coords="119,150,151,155,150,160,118,156"/>
+<area shape="rect" href="class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="174,208,320,235"/>
+<area shape="poly" title=" " alt="" coords="89,157,167,194,184,200,182,205,165,198,87,162"/>
+<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="168,259,326,285"/>
+<area shape="poly" title=" " alt="" coords="75,157,113,200,139,224,167,244,177,250,175,255,164,249,135,228,109,204,71,161"/>
+<area shape="rect" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="434,107,519,133"/>
+<area shape="poly" title=" " alt="" coords="311,117,418,117,418,123,311,123"/>
+<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="376,259,576,285"/>
+<area shape="poly" title=" " alt="" coords="326,269,360,269,360,275,326,275"/>
 </map>
 </div>
 <div class="dynheader">
@@ -415,14 +416,14 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método beginFlows da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método beginFlows inicia adequadamente os fluxos no modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                             {</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_class" href="class_flow.html">Flow</a>* flow1 = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760">createFlow</a>&lt;<a class="code hl_class" href="class_flow_exponential.html">FlowExponential</a>&gt;();</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>();</div>
-<div class="line"><span class="lineno">   41</span>    assert(it != model-&gt;<a class="code hl_function" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>());</div>
-<div class="line"><span class="lineno">   42</span>    assert(*it == flow1);</div>
-<div class="line"><span class="lineno">   43</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                             {</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_class" href="class_flow.html">Flow</a>* flow1 = model-&gt;<a class="code hl_function" href="class_model.html#a837d1676759dfb5cd1279260966c06c7">createFlow</a>&lt;<a class="code hl_class" href="class_flow_exponential.html">FlowExponential</a>&gt;();</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>();</div>
+<div class="line"><span class="lineno">   42</span>    assert(it != model-&gt;<a class="code hl_function" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>());</div>
+<div class="line"><span class="lineno">   43</span>    assert(*it == flow1);</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aclass_model_html_a27d6c506e46555299b4b4c8ae0990a7c"><div class="ttname"><a href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">Model::endFlows</a></div><div class="ttdeci">virtual flowIterator endFlows()=0</div><div class="ttdoc">Retorna um iterador para o final dos fluxos no modelo.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -432,7 +433,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Testa o método beginFlows da classe Model." alt="" coords="5,107,162,133"/>
 <area shape="rect" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="226,5,356,32"/>
 <area shape="poly" title=" " alt="" coords="103,104,150,73,209,42,224,35,226,40,211,46,153,78,106,108"/>
-<area shape="rect" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="214,56,368,83"/>
+<area shape="rect" href="class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="227,56,355,83"/>
 <area shape="poly" title=" " alt="" coords="141,103,218,84,219,90,142,109"/>
 <area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="210,107,372,133"/>
 <area shape="poly" title=" " alt="" coords="162,117,194,117,194,123,162,123"/>
@@ -440,8 +441,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="142,131,219,150,218,156,141,137"/>
 <area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="212,208,370,235"/>
 <area shape="poly" title=" " alt="" coords="106,132,153,162,211,194,226,200,224,205,209,198,150,167,103,136"/>
-<area shape="rect" href="class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="464,56,576,83"/>
-<area shape="poly" title=" " alt="" coords="368,67,448,67,448,72,368,72"/>
+<area shape="rect" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="478,56,563,83"/>
+<area shape="poly" title=" " alt="" coords="355,67,462,67,462,72,355,72"/>
 <area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="420,208,620,235"/>
 <area shape="poly" title=" " alt="" coords="370,219,404,219,404,224,370,224"/>
 </map>
@@ -478,13 +479,13 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método beginHistory da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método beginHistory inicia adequadamente o histórico no modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                               {</div>
-<div class="line"><span class="lineno">   58</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   60</span>    model-&gt;<a class="code hl_function" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">execute</a>(0, 10);</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>();</div>
-<div class="line"><span class="lineno">   62</span>    assert(it != model-&gt;<a class="code hl_function" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>());</div>
-<div class="line"><span class="lineno">   63</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                               {</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   61</span>    model-&gt;<a class="code hl_function" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">execute</a>(0, 10);</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>();</div>
+<div class="line"><span class="lineno">   63</span>    assert(it != model-&gt;<a class="code hl_function" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>());</div>
+<div class="line"><span class="lineno">   64</span>}</div>
 <div class="ttc" id="aclass_model_html_a23cce9625a3ac948b976c99201a1a8f7"><div class="ttname"><a href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">Model::beginHistory</a></div><div class="ttdeci">virtual historyIterator beginHistory()=0</div><div class="ttdoc">Retorna um iterador para o início do histórico no modelo.</div></div>
 <div class="ttc" id="aclass_model_html_a686edecbb77beb3000f1bd6c1ac6b251"><div class="ttname"><a href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">Model::execute</a></div><div class="ttdeci">virtual void execute(const int timeInitial, const int timeFinal)=0</div><div class="ttdoc">Executa o modelo de tempo inicial a tempo final.</div></div>
 <div class="ttc" id="aclass_model_html_ad2edbf30bc599d9c82182b1d3b778d31"><div class="ttname"><a href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">Model::endHistory</a></div><div class="ttdeci">virtual historyIterator endHistory()=0</div><div class="ttdoc">Retorna um iterador para o final do histórico no modelo.</div></div>
@@ -540,14 +541,14 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método beginSystems da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método beginSystems inicia adequadamente os sistemas no modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>                               {</div>
-<div class="line"><span class="lineno">   15</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   16</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   17</span>    <a class="code hl_class" href="class_system.html">System</a>* sys1 = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557">createSystem</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>();</div>
-<div class="line"><span class="lineno">   19</span>    assert(it != model-&gt;<a class="code hl_function" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>());</div>
-<div class="line"><span class="lineno">   20</span>    assert(*it == sys1);</div>
-<div class="line"><span class="lineno">   21</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                               {</div>
+<div class="line"><span class="lineno">   16</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   17</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_class" href="class_system.html">System</a>* sys1 = model-&gt;<a class="code hl_function" href="class_model.html#a851720e25fa19a32e59e5ca12be23901">createSystem</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>();</div>
+<div class="line"><span class="lineno">   20</span>    assert(it != model-&gt;<a class="code hl_function" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>());</div>
+<div class="line"><span class="lineno">   21</span>    assert(*it == sys1);</div>
+<div class="line"><span class="lineno">   22</span>}</div>
 <div class="ttc" id="aclass_model_html_a251f709667f7ca6aedc45dd7431e40c1"><div class="ttname"><a href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">Model::endSystems</a></div><div class="ttdeci">virtual systemIterator endSystems()=0</div><div class="ttdoc">Retorna um iterador para o final dos sistemas no modelo.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -555,18 +556,18 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="_unit_model_8hpp_a0e9ac246464949279864e6af420214c8_cgraph.png" border="0" usemap="#a_unit_model_8hpp_a0e9ac246464949279864e6af420214c8_cgraph" alt=""/></div>
 <map name="a_unit_model_8hpp_a0e9ac246464949279864e6af420214c8_cgraph" id="a_unit_model_8hpp_a0e9ac246464949279864e6af420214c8_cgraph">
 <area shape="rect" title="Testa o método beginSystems da classe Model." alt="" coords="5,107,180,133"/>
-<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="240,5,388,32"/>
-<area shape="poly" title=" " alt="" coords="113,104,164,73,227,42,244,35,245,40,229,46,167,78,116,108"/>
-<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="233,56,395,83"/>
-<area shape="poly" title=" " alt="" coords="154,103,237,84,238,89,155,109"/>
-<area shape="rect" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="228,107,400,133"/>
-<area shape="poly" title=" " alt="" coords="180,117,212,117,212,123,180,123"/>
-<area shape="rect" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="245,157,383,184"/>
-<area shape="poly" title=" " alt="" coords="155,131,238,151,237,156,154,137"/>
-<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="235,208,393,235"/>
-<area shape="poly" title=" " alt="" coords="116,132,167,162,229,194,245,200,244,205,227,198,164,167,113,136"/>
-<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="448,208,648,235"/>
-<area shape="poly" title=" " alt="" coords="394,219,432,219,432,224,394,224"/>
+<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="235,5,383,32"/>
+<area shape="poly" title=" " alt="" coords="114,104,164,73,227,42,243,35,245,40,229,46,167,78,116,108"/>
+<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="228,56,390,83"/>
+<area shape="poly" title=" " alt="" coords="152,103,233,84,235,89,153,109"/>
+<area shape="rect" href="class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="236,107,382,133"/>
+<area shape="poly" title=" " alt="" coords="180,117,220,117,220,123,180,123"/>
+<area shape="rect" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="240,157,378,184"/>
+<area shape="poly" title=" " alt="" coords="153,131,235,151,233,156,152,137"/>
+<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="230,208,388,235"/>
+<area shape="poly" title=" " alt="" coords="116,132,167,162,229,194,245,200,243,205,227,198,164,167,114,136"/>
+<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="438,208,638,235"/>
+<area shape="poly" title=" " alt="" coords="388,219,422,219,422,224,388,224"/>
 </map>
 </div>
 <div class="dynheader">
@@ -625,10 +626,11 @@ Here is the caller graph for this function:</div>
 <p>Este método verifica se o construtor da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a> funciona conforme esperado. </p>
 <div class="fragment"><div class="line"><span class="lineno">    7</span>                              {</div>
 <div class="line"><span class="lineno">    8</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">    9</span>    <a class="code hl_class" href="class_system.html">System</a>* q1 = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557">createSystem</a>(<span class="stringliteral">&quot;Q1&quot;</span>, 100.3);</div>
-<div class="line"><span class="lineno">   10</span>    assert(q1-&gt;<a class="code hl_function" href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>() == <span class="stringliteral">&quot;Q1&quot;</span>);</div>
-<div class="line"><span class="lineno">   11</span>    assert(std::abs(q1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() - 100.3) &lt; 0.001);</div>
-<div class="line"><span class="lineno">   12</span>}</div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   10</span>    <a class="code hl_class" href="class_system.html">System</a>* q1 = model-&gt;<a class="code hl_function" href="class_model.html#a851720e25fa19a32e59e5ca12be23901">createSystem</a>(<span class="stringliteral">&quot;Q1&quot;</span>, 100.3);</div>
+<div class="line"><span class="lineno">   11</span>    assert(q1-&gt;<a class="code hl_function" href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>() == <span class="stringliteral">&quot;Q1&quot;</span>);</div>
+<div class="line"><span class="lineno">   12</span>    assert(std::abs(q1-&gt;<a class="code hl_function" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() - 100.3) &lt; 0.001);</div>
+<div class="line"><span class="lineno">   13</span>}</div>
 <div class="ttc" id="aclass_system_html_a3bc2509274e6c346e07b0bf1151378c5"><div class="ttname"><a href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5">System::getName</a></div><div class="ttdeci">virtual std::string getName() const =0</div><div class="ttdoc">Obtém o nome do sistema.</div></div>
 <div class="ttc" id="aclass_system_html_a41b673faa6c199eb8e4f204639fab4f2"><div class="ttname"><a href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue</a></div><div class="ttdeci">virtual double getValue() const =0</div><div class="ttdoc">Obtém o valor associado ao sistema.</div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -636,17 +638,19 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_unit_model_8hpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph.png" border="0" usemap="#a_unit_model_8hpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph" alt=""/></div>
 <map name="a_unit_model_8hpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph" id="a_unit_model_8hpp_a33c89b15c9a9fa91b3753cba55af695b_cgraph">
-<area shape="rect" title="Arquivo de testes unitários para a classe Model." alt="" coords="5,81,162,108"/>
-<area shape="rect" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="210,5,382,32"/>
-<area shape="poly" title=" " alt="" coords="116,78,209,41,230,35,231,40,211,47,118,83"/>
-<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="217,56,375,83"/>
-<area shape="poly" title=" " alt="" coords="162,83,201,78,202,83,163,88"/>
-<area shape="rect" href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="233,107,359,133"/>
-<area shape="poly" title=" " alt="" coords="163,101,218,108,217,113,162,107"/>
-<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="233,157,359,184"/>
-<area shape="poly" title=" " alt="" coords="118,106,211,143,231,150,230,155,209,148,116,111"/>
-<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="430,56,630,83"/>
-<area shape="poly" title=" " alt="" coords="376,67,414,67,414,72,376,72"/>
+<area shape="rect" title="Arquivo de testes unitários para a classe Model." alt="" coords="5,107,162,133"/>
+<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="210,5,372,32"/>
+<area shape="poly" title=" " alt="" coords="103,104,150,73,209,42,224,35,226,40,211,46,153,78,106,108"/>
+<area shape="rect" href="class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="218,56,364,83"/>
+<area shape="poly" title=" " alt="" coords="141,103,218,84,219,90,142,109"/>
+<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="212,107,370,133"/>
+<area shape="poly" title=" " alt="" coords="162,117,196,117,196,123,162,123"/>
+<area shape="rect" href="class_system.html#a3bc2509274e6c346e07b0bf1151378c5" title="Obtém o nome do sistema." alt="" coords="228,157,354,184"/>
+<area shape="poly" title=" " alt="" coords="142,131,219,150,218,156,141,137"/>
+<area shape="rect" href="class_system.html#a41b673faa6c199eb8e4f204639fab4f2" title="Obtém o valor associado ao sistema." alt="" coords="228,208,354,235"/>
+<area shape="poly" title=" " alt="" coords="106,132,153,162,211,194,226,200,224,205,209,198,150,167,103,136"/>
+<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="420,107,620,133"/>
+<area shape="poly" title=" " alt="" coords="370,117,404,117,404,123,370,123"/>
 </map>
 </div>
 <div class="dynheader">
@@ -681,17 +685,17 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método endFlows da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método endFlows conclui adequadamente os fluxos no modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                           {</div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   48</span>    factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760">createFlow</a>&lt;<a class="code hl_class" href="class_flow_exponential.html">FlowExponential</a>&gt;();</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>();</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">while</span> (it != model-&gt;<a class="code hl_function" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>()) {</div>
-<div class="line"><span class="lineno">   51</span>        ++it;</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>    assert(it == model-&gt;<a class="code hl_function" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>());</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                           {</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   49</span>    model-&gt;<a class="code hl_function" href="class_model.html#a837d1676759dfb5cd1279260966c06c7">createFlow</a>&lt;<a class="code hl_class" href="class_flow_exponential.html">FlowExponential</a>&gt;();</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4">beginFlows</a>();</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">while</span> (it != model-&gt;<a class="code hl_function" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>()) {</div>
+<div class="line"><span class="lineno">   52</span>        ++it;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    assert(it == model-&gt;<a class="code hl_function" href="class_model.html#a27d6c506e46555299b4b4c8ae0990a7c">endFlows</a>());</div>
+<div class="line"><span class="lineno">   56</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -700,7 +704,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Testa o método endFlows da classe Model." alt="" coords="5,107,152,133"/>
 <area shape="rect" href="class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="216,5,346,32"/>
 <area shape="poly" title=" " alt="" coords="97,104,142,73,198,42,213,35,216,40,201,46,145,78,100,108"/>
-<area shape="rect" href="class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="204,56,358,83"/>
+<area shape="rect" href="class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="217,56,345,83"/>
 <area shape="poly" title=" " alt="" coords="134,103,209,84,210,90,136,109"/>
 <area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="200,107,362,133"/>
 <area shape="poly" title=" " alt="" coords="152,117,184,117,184,123,152,123"/>
@@ -708,8 +712,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="136,131,210,150,209,156,134,137"/>
 <area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="202,208,360,235"/>
 <area shape="poly" title=" " alt="" coords="100,132,145,162,201,194,216,200,213,205,198,198,142,167,97,136"/>
-<area shape="rect" href="class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="454,56,566,83"/>
-<area shape="poly" title=" " alt="" coords="358,67,438,67,438,72,358,72"/>
+<area shape="rect" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="468,56,553,83"/>
+<area shape="poly" title=" " alt="" coords="345,67,452,67,452,72,345,72"/>
 <area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="410,208,610,235"/>
 <area shape="poly" title=" " alt="" coords="360,219,394,219,394,224,360,224"/>
 </map>
@@ -746,11 +750,11 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método endHistory da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método endHistory conclui adequadamente o histórico no modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>                             {</div>
-<div class="line"><span class="lineno">   66</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   68</span>    assert(model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>() == model-&gt;<a class="code hl_function" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>());</div>
-<div class="line"><span class="lineno">   69</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                             {</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   69</span>    assert(model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>() == model-&gt;<a class="code hl_function" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>());</div>
+<div class="line"><span class="lineno">   70</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -801,36 +805,36 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método endSystems da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método endSystems conclui adequadamente os sistemas no modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                             {</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   25</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   26</span>    factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557">createSystem</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>();</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">while</span> (it != model-&gt;<a class="code hl_function" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>()) {</div>
-<div class="line"><span class="lineno">   30</span>        ++it;</div>
-<div class="line"><span class="lineno">   31</span>    }</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>    assert(it == model-&gt;<a class="code hl_function" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>());</div>
-<div class="line"><span class="lineno">   34</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                             {</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   27</span>    model-&gt;<a class="code hl_function" href="class_model.html#a851720e25fa19a32e59e5ca12be23901">createSystem</a>(<span class="stringliteral">&quot;System1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <span class="keyword">auto</span> it = model-&gt;<a class="code hl_function" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2">beginSystems</a>();</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">while</span> (it != model-&gt;<a class="code hl_function" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>()) {</div>
+<div class="line"><span class="lineno">   31</span>        ++it;</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    assert(it == model-&gt;<a class="code hl_function" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1">endSystems</a>());</div>
+<div class="line"><span class="lineno">   35</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_unit_model_8hpp_a91ccff8e2ec46bc1fa4d1fe9ed79cd0d_cgraph.png" border="0" usemap="#a_unit_model_8hpp_a91ccff8e2ec46bc1fa4d1fe9ed79cd0d_cgraph" alt=""/></div>
 <map name="a_unit_model_8hpp_a91ccff8e2ec46bc1fa4d1fe9ed79cd0d_cgraph" id="a_unit_model_8hpp_a91ccff8e2ec46bc1fa4d1fe9ed79cd0d_cgraph">
 <area shape="rect" title="Testa o método endSystems da classe Model." alt="" coords="5,107,170,133"/>
-<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="230,5,378,32"/>
-<area shape="poly" title=" " alt="" coords="108,104,156,73,217,42,234,35,235,40,219,46,159,78,110,108"/>
-<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="223,56,385,83"/>
-<area shape="poly" title=" " alt="" coords="147,103,228,84,230,89,148,109"/>
-<area shape="rect" href="class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="218,107,390,133"/>
-<area shape="poly" title=" " alt="" coords="170,117,202,117,202,123,170,123"/>
-<area shape="rect" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="235,157,373,184"/>
-<area shape="poly" title=" " alt="" coords="148,131,230,151,228,156,147,137"/>
-<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="225,208,383,235"/>
-<area shape="poly" title=" " alt="" coords="110,132,159,162,219,194,235,200,234,205,217,198,156,167,108,136"/>
-<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="438,208,638,235"/>
-<area shape="poly" title=" " alt="" coords="384,219,422,219,422,224,384,224"/>
+<area shape="rect" href="class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="225,5,373,32"/>
+<area shape="poly" title=" " alt="" coords="108,104,156,73,217,42,232,35,234,40,219,46,159,78,110,108"/>
+<area shape="rect" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="218,56,380,83"/>
+<area shape="poly" title=" " alt="" coords="146,103,225,84,226,89,147,109"/>
+<area shape="rect" href="class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="226,107,372,133"/>
+<area shape="poly" title=" " alt="" coords="170,117,211,117,211,123,170,123"/>
+<area shape="rect" href="class_model.html#a251f709667f7ca6aedc45dd7431e40c1" title="Retorna um iterador para o final dos sistemas no modelo." alt="" coords="230,157,368,184"/>
+<area shape="poly" title=" " alt="" coords="147,131,226,151,225,156,146,137"/>
+<area shape="rect" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="220,208,378,235"/>
+<area shape="poly" title=" " alt="" coords="110,132,159,162,219,194,234,200,232,205,217,198,156,167,108,136"/>
+<area shape="rect" href="class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="428,208,628,235"/>
+<area shape="poly" title=" " alt="" coords="378,219,412,219,412,224,378,224"/>
 </map>
 </div>
 <div class="dynheader">
@@ -865,12 +869,12 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método execute da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método execute executa corretamente a lógica do modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                          {</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   90</span>    model-&gt;<a class="code hl_function" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">execute</a>(0, 10);</div>
-<div class="line"><span class="lineno">   91</span>    assert(model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>() != model-&gt;<a class="code hl_function" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>());</div>
-<div class="line"><span class="lineno">   92</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>                          {</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   91</span>    model-&gt;<a class="code hl_function" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">execute</a>(0, 10);</div>
+<div class="line"><span class="lineno">   92</span>    assert(model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>() != model-&gt;<a class="code hl_function" href="class_model.html#ad2edbf30bc599d9c82182b1d3b778d31">endHistory</a>());</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -923,12 +927,12 @@ Here is the caller graph for this function:</div>
 
 <p>Testa o método setInitialHistory da classe <a class="el" href="class_model.html" title="Classe que representa um modelo de sistema puramente virtual.">Model</a>. </p>
 <p>Este método verifica se o método setInitialHistory atribui corretamente o histórico inicial ao modelo. </p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                                    {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
-<div class="line"><span class="lineno">   83</span>    model-&gt;<a class="code hl_function" href="class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba">setInitialHistory</a>();</div>
-<div class="line"><span class="lineno">   84</span>    assert(model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>()-&gt;empty());</div>
-<div class="line"><span class="lineno">   85</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>                                    {</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_class" href="class_my_vensim.html">MyVensim</a>* factory = <a class="code hl_function" href="class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209">MyVensim::getInstance</a>();</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_class" href="class_model.html">Model</a>* model = factory-&gt;<a class="code hl_function" href="class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf">createModel</a>();</div>
+<div class="line"><span class="lineno">   84</span>    model-&gt;<a class="code hl_function" href="class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba">setInitialHistory</a>();</div>
+<div class="line"><span class="lineno">   85</span>    assert(model-&gt;<a class="code hl_function" href="class_model.html#a23cce9625a3ac948b976c99201a1a8f7">beginHistory</a>()-&gt;empty());</div>
+<div class="line"><span class="lineno">   86</span>}</div>
 <div class="ttc" id="aclass_model_html_adeb3f252f18aa6abd30bbf4482bf98ba"><div class="ttname"><a href="class_model.html#adeb3f252f18aa6abd30bbf4482bf98ba">Model::setInitialHistory</a></div><div class="ttdeci">virtual void setInitialHistory()=0</div><div class="ttdoc">Define o histórico inicial com valores padrão.</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

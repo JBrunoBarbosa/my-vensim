@@ -1,5 +1,4 @@
 #include "MyVensimImpl.hpp"
-#include "SystemImpl.hpp"
 #include "ModelImpl.hpp"
 
 MyVensim* MyVensim::getInstance() {
@@ -17,19 +16,6 @@ Model* MyVensimImpl::createModel() {
     return model;
 }
 
-System* MyVensimImpl::createSystem(const std::string& name, double value) {
-    ensureModelExists();
-    System* system = new SystemImpl(name, value);
-    model->add(system);
-    return system;
-}
-
-void MyVensimImpl::add(Flow* flow) {
-    ensureModelExists();
-    model->add(flow); 
-    flows.push_back(flow);
-}
-
 void MyVensimImpl::ensureModelExists() {
     if (!model) {
         createModel(); 
@@ -37,15 +23,9 @@ void MyVensimImpl::ensureModelExists() {
 }
 
 MyVensimImpl::MyVensimImpl() {
-    model = nullptr; // Inicializa o atributo model como nulo no construtor
+    model = nullptr; 
 }
 
 MyVensimImpl::~MyVensimImpl() {
-    delete model; // Libera a memória do modelo no destrutor, se necessário
-    for (Flow* flow : flows) {
-        delete flow;
-    }
-    for (System* system : systems) {
-        delete system;
-    }
+    delete model;
 }

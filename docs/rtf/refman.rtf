@@ -161,21 +161,21 @@ Model\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFM \\*MERGEFORMAT}{\fldrsl
 {
 \par
 \pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
-ModelImpl\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGP \\*MERGEFORMAT}{\fldrslt pagenum}}
+ModelImpl\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGS \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 }\par
-MyVensim\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGW \\*MERGEFORMAT}{\fldrslt pagenum}}
+MyVensim\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGZ \\*MERGEFORMAT}{\fldrslt pagenum}}
 {
 \par
 \pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
-MyVensimImpl\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHF \\*MERGEFORMAT}{\fldrslt pagenum}}
+MyVensimImpl\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHE \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 }\par
-System\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHH \\*MERGEFORMAT}{\fldrslt pagenum}}
+System\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHG \\*MERGEFORMAT}{\fldrslt pagenum}}
 {
 \par
 \pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
-SystemImpl\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHT \\*MERGEFORMAT}{\fldrslt pagenum}}
+SystemImpl\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHS \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 }\par
 }
@@ -206,19 +206,19 @@ Classe que representa um fluxo log\'EDstico em um sistema })} \tab {\field\flded
 Classe que representa um modelo de sistema puramente virtual })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFM \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b ModelImpl} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Classe que implementa {\b Model} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGP \\*MERGEFORMAT}{\fldrslt pagenum}}
+Classe que implementa {\b Model} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGS \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b MyVensim} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Interface para a f\'E1brica de objetos Vensim })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGW \\*MERGEFORMAT}{\fldrslt pagenum}}
+Interface para a f\'E1brica de objetos Vensim })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGZ \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b MyVensimImpl} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Classe que implementa a interface {\b MyVensim} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHF \\*MERGEFORMAT}{\fldrslt pagenum}}
+Classe que implementa a interface {\b MyVensim} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHE \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b System} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Classe que representa um sistema puramente virtual })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHH \\*MERGEFORMAT}{\fldrslt pagenum}}
+Classe que representa um sistema puramente virtual })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHG \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b SystemImpl} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Classe que implementa {\b System} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHT \\*MERGEFORMAT}{\fldrslt pagenum}}
+Classe que implementa {\b System} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHS \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 \par}
 \pard\plain \sect\sbkpage
@@ -1754,6 +1754,20 @@ virtual void {\b execute} (const int timeInitial, const int timeFinal)=0\par
 Executa o modelo de tempo inicial a tempo final. }{
 }\par
 }\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+virtual {\b System} * {\b createSystem} (const std::string name, double value)=0\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b System}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename FlowType > {\b Flow} * {\b createFlow} (std::string name="", {\b System} *source=nullptr, {\b System} *destiny=nullptr)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b Flow}. }{
+}\par
+}\par}
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -1989,14 +2003,111 @@ Limpa o modelo, removendo todos os sistemas e fluxos. }}\par
 {
 Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGC \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 }
+{\xe \v createFlow\:Model}
+{\xe \v Model\:createFlow}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename FlowType > {\b Flow} * Model::createFlow (std::string  {\i name} = {\f2 ""}, {\b System} *  {\i source} = {\f2 nullptr}, {\b System} *  {\i destiny} = {\f2 nullptr}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGD}
+{\bkmkend AAAAAAAAGD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b Flow}. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name} \cell }{Nome do fluxo. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i source} \cell }{Sistema de origem do fluxo. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i target} \cell }{Sistema de destino do fluxo. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Um ponteiro para a inst\'E2ncia de {\b Flow} criada. \par
+}}}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 118                                                                                                \{\par
+119         Flow* f = {\cf17 new} FlowType(name, source, destiny);\par
+120         add(f);\par
+121         {\cf19 return} f;\par
+122     \}\par
+}
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_a837d1676759dfb5cd1279260966c06c7_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_a837d1676759dfb5cd1279260966c06c7_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
+{\xe \v createSystem\:Model}
+{\xe \v Model\:createSystem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+virtual {\b System} * Model::createSystem (const std::string  {\i name}, double  {\i value}){\f2 [pure virtual]}}}
+\par
+{\bkmkstart AAAAAAAAGE}
+{\bkmkend AAAAAAAAGE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b System}. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name} \cell }{Nome do sistema. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Valor associado ao sistema. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Um ponteiro para a inst\'E2ncia de {\b System} criada. \par
+}}}{
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGF \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_a851720e25fa19a32e59e5ca12be23901_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}
 {\xe \v endFlows\:Model}
 {\xe \v Model\:endFlows}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 virtual {\b flowIterator} Model::endFlows (){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGD}
-{\bkmkend AAAAAAAAGD}
+{\bkmkstart AAAAAAAAGG}
+{\bkmkend AAAAAAAAGG}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2009,7 +2120,7 @@ Retorna um iterador para o final dos fluxos no modelo. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Iterador para o final dos fluxos. \par
 }}}{
-Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGE \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGH \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_a27d6c506e46555299b4b4c8ae0990a7c_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -2021,8 +2132,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual {\b historyIterator} Model::endHistory (){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGF}
-{\bkmkend AAAAAAAAGF}
+{\bkmkstart AAAAAAAAGI}
+{\bkmkend AAAAAAAAGI}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2035,7 +2146,7 @@ Retorna um iterador para o final do hist\'F3rico no modelo. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Iterador para o final do hist\'F3rico. \par
 }}}{
-Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGG \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGJ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_ad2edbf30bc599d9c82182b1d3b778d31_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -2047,8 +2158,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual {\b systemIterator} Model::endSystems (){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGH}
-{\bkmkend AAAAAAAAGH}
+{\bkmkstart AAAAAAAAGK}
+{\bkmkend AAAAAAAAGK}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2061,7 +2172,7 @@ Retorna um iterador para o final dos sistemas no modelo. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Iterador para o final dos sistemas. \par
 }}}{
-Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGI \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGL \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_a251f709667f7ca6aedc45dd7431e40c1_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -2073,8 +2184,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual void Model::execute (const int  {\i timeInitial}, const int  {\i timeFinal}){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGJ}
-{\bkmkend AAAAAAAAGJ}
+{\bkmkstart AAAAAAAAGM}
+{\bkmkend AAAAAAAAGM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2099,7 +2210,7 @@ Parameters\par}
 {\row }
 }
 }{
-Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGK \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGN \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_a686edecbb77beb3000f1bd6c1ac6b251_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -2111,8 +2222,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual void Model::report (){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGL}
-{\bkmkend AAAAAAAAGL}
+{\bkmkstart AAAAAAAAGO}
+{\bkmkend AAAAAAAAGO}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2120,7 +2231,7 @@ virtual void Model::report (){\f2 [pure virtual]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Gera um relat\'F3rio do modelo. }}\par
 {
-Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGM \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGP \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 }
 {\xe \v setInitialHistory\:Model}
 {\xe \v Model\:setInitialHistory}
@@ -2128,8 +2239,8 @@ Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAA
 {\b 
 virtual void Model::setInitialHistory (){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGN}
-{\bkmkend AAAAAAAAGN}
+{\bkmkstart AAAAAAAAGQ}
+{\bkmkend AAAAAAAAGQ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2137,7 +2248,7 @@ virtual void Model::setInitialHistory (){\f2 [pure virtual]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Define o hist\'F3rico inicial com valores padr\'E3o. }}\par
 {
-Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGO \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b ModelImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGR \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_adeb3f252f18aa6abd30bbf4482bf98ba_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -2155,8 +2266,8 @@ src/{\b Model.hpp}\par
 ModelImpl Class Reference\par \pard\plain 
 {\tc\tcl2 \v ModelImpl}
 {\xe \v ModelImpl}
-{\bkmkstart AAAAAAAAGP}
-{\bkmkend AAAAAAAAGP}
+{\bkmkstart AAAAAAAAGS}
+{\bkmkend AAAAAAAAGS}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -2227,6 +2338,13 @@ Retorna um iterador para o final do hist\'F3rico no modelo. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b System} * {\b createSystem} (const std::string name, double value) override\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b System}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 void {\b add} ({\b Flow} *flow) override\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -2281,6 +2399,13 @@ virtual {\b ~Model} ()\par
 Destrutor virtual. }{
 }\par
 }\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename FlowType > {\b Flow} * {\b createFlow} (std::string name="", {\b System} *source=nullptr, {\b System} *destiny=nullptr)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b Flow}. }{
+}\par
+}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Protected Attributes\par
@@ -2332,12 +2457,12 @@ Constructor & Destructor Documentation\par
 {\b 
 ModelImpl::ModelImpl ()}}
 \par
-{\bkmkstart AAAAAAAAGQ}
-{\bkmkend AAAAAAAAGQ}
+{\bkmkstart AAAAAAAAGT}
+{\bkmkend AAAAAAAAGT}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7 \{\}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 9 \{\}\par
 }
 }
 {\xe \v ModelImpl\:ModelImpl}
@@ -2346,20 +2471,20 @@ ModelImpl::ModelImpl ()}}
 {\b 
 ModelImpl::ModelImpl ({\b Model} *  {\i other})}}
 \par
-{\bkmkstart AAAAAAAAGR}
-{\bkmkend AAAAAAAAGR}
+{\bkmkstart AAAAAAAAGU}
+{\bkmkend AAAAAAAAGU}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 24                               \{\par
-25     \par
-26     {\cf19 for}(systemIterator it = obj->beginSystems(); it != obj->endSystems(); ++it)\{\par
-27         (systems).push_back(*it);\par
-28     \}\par
-29     {\cf19 for}(flowIterator it = obj->beginFlows(); it != obj->endFlows(); ++it)\{\par
-30         (flows).push_back(*it);\par
-31     \}\par
-32 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 26                               \{\par
+27     \par
+28     {\cf19 for}(systemIterator it = obj->beginSystems(); it != obj->endSystems(); ++it)\{\par
+29         (systems).push_back(*it);\par
+30     \}\par
+31     {\cf19 for}(flowIterator it = obj->beginFlows(); it != obj->endFlows(); ++it)\{\par
+32         (flows).push_back(*it);\par
+33     \}\par
+34 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -2372,12 +2497,12 @@ Here is the call graph for this function:{
 {\b 
 ModelImpl::~ModelImpl (){\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGS}
-{\bkmkend AAAAAAAAGS}
+{\bkmkstart AAAAAAAAGV}
+{\bkmkend AAAAAAAAGV}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 10 \{\} \par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 12 \{\} \par
 }
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
@@ -2412,7 +2537,11 @@ Parameters\par}
 }{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFR \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 13 \{ flows.push_back(flow); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15 \{ flows.push_back(flow); \}\par
+}
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_impl_a3e8843e5353f40ab30afcf19b4f13a67_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
 }
 {\xe \v add\:ModelImpl}
@@ -2443,7 +2572,7 @@ Parameters\par}
 }{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFT \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14 \{ systems.push_back(system); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 16 \{ systems.push_back(system); \}\par
 }
 }
 {\xe \v beginFlows\:ModelImpl}
@@ -2468,7 +2597,7 @@ Iterador para o in\'EDcio dos fluxos. \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFV \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 19 \{ {\cf19 return} flows.begin(); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 21 \{ {\cf19 return} flows.begin(); \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -2497,7 +2626,7 @@ Iterador para o in\'EDcio do hist\'F3rico. \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFX \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 21 \{ {\cf19 return} history.begin(); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 23 \{ {\cf19 return} history.begin(); \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -2526,7 +2655,7 @@ Iterador para o in\'EDcio dos sistemas. \par
 }}}{
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFZ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 17 \{ {\cf19 return} systems.begin(); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 19 \{ {\cf19 return} systems.begin(); \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -2550,12 +2679,60 @@ Limpa o modelo, removendo todos os sistemas e fluxos. }}\par
 {
 Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGB \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 96                            \{\par
-97     {\cf19 for} ({\cf17 auto} flow : flows) delete flow;\par
-98     {\cf19 for} ({\cf17 auto} system : systems) delete system;\par
-99     flows.clear();\par
-100     systems.clear();\par
-101 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 98                            \{\par
+99     {\cf19 for} ({\cf17 auto} flow : flows) delete flow;\par
+100     {\cf19 for} ({\cf17 auto} system : systems) delete system;\par
+101     flows.clear();\par
+102     systems.clear();\par
+103 \}\par
+}
+}
+{\xe \v createSystem\:ModelImpl}
+{\xe \v ModelImpl\:createSystem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b System} * ModelImpl::createSystem (const std::string  {\i name}, double  {\i value}){\f2 [override]}, {\f2 [virtual]}}}
+\par
+{\bkmkstart AAAAAAAAGF}
+{\bkmkend AAAAAAAAGF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cria uma inst\'E2ncia de {\b System}. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i name} \cell }{Nome do sistema. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Valor associado ao sistema. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Um ponteiro para a inst\'E2ncia de {\b System} criada. \par
+}}}{
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGE \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 105                                                                   \{\par
+106     System* system = {\cf17 new} SystemImpl(name, value);\par
+107     add(system);\par
+108     {\cf19 return} system;\par
+109 \}\par
+}
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_model_impl_afb1f7d5b720ba70a5f93b3727bbc19ac_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
 }
 {\xe \v endFlows\:ModelImpl}
@@ -2564,8 +2741,8 @@ Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGB \\*M
 {\b 
 {\b ModelImpl::flowIterator} ModelImpl::endFlows (){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGE}
-{\bkmkend AAAAAAAAGE}
+{\bkmkstart AAAAAAAAGH}
+{\bkmkend AAAAAAAAGH}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2578,9 +2755,9 @@ Retorna um iterador para o final dos fluxos no modelo. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Iterador para o final dos fluxos. \par
 }}}{
-Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGD \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGG \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 20 \{ {\cf19 return} flows.end(); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22 \{ {\cf19 return} flows.end(); \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -2593,8 +2770,8 @@ Here is the caller graph for this function:{
 {\b 
 {\b ModelImpl::historyIterator} ModelImpl::endHistory (){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGG}
-{\bkmkend AAAAAAAAGG}
+{\bkmkstart AAAAAAAAGJ}
+{\bkmkend AAAAAAAAGJ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2607,9 +2784,9 @@ Retorna um iterador para o final do hist\'F3rico no modelo. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Iterador para o final do hist\'F3rico. \par
 }}}{
-Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGF \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGI \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22 \{ {\cf19 return} history.end(); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 24 \{ {\cf19 return} history.end(); \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -2622,8 +2799,8 @@ Here is the caller graph for this function:{
 {\b 
 {\b ModelImpl::systemIterator} ModelImpl::endSystems (){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGI}
-{\bkmkend AAAAAAAAGI}
+{\bkmkstart AAAAAAAAGL}
+{\bkmkend AAAAAAAAGL}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2636,9 +2813,9 @@ Retorna um iterador para o final dos sistemas no modelo. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Iterador para o final dos sistemas. \par
 }}}{
-Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGH \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGK \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 18 \{ {\cf19 return} systems.end(); \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 20 \{ {\cf19 return} systems.end(); \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -2651,8 +2828,8 @@ Here is the caller graph for this function:{
 {\b 
 void ModelImpl::execute (const int  {\i timeInitial}, const int  {\i timeFinal}){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGK}
-{\bkmkend AAAAAAAAGK}
+{\bkmkstart AAAAAAAAGN}
+{\bkmkend AAAAAAAAGN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2677,41 +2854,41 @@ Parameters\par}
 {\row }
 }
 }{
-Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGJ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGM \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 34                                                       \{\par
-35 \par
-36    setInitialHistory();\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36                                                       \{\par
 37 \par
-38    {\cf19 for} ({\cf18 int} tempo = timeInitial; tempo < timeFinal; tempo++) \{\par
-39         {\cf20 // Vector to save flows and systems values}\par
-40         vector<double> currentFlowValues(flows.size());\par
-41         vector<double> currentSystemValues;\par
-42 \par
-43         {\cf20 // Flow values}\par
-44         {\cf19 for} (Model::flowIterator it = beginFlows(); it != endFlows(); ++it) \{\par
-45             Flow* flow = *it;\par
-46             currentFlowValues[it - beginFlows()] = flow->execute();\par
-47         \}\par
-48 \par
-49         {\cf20 // Update systems by flows}\par
-50         {\cf19 for} (Model::flowIterator it = beginFlows(); it != endFlows(); ++it) \{\par
-51             Flow* flow = *it;\par
-52             System* source = flow->getSource();\par
-53             System* target = flow->getTarget();\par
-54 \par
-55             {\cf20 // Update source and target systems}\par
-56             source->setValue(source->getValue() - currentFlowValues[it - beginFlows()]);\par
-57             target->setValue(target->getValue() + currentFlowValues[it - beginFlows()]);\par
-58         \}\par
-59 \par
-60         {\cf19 for} (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) \{\par
-61             System* system = *it;\par
-62             currentSystemValues.push_back(system->getValue());\par
-63         \}\par
-64         history.push_back(currentSystemValues);\par
-65     \}\par
-66 \}\par
+38    setInitialHistory();\par
+39 \par
+40    {\cf19 for} ({\cf18 int} tempo = timeInitial; tempo < timeFinal; tempo++) \{\par
+41         {\cf20 // Vector to save flows and systems values}\par
+42         vector<double> currentFlowValues(flows.size());\par
+43         vector<double> currentSystemValues;\par
+44 \par
+45         {\cf20 // Flow values}\par
+46         {\cf19 for} (Model::flowIterator it = beginFlows(); it != endFlows(); ++it) \{\par
+47             Flow* flow = *it;\par
+48             currentFlowValues[it - beginFlows()] = flow->execute();\par
+49         \}\par
+50 \par
+51         {\cf20 // Update systems by flows}\par
+52         {\cf19 for} (Model::flowIterator it = beginFlows(); it != endFlows(); ++it) \{\par
+53             Flow* flow = *it;\par
+54             System* source = flow->getSource();\par
+55             System* target = flow->getTarget();\par
+56 \par
+57             {\cf20 // Update source and target systems}\par
+58             source->setValue(source->getValue() - currentFlowValues[it - beginFlows()]);\par
+59             target->setValue(target->getValue() + currentFlowValues[it - beginFlows()]);\par
+60         \}\par
+61 \par
+62         {\cf19 for} (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) \{\par
+63             System* system = *it;\par
+64             currentSystemValues.push_back(system->getValue());\par
+65         \}\par
+66         history.push_back(currentSystemValues);\par
+67     \}\par
+68 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -2724,8 +2901,8 @@ Here is the call graph for this function:{
 {\b 
 void ModelImpl::report (){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGM}
-{\bkmkend AAAAAAAAGM}
+{\bkmkstart AAAAAAAAGP}
+{\bkmkend AAAAAAAAGP}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2733,25 +2910,25 @@ void ModelImpl::report (){\f2 [override]}, {\f2 [virtual]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Gera um relat\'F3rio do modelo. }}\par
 {
-Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGL \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGO \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 78                        \{\par
-79 \par
-80     cout << {\cf22 "Time"};\par
-81     {\cf19 for} (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) \{\par
-82         System* system = *it;\par
-83         cout << {\cf22 "\\t"} << system->getName();\par
-84     \}\par
-85     cout << endl;\par
-86 \par
-87     {\cf19 for} (Model::historyIterator it1 = beginHistory(); it1 != endHistory(); ++it1) \{\par
-88         cout << distance(beginHistory(), it1);\par
-89         {\cf19 for} (vector<double>::iterator it2 = it1->begin(); it2 != it1->end(); ++it2) \{\par
-90             cout << {\cf22 "\\t"} << *it2;\par
-91         \}\par
-92         cout << endl;\par
-93     \}\par
-94 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 80                        \{\par
+81 \par
+82     cout << {\cf22 "Time"};\par
+83     {\cf19 for} (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) \{\par
+84         System* system = *it;\par
+85         cout << {\cf22 "\\t"} << system->getName();\par
+86     \}\par
+87     cout << endl;\par
+88 \par
+89     {\cf19 for} (Model::historyIterator it1 = beginHistory(); it1 != endHistory(); ++it1) \{\par
+90         cout << distance(beginHistory(), it1);\par
+91         {\cf19 for} (vector<double>::iterator it2 = it1->begin(); it2 != it1->end(); ++it2) \{\par
+92             cout << {\cf22 "\\t"} << *it2;\par
+93         \}\par
+94         cout << endl;\par
+95     \}\par
+96 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -2764,8 +2941,8 @@ Here is the call graph for this function:{
 {\b 
 void ModelImpl::setInitialHistory (){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGO}
-{\bkmkend AAAAAAAAGO}
+{\bkmkstart AAAAAAAAGR}
+{\bkmkend AAAAAAAAGR}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -2773,17 +2950,17 @@ void ModelImpl::setInitialHistory (){\f2 [override]}, {\f2 [virtual]}}}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Define o hist\'F3rico inicial com valores padr\'E3o. }}\par
 {
-Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGN \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b Model} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGQ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 68                                   \{\par
-69     vector<double> current;\par
-70 \par
-71     {\cf19 for} (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) \{\par
-72         System* system = *it;\par
-73         current.push_back(system->getValue());\par
-74     \}\par
-75     history.push_back(current);\par
-76 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 70                                   \{\par
+71     vector<double> current;\par
+72 \par
+73     {\cf19 for} (Model::systemIterator it = beginSystems(); it != endSystems(); ++it) \{\par
+74         System* system = *it;\par
+75         current.push_back(system->getValue());\par
+76     \}\par
+77     history.push_back(current);\par
+78 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -2804,8 +2981,8 @@ Member Data Documentation\par
 {\b 
 std::vector<{\b Flow}*> ModelImpl::flows{\f2 [protected]}}}
 \par
-{\bkmkstart AAAAAAAAGT}
-{\bkmkend AAAAAAAAGT}
+{\bkmkstart AAAAAAAAGW}
+{\bkmkend AAAAAAAAGW}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -2815,8 +2992,8 @@ std::vector<{\b Flow}*> ModelImpl::flows{\f2 [protected]}}}
 {\b 
 std::vector<std::vector<double> > ModelImpl::history{\f2 [protected]}}}
 \par
-{\bkmkstart AAAAAAAAGU}
-{\bkmkend AAAAAAAAGU}
+{\bkmkstart AAAAAAAAGX}
+{\bkmkend AAAAAAAAGX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -2826,8 +3003,8 @@ std::vector<std::vector<double> > ModelImpl::history{\f2 [protected]}}}
 {\b 
 std::vector<{\b System}*> ModelImpl::systems{\f2 [protected]}}}
 \par
-{\bkmkstart AAAAAAAAGV}
-{\bkmkend AAAAAAAAGV}
+{\bkmkstart AAAAAAAAGY}
+{\bkmkend AAAAAAAAGY}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -2845,8 +3022,8 @@ src/{\b ModelImpl.cpp}\par
 MyVensim Class Reference\par \pard\plain 
 {\tc\tcl2 \v MyVensim}
 {\xe \v MyVensim}
-{\bkmkstart AAAAAAAAGW}
-{\bkmkend AAAAAAAAGW}
+{\bkmkstart AAAAAAAAGZ}
+{\bkmkend AAAAAAAAGZ}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -2877,27 +3054,6 @@ virtual {\b Model} * {\b createModel} ()=0\par
 Cria uma inst\'E2ncia de {\b Model}. }{
 }\par
 }\par}
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-virtual {\b System} * {\b createSystem} (const std::string &name, double value)=0\par
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b System}. }{
-}\par
-}\par}
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-template<typename FlowType > {\b Flow} * {\b createFlow} (std::string name="", {\b System} *source=nullptr, {\b System} *destiny=nullptr)\par
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b Flow}. }{
-}\par
-}\par}
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-virtual void {\b add} ({\b Flow} *flow)=0\par
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Adiciona um fluxo ao modelo. }{
-}\par
-}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Static Public Member Functions\par
@@ -2925,112 +3081,26 @@ Constructor & Destructor Documentation\par
 {\b 
 virtual MyVensim::~MyVensim (){\f2 [inline]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAGX}
-{\bkmkend AAAAAAAAGX}
+{\bkmkstart AAAAAAAAHA}
+{\bkmkend AAAAAAAAHA}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15 \{\}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 13 \{\}\par
 }
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Member Function Documentation\par
 \pard\plain 
-{\xe \v add\:MyVensim}
-{\xe \v MyVensim\:add}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-virtual void MyVensim::add ({\b Flow} *  {\i flow}){\f2 [pure virtual]}}}
-\par
-{\bkmkstart AAAAAAAAGY}
-{\bkmkend AAAAAAAAGY}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-\par
-{
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Adiciona um fluxo ao modelo. }}\par
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-{\par
-{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Parameters\par}
-\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i flow} \cell }{Ponteiro para o fluxo a ser adicionado. \cell }
-{\row }
-}
-}Here is the caller graph for this function:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_my_vensim_a9b44b5b24c9499436c5d7ff82cb9d72d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
-{\xe \v createFlow\:MyVensim}
-{\xe \v MyVensim\:createFlow}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-template<typename FlowType > {\b Flow} * MyVensim::createFlow (std::string  {\i name} = {\f2 ""}, {\b System} *  {\i source} = {\f2 nullptr}, {\b System} *  {\i destiny} = {\f2 nullptr}){\f2 [inline]}}}
-\par
-{\bkmkstart AAAAAAAAGZ}
-{\bkmkend AAAAAAAAGZ}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-\par
-{
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b Flow}. }}\par
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-{\par
-{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Parameters\par}
-\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i name} \cell }{Nome do fluxo. \cell }
-{\row }
-\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i source} \cell }{Sistema de origem do fluxo. \cell }
-{\row }
-\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i target} \cell }{Sistema de destino do fluxo. \cell }
-{\row }
-}
-{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
-Um ponteiro para a inst\'E2ncia de {\b Flow} criada. \par
-}}}{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 41                                                                                                \{\par
-42         Flow* f = {\cf17 new} FlowType(name, source, destiny);\par
-43         add(f);\par
-44         {\cf19 return} f;\par
-45     \}\par
-}
-Here is the call graph for this function:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_my_vensim_a646f0de3118cc569e9c9a3c45175e760_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-Here is the caller graph for this function:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_my_vensim_a646f0de3118cc569e9c9a3c45175e760_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
 {\xe \v createModel\:MyVensim}
 {\xe \v MyVensim\:createModel}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 virtual {\b Model} * MyVensim::createModel (){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHA}
-{\bkmkend AAAAAAAAHA}
+{\bkmkstart AAAAAAAAHB}
+{\bkmkend AAAAAAAAHB}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3043,51 +3113,10 @@ Cria uma inst\'E2ncia de {\b Model}. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Um ponteiro para a inst\'E2ncia de {\b Model} criada. \par
 }}}{
-Implemented in {\b MyVensimImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHB \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b MyVensimImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHC \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_my_vensim_a7364cd2d39a32f921181e3ceee2bf2cf_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
-}
-}
-{\xe \v createSystem\:MyVensim}
-{\xe \v MyVensim\:createSystem}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-virtual {\b System} * MyVensim::createSystem (const std::string &  {\i name}, double  {\i value}){\f2 [pure virtual]}}}
-\par
-{\bkmkstart AAAAAAAAHC}
-{\bkmkend AAAAAAAAHC}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-\par
-{
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b System}. }}\par
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-{\par
-{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Parameters\par}
-\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i name} \cell }{Nome do sistema. \cell }
-{\row }
-\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i value} \cell }{Valor associado ao sistema. \cell }
-{\row }
-}
-{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
-Um ponteiro para a inst\'E2ncia de {\b System} criada. \par
-}}}{
-Implemented in {\b MyVensimImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHD \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
-Here is the caller graph for this function:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_my_vensim_a07b80121d996d6ec25267e039197a557_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
 }
 }
 {\xe \v getInstance\:MyVensim}
@@ -3096,14 +3125,14 @@ Here is the caller graph for this function:{
 {\b 
 {\b MyVensim} * MyVensim::getInstance (){\f2 [static]}}}
 \par
-{\bkmkstart AAAAAAAAHE}
-{\bkmkend AAAAAAAAHE}
+{\bkmkstart AAAAAAAAHD}
+{\bkmkend AAAAAAAAHD}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 5                                 \{\par
-6     {\cf19 return} MyVensimImpl::createInstance();\par
-7 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 4                                 \{\par
+5     {\cf19 return} MyVensimImpl::createInstance();\par
+6 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -3128,8 +3157,8 @@ src/{\b MyVensimImpl.cpp}\par
 MyVensimImpl Class Reference\par \pard\plain 
 {\tc\tcl2 \v MyVensimImpl}
 {\xe \v MyVensimImpl}
-{\bkmkstart AAAAAAAAHF}
-{\bkmkend AAAAAAAAHF}
+{\bkmkstart AAAAAAAAHE}
+{\bkmkend AAAAAAAAHE}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -3158,13 +3187,6 @@ Public Member Functions\par
 Cria uma inst\'E2ncia de {\b Model}. }{
 }\par
 }\par}
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-{\b System} * {\b createSystem} (const std::string &name, double value) override\par
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b System}. }{
-}\par
-}\par}
 }
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Public Member Functions inherited from {\b MyVensim}\par
@@ -3173,13 +3195,6 @@ Public Member Functions inherited from {\b MyVensim}\par
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 virtual {\b ~MyVensim} ()\par
-\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-template<typename FlowType > {\b Flow} * {\b createFlow} (std::string name="", {\b System} *source=nullptr, {\b System} *destiny=nullptr)\par
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b Flow}. }{
-}\par
-}\par}
 }
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Static Public Member Functions\par
@@ -3215,15 +3230,15 @@ Member Function Documentation\par
 {\b 
 {\b MyVensim} * MyVensimImpl::createInstance (){\f2 [static]}}}
 \par
-{\bkmkstart AAAAAAAAHG}
-{\bkmkend AAAAAAAAHG}
+{\bkmkstart AAAAAAAAHF}
+{\bkmkend AAAAAAAAHF}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 9                                        \{\par
-10     {\cf17 static} MyVensimImpl instance;\par
-11     {\cf19 return} &instance;\par
-12 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 8                                        \{\par
+9     {\cf17 static} MyVensimImpl instance;\par
+10     {\cf19 return} &instance;\par
+11 \}\par
 }
 Here is the caller graph for this function:{
 \pard\plain 
@@ -3236,8 +3251,8 @@ Here is the caller graph for this function:{
 {\b 
 {\b Model} * MyVensimImpl::createModel (){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHB}
-{\bkmkend AAAAAAAAHB}
+{\bkmkstart AAAAAAAAHC}
+{\bkmkend AAAAAAAAHC}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3250,62 +3265,13 @@ Cria uma inst\'E2ncia de {\b Model}. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 Um ponteiro para a inst\'E2ncia de {\b Model} criada. \par
 }}}{
-Implements {\b MyVensim} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHA \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b MyVensim} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHB \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                                  \{\par
-15     Model* model = {\cf17 new} ModelImpl();\par
-16     this->model = model;\par
-17     {\cf19 return} model;\par
-18 \}\par
-}
-}
-{\xe \v createSystem\:MyVensimImpl}
-{\xe \v MyVensimImpl\:createSystem}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-{\b System} * MyVensimImpl::createSystem (const std::string &  {\i name}, double  {\i value}){\f2 [override]}, {\f2 [virtual]}}}
-\par
-{\bkmkstart AAAAAAAAHD}
-{\bkmkend AAAAAAAAHD}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-\par
-{
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Cria uma inst\'E2ncia de {\b System}. }}\par
-{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-{\par
-{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Parameters\par}
-\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i name} \cell }{Nome do sistema. \cell }
-{\row }
-\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
-\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
-\pard \widctlpar\intbl\adjustright
-{{\i value} \cell }{Valor associado ao sistema. \cell }
-{\row }
-}
-{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
-Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
-Um ponteiro para a inst\'E2ncia de {\b System} criada. \par
-}}}{
-Implements {\b MyVensim} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHC \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
-{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 20                                                                       \{\par
-21     ensureModelExists();\par
-22     System* system = {\cf17 new} SystemImpl(name, value);\par
-23     model->add(system);\par
-24     {\cf19 return} system;\par
-25 \}\par
-}
-Here is the call graph for this function:{
-\pard\plain 
-\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_my_vensim_impl_a83b6eff816fc051ea6ca3e2516802df1_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 13                                  \{\par
+14     Model* model = {\cf17 new} ModelImpl();\par
+15     this->model = model;\par
+16     {\cf19 return} model;\par
+17 \}\par
 }
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
@@ -3322,8 +3288,8 @@ src/{\b MyVensimImpl.cpp}\par
 System Class Reference\par \pard\plain 
 {\tc\tcl2 \v System}
 {\xe \v System}
-{\bkmkstart AAAAAAAAHH}
-{\bkmkend AAAAAAAAHH}
+{\bkmkstart AAAAAAAAHG}
+{\bkmkend AAAAAAAAHG}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -3410,8 +3376,8 @@ Constructor & Destructor Documentation\par
 {\b 
 virtual System::~System (){\f2 [inline]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHI}
-{\bkmkend AAAAAAAAHI}
+{\bkmkstart AAAAAAAAHH}
+{\bkmkend AAAAAAAAHH}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3432,8 +3398,8 @@ Member Function Documentation\par
 {\b 
 virtual {\b System} * System::clone () const{\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHJ}
-{\bkmkend AAAAAAAAHJ}
+{\bkmkstart AAAAAAAAHI}
+{\bkmkend AAAAAAAAHI}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3446,7 +3412,7 @@ Clona um sistema. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 O valor associado ao sistema. \par
 }}}{
-Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHK \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHJ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_system_a68a6fe75a2b29473952362e57a03a491_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -3458,8 +3424,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual std::string System::getName () const{\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHL}
-{\bkmkend AAAAAAAAHL}
+{\bkmkstart AAAAAAAAHK}
+{\bkmkend AAAAAAAAHK}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3472,7 +3438,7 @@ Obt\'E9m o nome do sistema. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 O nome descritivo do sistema. \par
 }}}{
-Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHM \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHL \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_system_a3bc2509274e6c346e07b0bf1151378c5_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -3484,8 +3450,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual double System::getValue () const{\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHN}
-{\bkmkend AAAAAAAAHN}
+{\bkmkstart AAAAAAAAHM}
+{\bkmkend AAAAAAAAHM}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3498,7 +3464,7 @@ Obt\'E9m o valor associado ao sistema. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 O valor associado ao sistema. \par
 }}}{
-Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHO \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHN \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_system_a41b673faa6c199eb8e4f204639fab4f2_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -3510,8 +3476,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual void System::setName (const std::string  {\i name}){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHP}
-{\bkmkend AAAAAAAAHP}
+{\bkmkstart AAAAAAAAHO}
+{\bkmkend AAAAAAAAHO}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3530,7 +3496,7 @@ Parameters\par}
 {\row }
 }
 }{
-Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHQ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHP \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_system_a78398b0eb04213f7f05482fd9699e71f_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -3542,8 +3508,8 @@ Here is the caller graph for this function:{
 {\b 
 virtual void System::setValue (const double  {\i value}){\f2 [pure virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHR}
-{\bkmkend AAAAAAAAHR}
+{\bkmkstart AAAAAAAAHQ}
+{\bkmkend AAAAAAAAHQ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3562,7 +3528,7 @@ Parameters\par}
 {\row }
 }
 }{
-Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHS \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implemented in {\b SystemImpl} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHR \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 Here is the caller graph for this function:{
 \pard\plain 
 \par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_system_a7a5373e631e0b9f63423b2c9fbcef253_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
@@ -3580,8 +3546,8 @@ src/{\b System.hpp}\par
 SystemImpl Class Reference\par \pard\plain 
 {\tc\tcl2 \v SystemImpl}
 {\xe \v SystemImpl}
-{\bkmkstart AAAAAAAAHT}
-{\bkmkend AAAAAAAAHT}
+{\bkmkstart AAAAAAAAHS}
+{\bkmkend AAAAAAAAHS}
 \par
 {
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -3688,8 +3654,8 @@ Constructor & Destructor Documentation\par
 {\b 
 SystemImpl::SystemImpl (const std::string  {\i name} = {\f2 ""}, const double  {\i value} = {\f2 0.0})}}
 \par
-{\bkmkstart AAAAAAAAHU}
-{\bkmkend AAAAAAAAHU}
+{\bkmkstart AAAAAAAAHT}
+{\bkmkend AAAAAAAAHT}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -3699,8 +3665,8 @@ SystemImpl::SystemImpl (const std::string  {\i name} = {\f2 ""}, const double  {
 {\b 
 SystemImpl::SystemImpl (const {\b System} *  {\i other})}}
 \par
-{\bkmkstart AAAAAAAAHV}
-{\bkmkend AAAAAAAAHV}
+{\bkmkstart AAAAAAAAHU}
+{\bkmkend AAAAAAAAHU}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
@@ -3725,8 +3691,8 @@ Here is the call graph for this function:{
 {\b 
 SystemImpl::~SystemImpl (){\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHW}
-{\bkmkend AAAAAAAAHW}
+{\bkmkstart AAAAAAAAHV}
+{\bkmkend AAAAAAAAHV}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
@@ -3743,8 +3709,8 @@ Member Function Documentation\par
 {\b 
 {\b System} * SystemImpl::clone () const{\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHK}
-{\bkmkend AAAAAAAAHK}
+{\bkmkstart AAAAAAAAHJ}
+{\bkmkend AAAAAAAAHJ}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3757,7 +3723,7 @@ Clona um sistema. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 O valor associado ao sistema. \par
 }}}{
-Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHJ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHI \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 38 \{ {\cf19 return} {\cf17 new} SystemImpl(name, value); \}\par
 }
@@ -3768,8 +3734,8 @@ Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHJ \\*
 {\b 
 string SystemImpl::getName () const{\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHM}
-{\bkmkend AAAAAAAAHM}
+{\bkmkstart AAAAAAAAHL}
+{\bkmkend AAAAAAAAHL}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3782,7 +3748,7 @@ Obt\'E9m o nome do sistema. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 O nome descritivo do sistema. \par
 }}}{
-Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHL \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHK \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 26 \{ {\cf19 return} name; \}\par
 }
@@ -3793,8 +3759,8 @@ Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHL \\*
 {\b 
 double SystemImpl::getValue () const{\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHO}
-{\bkmkend AAAAAAAAHO}
+{\bkmkstart AAAAAAAAHN}
+{\bkmkend AAAAAAAAHN}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3807,7 +3773,7 @@ Obt\'E9m o valor associado ao sistema. }}\par
 Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
 O valor associado ao sistema. \par
 }}}{
-Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHN \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHM \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 27 \{ {\cf19 return} value; \}\par
 }
@@ -3818,8 +3784,8 @@ Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHN \\*
 {\b 
 {\b System} & SystemImpl::operator= (const {\b System} &  {\i other})}}
 \par
-{\bkmkstart AAAAAAAAHX}
-{\bkmkend AAAAAAAAHX}
+{\bkmkstart AAAAAAAAHW}
+{\bkmkend AAAAAAAAHW}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {
@@ -3842,8 +3808,8 @@ Here is the call graph for this function:{
 {\b 
 void SystemImpl::setName (const std::string  {\i name}){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHQ}
-{\bkmkend AAAAAAAAHQ}
+{\bkmkstart AAAAAAAAHP}
+{\bkmkend AAAAAAAAHP}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3862,7 +3828,7 @@ Parameters\par}
 {\row }
 }
 }{
-Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHP \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHO \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22 \{ this->name = name; \}\par
 }
@@ -3873,8 +3839,8 @@ Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHP \\*
 {\b 
 void SystemImpl::setValue (const double  {\i value}){\f2 [override]}, {\f2 [virtual]}}}
 \par
-{\bkmkstart AAAAAAAAHS}
-{\bkmkend AAAAAAAAHS}
+{\bkmkstart AAAAAAAAHR}
+{\bkmkend AAAAAAAAHR}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -3893,7 +3859,7 @@ Parameters\par}
 {\row }
 }
 }{
-Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHR \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+Implements {\b System} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHQ \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 23 \{ this->value = value; \}\par
 }
@@ -3908,8 +3874,8 @@ Member Data Documentation\par
 {\b 
 std::string SystemImpl::name{\f2 [protected]}}}
 \par
-{\bkmkstart AAAAAAAAHY}
-{\bkmkend AAAAAAAAHY}
+{\bkmkstart AAAAAAAAHX}
+{\bkmkend AAAAAAAAHX}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -3919,8 +3885,8 @@ std::string SystemImpl::name{\f2 [protected]}}}
 {\b 
 double SystemImpl::value{\f2 [protected]}}}
 \par
-{\bkmkstart AAAAAAAAHZ}
-{\bkmkend AAAAAAAAHZ}
+{\bkmkstart AAAAAAAAHY}
+{\bkmkend AAAAAAAAHY}
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -4328,9 +4294,18 @@ Go to the documentation of this file.\par
 93     {\cf17 virtual} {\cf18 void} clearModel() = 0;\par
 94     \par
 100     {\cf17 virtual} {\cf18 void} execute({\cf17 const} {\cf18 int} timeInitial, {\cf17 const} {\cf18 int} timeFinal) = 0;\par
-101 \};\par
-102 \par
-103 {\cf21 #endif}\par
+101 \par
+108     {\cf17 virtual} System* createSystem({\cf17 const} std::string name, {\cf18 double} value) = 0;\par
+109 \par
+117     {\cf17 template} <{\cf17 typename} FlowType>\par
+118     Flow* createFlow(std::string name = {\cf22 ""}, System* source = {\cf17 nullptr}, System* destiny = {\cf17 nullptr}) \{\par
+119         Flow* f = {\cf17 new} FlowType(name, source, destiny);\par
+120         add(f);\par
+121         {\cf19 return} f;\par
+122     \}\par
+123 \};\par
+124 \par
+125 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -4344,7 +4319,9 @@ src/ModelImpl.cpp File Reference\par \pard\plain
 {\bkmkend AAAAAAAAAX}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "ModelImpl.hpp"}\par
+{\f2 #include "SystemImpl.hpp"}\par
 {\f2 #include <iostream>}\par
+{\f2 #include <string>}\par
 }
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for ModelImpl.cpp:{
@@ -4425,15 +4402,16 @@ Go to the documentation of this file.\par
 24     flowIterator endFlows() {\cf17 override};\par
 25     historyIterator beginHistory() {\cf17 override};\par
 26     historyIterator endHistory() {\cf17 override};\par
-27     {\cf18 void} add(Flow* flow) {\cf17 override};\par
-28     {\cf18 void} add(System* system) {\cf17 override};\par
-29     {\cf18 void} report() {\cf17 override};\par
-30     {\cf18 void} setInitialHistory() {\cf17 override};\par
-31     {\cf18 void} clearModel() {\cf17 override};\par
-32     {\cf18 void} execute({\cf17 const} {\cf18 int} timeInitial, {\cf17 const} {\cf18 int} timeFinal) {\cf17 override};\par
-33 \};\par
-34 \par
-35 {\cf21 #endif}\par
+27     System* createSystem({\cf17 const} std::string name, {\cf18 double} value) {\cf17 override};\par
+28     {\cf18 void} add(Flow* flow) {\cf17 override};\par
+29     {\cf18 void} add(System* system) {\cf17 override};\par
+30     {\cf18 void} report() {\cf17 override};\par
+31     {\cf18 void} setInitialHistory() {\cf17 override};\par
+32     {\cf18 void} clearModel() {\cf17 override};\par
+33     {\cf18 void} execute({\cf17 const} {\cf18 int} timeInitial, {\cf17 const} {\cf18 int} timeFinal) {\cf17 override};\par
+34 \};\par
+35 \par
+36 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -4448,8 +4426,6 @@ src/MyVensim.hpp File Reference\par \pard\plain
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
 {\f2 #include "Model.hpp"}\par
-{\f2 #include "System.hpp"}\par
-{\f2 #include "Flow.hpp"}\par
 }
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for MyVensim.hpp:{
@@ -4492,30 +4468,17 @@ Go to the documentation of this file.\par
 3 \par
 4 {\cf21 #include <string>}\par
 5 {\cf21 #include "Model.hpp"}\par
-6 {\cf21 #include "System.hpp"}\par
-7 {\cf21 #include "Flow.hpp"}\par
-8 \par
-13 {\cf17 class }MyVensim \{\par
-14 {\cf17 public}:\par
-15     {\cf17 virtual} ~MyVensim() \{\}\par
+6 \par
+11 {\cf17 class }MyVensim \{\par
+12 {\cf17 public}:\par
+13     {\cf17 virtual} ~MyVensim() \{\}\par
+14 \par
+15     {\cf17 static} MyVensim* getInstance();\par
 16 \par
-17     {\cf17 static} MyVensim* getInstance();\par
-18 \par
-23     {\cf17 virtual} Model* createModel() = 0;\par
-24 \par
-31     {\cf17 virtual} System* createSystem({\cf17 const} std::string& name, {\cf18 double} value) = 0;\par
-32 \par
-40     {\cf17 template} <{\cf17 typename} FlowType>\par
-41     Flow* createFlow(std::string name = {\cf22 ""}, System* source = {\cf17 nullptr}, System* destiny = {\cf17 nullptr}) \{\par
-42         Flow* f = {\cf17 new} FlowType(name, source, destiny);\par
-43         add(f);\par
-44         {\cf19 return} f;\par
-45     \}\par
-46 \par
-51     {\cf17 virtual} {\cf18 void} add(Flow* flow) = 0;\par
-52 \};\par
-53 \par
-54 {\cf21 #endif}\par
+21     {\cf17 virtual} Model* createModel() = 0;\par
+22 \};\par
+23 \par
+24 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -4529,7 +4492,6 @@ src/MyVensimImpl.cpp File Reference\par \pard\plain
 {\bkmkend AAAAAAAABA}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "MyVensimImpl.hpp"}\par
-{\f2 #include "SystemImpl.hpp"}\par
 {\f2 #include "ModelImpl.hpp"}\par
 }
 {
@@ -4551,7 +4513,6 @@ src/MyVensimImpl.hpp File Reference\par \pard\plain
 {\bkmkend AAAAAAAABB}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "MyVensim.hpp"}\par
-{\f2 #include <vector>}\par
 }
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for MyVensimImpl.hpp:{
@@ -4594,29 +4555,23 @@ Go to the documentation of this file.\par
 5 {\cf21 #define MY_VENSIM_IMPL_HPP}\par
 6 \par
 7 {\cf21 #include "MyVensim.hpp"}\par
-8 {\cf21 #include <vector>}\par
-9 \par
-10 {\cf17 class }MyVensimImpl : {\cf17 public} MyVensim \{\par
-11 {\cf17 private}:\par
-12 \par
-13     Model* model; \par
-14     std::vector<Flow*> flows;\par
-15     std::vector<System*> systems;\par
-16 \par
-17     MyVensimImpl();\par
-18     ~MyVensimImpl();\par
-19     \par
-20     {\cf18 void} add(Flow* flow) {\cf17 override};\par
-21     {\cf18 void} ensureModelExists();\par
-22 \par
-23 {\cf17 public}:\par
-24     Model* createModel() {\cf17 override};\par
-25     System* createSystem({\cf17 const} std::string& name, {\cf18 double} value) {\cf17 override};\par
-26 \par
-27     {\cf17 static} MyVensim* createInstance();\par
-28 \};\par
-29 \par
-30 {\cf21 #endif}\par
+8 \par
+9 {\cf17 class }MyVensimImpl : {\cf17 public} MyVensim \{\par
+10 {\cf17 private}:\par
+11 \par
+12     Model* model; \par
+13 \par
+14     MyVensimImpl();\par
+15     ~MyVensimImpl();\par
+16     \par
+17     {\cf18 void} ensureModelExists();\par
+18 \par
+19 {\cf17 public}:\par
+20     Model* createModel() {\cf17 override};    \par
+21     {\cf17 static} MyVensim* createInstance();\par
+22 \};\par
+23 \par
+24 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -4863,18 +4818,18 @@ Este teste executa cen\'E1rios de teste complexos que podem envolver v\'E1rios f
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 56                            \{\par
 57 \par
 58     MyVensim* factory = MyVensim::getInstance();\par
-59     Model* comModel = factory->createModel();\par
-60     System* q1 = factory->createSystem({\cf22 "Q1"}, 100);\par
-61     System* q2 = factory->createSystem({\cf22 "Q2"}, 0);\par
-62     System* q3 = factory->createSystem({\cf22 "Q3"}, 100);\par
-63     System* q4 = factory->createSystem({\cf22 "Q4"}, 0);\par
-64     System* q5 = factory->createSystem({\cf22 "Q5"}, 0);\par
-65     Flow* comFlowF = factory->createFlow<FlowExponential>({\cf22 "Fluxo f"}, q1, q2);\par
-66     Flow* comFlowT = factory->createFlow<FlowExponential>({\cf22 "Fluxo t"}, q2, q3);\par
-67     Flow* comFlowU = factory->createFlow<FlowExponential>({\cf22 "Fluxo u"}, q3, q4);\par
-68     Flow* comFlowV = factory->createFlow<FlowExponential>({\cf22 "Fluxo v"}, q4, q1);\par
-69     Flow* comFlowG = factory->createFlow<FlowExponential>({\cf22 "Fluxo g"}, q1, q3);\par
-70     Flow* comFlowR = factory->createFlow<FlowExponential>({\cf22 "Fluxo r"}, q2, q5);\par
+59     Model* model = factory->createModel();\par
+60     System* q1 = model->createSystem({\cf22 "Q1"}, 100);\par
+61     System* q2 = model->createSystem({\cf22 "Q2"}, 0);\par
+62     System* q3 = model->createSystem({\cf22 "Q3"}, 100);\par
+63     System* q4 = model->createSystem({\cf22 "Q4"}, 0);\par
+64     System* q5 = model->createSystem({\cf22 "Q5"}, 0);\par
+65     Flow* comFlowF = model->createFlow<FlowExponential>({\cf22 "Fluxo f"}, q1, q2);\par
+66     Flow* comFlowT = model->createFlow<FlowExponential>({\cf22 "Fluxo t"}, q2, q3);\par
+67     Flow* comFlowU = model->createFlow<FlowExponential>({\cf22 "Fluxo u"}, q3, q4);\par
+68     Flow* comFlowV = model->createFlow<FlowExponential>({\cf22 "Fluxo v"}, q4, q1);\par
+69     Flow* comFlowG = model->createFlow<FlowExponential>({\cf22 "Fluxo g"}, q1, q3);\par
+70     Flow* comFlowR = model->createFlow<FlowExponential>({\cf22 "Fluxo r"}, q2, q5);\par
 71 \par
 72     assert(q1->getName() == {\cf22 "Q1"});\par
 73     assert(q2->getName() == {\cf22 "Q2"});\par
@@ -4894,7 +4849,7 @@ Este teste executa cen\'E1rios de teste complexos que podem envolver v\'E1rios f
 87     assert(abs(q4->getValue() - 0.0) < 0.0001);\par
 88     assert(abs(q5->getValue() - 0.0) < 0.0001);\par
 89 \par
-90     comModel->execute(0, 100);\par
+90     model->execute(0, 100);\par
 91 \par
 92     assert(abs(q1->getValue() - 31.8513) < 0.0001);\par
 93     assert(abs(q2->getValue() - 18.4003) < 0.0001);\par
@@ -4934,10 +4889,10 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos exponenciais 
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 10                                \{\par
 11 \par
 12     MyVensim* factory = MyVensim::getInstance();\par
-13     Model* expModel = factory->createModel();\par
-14     System* pop = factory->createSystem({\cf22 "Populacao 1"}, 100);\par
-15     System* pop2 = factory->createSystem({\cf22 "Populacao 2"}, 0);\par
-16     Flow* expFlow = factory->createFlow<FlowExponential>({\cf22 "Crescimento"}, pop, pop2);\par
+13     Model* model = factory->createModel();\par
+14     System* pop = model->createSystem({\cf22 "Populacao 1"}, 100);\par
+15     System* pop2 = model->createSystem({\cf22 "Populacao 2"}, 0);\par
+16     Flow* expFlow = model->createFlow<FlowExponential>({\cf22 "Crescimento"}, pop, pop2);\par
 17 \par
 18     assert(pop->getName() == {\cf22 "Populacao 1"});\par
 19     assert(pop2->getName() == {\cf22 "Populacao 2"});\par
@@ -4946,7 +4901,7 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos exponenciais 
 22     assert(abs(pop->getValue() - 100.0) < 0.0001);\par
 23     assert(abs(pop2->getValue() - 0.0) < 0.0001);\par
 24 \par
-25     expModel->execute(0, 100);\par
+25     model->execute(0, 100);\par
 26 \par
 27     assert(abs(pop->getValue() - 36.6032) < 0.0001);\par
 28     assert(abs(pop2->getValue() - 63.3968) < 0.0001);\par
@@ -4983,10 +4938,10 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos log\'EDsticos
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 33                               \{\par
 34 \par
 35     MyVensim* factory = MyVensim::getInstance();\par
-36     Model* logModel = factory->createModel();\par
-37     System* p = factory->createSystem({\cf22 "Populacao 1"}, 100);\par
-38     System* p2 = factory->createSystem({\cf22 "Populacao 2"}, 10);\par
-39     Flow* logFlow = factory->createFlow<FlowLogistic>({\cf22 "Crescimento"}, p, p2);\par
+36     Model* model = factory->createModel();\par
+37     System* p = model->createSystem({\cf22 "Populacao 1"}, 100);\par
+38     System* p2 = model->createSystem({\cf22 "Populacao 2"}, 10);\par
+39     Flow* logFlow = model->createFlow<FlowLogistic>({\cf22 "Crescimento"}, p, p2);\par
 40 \par
 41     assert(p->getName() == {\cf22 "Populacao 1"});\par
 42     assert(p2->getName() == {\cf22 "Populacao 2"});    \par
@@ -4995,7 +4950,7 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos log\'EDsticos
 45     assert(abs(p->getValue() - 100.0) < 0.0001);\par
 46     assert(abs(p2->getValue() - 10.0) < 0.0001);\par
 47 \par
-48     logModel->execute(0, 100);\par
+48     model->execute(0, 100);\par
 49 \par
 50     assert(abs(p->getValue() - 88.2167) < 0.0001);\par
 51     assert(abs(p2->getValue() - 21.7833) < 0.0001);\par
@@ -5091,18 +5046,18 @@ Este teste executa cen\'E1rios de teste complexos que podem envolver v\'E1rios f
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 56                            \{\par
 57 \par
 58     MyVensim* factory = MyVensim::getInstance();\par
-59     Model* comModel = factory->createModel();\par
-60     System* q1 = factory->createSystem({\cf22 "Q1"}, 100);\par
-61     System* q2 = factory->createSystem({\cf22 "Q2"}, 0);\par
-62     System* q3 = factory->createSystem({\cf22 "Q3"}, 100);\par
-63     System* q4 = factory->createSystem({\cf22 "Q4"}, 0);\par
-64     System* q5 = factory->createSystem({\cf22 "Q5"}, 0);\par
-65     Flow* comFlowF = factory->createFlow<FlowExponential>({\cf22 "Fluxo f"}, q1, q2);\par
-66     Flow* comFlowT = factory->createFlow<FlowExponential>({\cf22 "Fluxo t"}, q2, q3);\par
-67     Flow* comFlowU = factory->createFlow<FlowExponential>({\cf22 "Fluxo u"}, q3, q4);\par
-68     Flow* comFlowV = factory->createFlow<FlowExponential>({\cf22 "Fluxo v"}, q4, q1);\par
-69     Flow* comFlowG = factory->createFlow<FlowExponential>({\cf22 "Fluxo g"}, q1, q3);\par
-70     Flow* comFlowR = factory->createFlow<FlowExponential>({\cf22 "Fluxo r"}, q2, q5);\par
+59     Model* model = factory->createModel();\par
+60     System* q1 = model->createSystem({\cf22 "Q1"}, 100);\par
+61     System* q2 = model->createSystem({\cf22 "Q2"}, 0);\par
+62     System* q3 = model->createSystem({\cf22 "Q3"}, 100);\par
+63     System* q4 = model->createSystem({\cf22 "Q4"}, 0);\par
+64     System* q5 = model->createSystem({\cf22 "Q5"}, 0);\par
+65     Flow* comFlowF = model->createFlow<FlowExponential>({\cf22 "Fluxo f"}, q1, q2);\par
+66     Flow* comFlowT = model->createFlow<FlowExponential>({\cf22 "Fluxo t"}, q2, q3);\par
+67     Flow* comFlowU = model->createFlow<FlowExponential>({\cf22 "Fluxo u"}, q3, q4);\par
+68     Flow* comFlowV = model->createFlow<FlowExponential>({\cf22 "Fluxo v"}, q4, q1);\par
+69     Flow* comFlowG = model->createFlow<FlowExponential>({\cf22 "Fluxo g"}, q1, q3);\par
+70     Flow* comFlowR = model->createFlow<FlowExponential>({\cf22 "Fluxo r"}, q2, q5);\par
 71 \par
 72     assert(q1->getName() == {\cf22 "Q1"});\par
 73     assert(q2->getName() == {\cf22 "Q2"});\par
@@ -5122,7 +5077,7 @@ Este teste executa cen\'E1rios de teste complexos que podem envolver v\'E1rios f
 87     assert(abs(q4->getValue() - 0.0) < 0.0001);\par
 88     assert(abs(q5->getValue() - 0.0) < 0.0001);\par
 89 \par
-90     comModel->execute(0, 100);\par
+90     model->execute(0, 100);\par
 91 \par
 92     assert(abs(q1->getValue() - 31.8513) < 0.0001);\par
 93     assert(abs(q2->getValue() - 18.4003) < 0.0001);\par
@@ -5162,10 +5117,10 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos exponenciais 
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 10                                \{\par
 11 \par
 12     MyVensim* factory = MyVensim::getInstance();\par
-13     Model* expModel = factory->createModel();\par
-14     System* pop = factory->createSystem({\cf22 "Populacao 1"}, 100);\par
-15     System* pop2 = factory->createSystem({\cf22 "Populacao 2"}, 0);\par
-16     Flow* expFlow = factory->createFlow<FlowExponential>({\cf22 "Crescimento"}, pop, pop2);\par
+13     Model* model = factory->createModel();\par
+14     System* pop = model->createSystem({\cf22 "Populacao 1"}, 100);\par
+15     System* pop2 = model->createSystem({\cf22 "Populacao 2"}, 0);\par
+16     Flow* expFlow = model->createFlow<FlowExponential>({\cf22 "Crescimento"}, pop, pop2);\par
 17 \par
 18     assert(pop->getName() == {\cf22 "Populacao 1"});\par
 19     assert(pop2->getName() == {\cf22 "Populacao 2"});\par
@@ -5174,7 +5129,7 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos exponenciais 
 22     assert(abs(pop->getValue() - 100.0) < 0.0001);\par
 23     assert(abs(pop2->getValue() - 0.0) < 0.0001);\par
 24 \par
-25     expModel->execute(0, 100);\par
+25     model->execute(0, 100);\par
 26 \par
 27     assert(abs(pop->getValue() - 36.6032) < 0.0001);\par
 28     assert(abs(pop2->getValue() - 63.3968) < 0.0001);\par
@@ -5211,10 +5166,10 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos log\'EDsticos
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 33                               \{\par
 34 \par
 35     MyVensim* factory = MyVensim::getInstance();\par
-36     Model* logModel = factory->createModel();\par
-37     System* p = factory->createSystem({\cf22 "Populacao 1"}, 100);\par
-38     System* p2 = factory->createSystem({\cf22 "Populacao 2"}, 10);\par
-39     Flow* logFlow = factory->createFlow<FlowLogistic>({\cf22 "Crescimento"}, p, p2);\par
+36     Model* model = factory->createModel();\par
+37     System* p = model->createSystem({\cf22 "Populacao 1"}, 100);\par
+38     System* p2 = model->createSystem({\cf22 "Populacao 2"}, 10);\par
+39     Flow* logFlow = model->createFlow<FlowLogistic>({\cf22 "Crescimento"}, p, p2);\par
 40 \par
 41     assert(p->getName() == {\cf22 "Populacao 1"});\par
 42     assert(p2->getName() == {\cf22 "Populacao 2"});    \par
@@ -5223,7 +5178,7 @@ Este teste executa cen\'E1rios de teste espec\'EDficos para fluxos log\'EDsticos
 45     assert(abs(p->getValue() - 100.0) < 0.0001);\par
 46     assert(abs(p2->getValue() - 10.0) < 0.0001);\par
 47 \par
-48     logModel->execute(0, 100);\par
+48     model->execute(0, 100);\par
 49 \par
 50     assert(abs(p->getValue() - 88.2167) < 0.0001);\par
 51     assert(abs(p2->getValue() - 21.7833) < 0.0001);\par
@@ -5550,18 +5505,18 @@ Executa todos os testes unit\'E1rios para a classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo chama todos os testes unit\'E1rios definidos para a classe {\b Flow}. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 74                            \{\par
-75     unit_Flow_constructor();\par
-76     unit_Flow_execute();\par
-77     unit_Flow_link();\par
-78     unit_Flow_setSource();\par
-79     unit_Flow_setTarget();\par
-80     unit_Flow_setName();\par
-81     unit_Flow_getName();\par
-82     unit_Flow_getSource();\par
-83     unit_Flow_getTarget();\par
-84     std::cout << {\cf22 "All Flow unit tests passed!"} << std::endl;\par
-85 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 84                            \{\par
+85     unit_Flow_constructor();\par
+86     unit_Flow_execute();\par
+87     unit_Flow_link();\par
+88     unit_Flow_setSource();\par
+89     unit_Flow_setTarget();\par
+90     unit_Flow_setName();\par
+91     unit_Flow_getName();\par
+92     unit_Flow_getSource();\par
+93     unit_Flow_getTarget();\par
+94     std::cout << {\cf22 "All Flow unit tests passed!"} << std::endl;\par
+95 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5585,11 +5540,12 @@ void unit_Flow_constructor ()}}
 {
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 6                              \{\par
 7     MyVensim* factory = MyVensim::getInstance();\par
-8     Flow* flow = factory->createFlow<FlowExponential>({\cf22 "Flow1"}, {\cf17 nullptr}, {\cf17 nullptr});\par
-9     assert(flow->getName() == {\cf22 "Flow1"});\par
-10     assert(flow->getSource() == {\cf17 nullptr});\par
-11     assert(flow->getTarget() == {\cf17 nullptr});\par
-12 \}\par
+8     Model* model = factory->createModel();\par
+9     Flow* flow = model->createFlow<FlowExponential>({\cf22 "Flow1"}, {\cf17 nullptr}, {\cf17 nullptr});\par
+10     assert(flow->getName() == {\cf22 "Flow1"});\par
+11     assert(flow->getSource() == {\cf17 nullptr});\par
+12     assert(flow->getTarget() == {\cf17 nullptr});\par
+13 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5617,13 +5573,15 @@ Testa o m\'E9todo execute da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo execute da classe {\b Flow} funciona corretamente. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                          \{\par
-15     System* source = MyVensim::getInstance()->createSystem({\cf22 "Source"}, 100);\par
-16     Flow* flow = MyVensim::getInstance()->createFlow<FlowExponential>({\cf22 ""}, source);\par
-17     \par
-18     {\cf18 double} result = flow->execute();\par
-19     assert(result == 1.0);\par
-20 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                          \{\par
+16     MyVensim* factory = MyVensim::getInstance();\par
+17     Model* model = factory->createModel();\par
+18     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+19     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, source);\par
+20     \par
+21     {\cf18 double} result = flow->execute();\par
+22     assert(result == 1.0);\par
+23 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5651,11 +5609,12 @@ Testa o m\'E9todo getName da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getName da classe {\b Flow} retorna corretamente o nome do fluxo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 54                          \{\par
-55     MyVensim* factory = MyVensim::getInstance();\par
-56     Flow* flow = factory->createFlow<FlowExponential>({\cf22 "Flow1"});\par
-57     assert(flow->getName() == {\cf22 "Flow1"});\par
-58 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 61                          \{\par
+62     MyVensim* factory = MyVensim::getInstance();\par
+63     Model* model = factory->createModel();\par
+64     Flow* flow = model->createFlow<FlowExponential>({\cf22 "Flow1"});\par
+65     assert(flow->getName() == {\cf22 "Flow1"});\par
+66 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5683,12 +5642,13 @@ Testa o m\'E9todo getSource da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getSource da classe {\b Flow} retorna corretamente o componente de origem. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 60                            \{\par
-61     MyVensim* factory = MyVensim::getInstance();\par
-62     System* source = factory->createSystem({\cf22 "Source"}, 100);\par
-63     Flow* flow = factory->createFlow<FlowExponential>({\cf22 ""}, source);\par
-64     assert(flow->getSource() == source);\par
-65 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 68                            \{\par
+69     MyVensim* factory = MyVensim::getInstance();\par
+70     Model* model = factory->createModel();\par
+71     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+72     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, source);\par
+73     assert(flow->getSource() == source);\par
+74 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5716,12 +5676,13 @@ Testa o m\'E9todo getTarget da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getTarget da classe {\b Flow} retorna corretamente o componente de destino. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 67                            \{\par
-68     MyVensim* factory = MyVensim::getInstance();\par
-69     System* target = factory->createSystem({\cf22 "Target"}, 200);\par
-70     Flow* flow = factory->createFlow<FlowExponential>({\cf22 ""}, {\cf17 nullptr}, target);\par
-71     assert(flow->getTarget() == target);\par
-72 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76                            \{\par
+77     MyVensim* factory = MyVensim::getInstance();\par
+78     Model* model = factory->createModel();\par
+79     System* target = model->createSystem({\cf22 "Target"}, 200);\par
+80     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, {\cf17 nullptr}, target);\par
+81     assert(flow->getTarget() == target);\par
+82 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5749,14 +5710,15 @@ Testa o m\'E9todo link da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo link da classe {\b Flow} est\'E1 corretamente implementado. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22                       \{\par
-23     MyVensim* factory = MyVensim::getInstance();\par
-24     System* source = factory->createSystem({\cf22 "Source"}, 100);\par
-25     System* target = factory->createSystem({\cf22 "Target"}, 200);\par
-26     Flow* flow = factory->createFlow<FlowExponential>({\cf22 ""}, source, target);\par
-27     assert(flow->getSource() == source);\par
-28     assert(flow->getTarget() == target);\par
-29 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 25                       \{\par
+26     MyVensim* factory = MyVensim::getInstance();\par
+27     Model* model = factory->createModel();\par
+28     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+29     System* target = model->createSystem({\cf22 "Target"}, 200);\par
+30     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, source, target);\par
+31     assert(flow->getSource() == source);\par
+32     assert(flow->getTarget() == target);\par
+33 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5784,12 +5746,13 @@ Testa o m\'E9todo setName da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setName da classe {\b Flow} atribui corretamente o nome ao fluxo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47                          \{\par
-48     MyVensim* factory = MyVensim::getInstance();\par
-49     Flow* flow = factory->createFlow<FlowExponential>();\par
-50     flow->setName({\cf22 "Flow1"});\par
-51     assert(flow->getName() == {\cf22 "Flow1"});\par
-52 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 53                          \{\par
+54     MyVensim* factory = MyVensim::getInstance();\par
+55     Model* model = factory->createModel();\par
+56     Flow* flow =  model->createFlow<FlowExponential>();\par
+57     flow->setName({\cf22 "Flow1"});\par
+58     assert(flow->getName() == {\cf22 "Flow1"});\par
+59 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5817,13 +5780,14 @@ Testa o m\'E9todo setSource da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setSource da classe {\b Flow} atribui corretamente o componente de origem. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 31                            \{\par
-32     MyVensim* factory = MyVensim::getInstance();\par
-33     System* source = factory->createSystem({\cf22 "Source"}, 100);\par
-34     Flow* flow = factory->createFlow<FlowExponential>();\par
-35     flow->setSource(source);\par
-36     assert(flow->getSource() == source);\par
-37 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 35                            \{\par
+36     MyVensim* factory = MyVensim::getInstance();\par
+37     Model* model = factory->createModel();\par
+38     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+39     Flow* flow = model->createFlow<FlowExponential>();\par
+40     flow->setSource(source);\par
+41     assert(flow->getSource() == source);\par
+42 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5851,13 +5815,14 @@ Testa o m\'E9todo setTarget da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setTarget da classe {\b Flow} atribui corretamente o componente de destino. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 39                            \{\par
-40     MyVensim* factory = MyVensim::getInstance();\par
-41     System* target = factory->createSystem({\cf22 "Target"}, 200);\par
-42     Flow* flow = factory->createFlow<FlowExponential>();\par
-43     flow->setTarget(target);\par
-44     assert(flow->getTarget() == target);\par
-45 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 44                            \{\par
+45     MyVensim* factory = MyVensim::getInstance();\par
+46     Model* model = factory->createModel();\par
+47     System* target = model->createSystem({\cf22 "Target"}, 200);\par
+48     Flow* flow = model->createFlow<FlowExponential>();\par
+49     flow->setTarget(target);\par
+50     assert(flow->getTarget() == target);\par
+51 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -5994,18 +5959,18 @@ Executa todos os testes unit\'E1rios para a classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo chama todos os testes unit\'E1rios definidos para a classe {\b Flow}. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 74                            \{\par
-75     unit_Flow_constructor();\par
-76     unit_Flow_execute();\par
-77     unit_Flow_link();\par
-78     unit_Flow_setSource();\par
-79     unit_Flow_setTarget();\par
-80     unit_Flow_setName();\par
-81     unit_Flow_getName();\par
-82     unit_Flow_getSource();\par
-83     unit_Flow_getTarget();\par
-84     std::cout << {\cf22 "All Flow unit tests passed!"} << std::endl;\par
-85 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 84                            \{\par
+85     unit_Flow_constructor();\par
+86     unit_Flow_execute();\par
+87     unit_Flow_link();\par
+88     unit_Flow_setSource();\par
+89     unit_Flow_setTarget();\par
+90     unit_Flow_setName();\par
+91     unit_Flow_getName();\par
+92     unit_Flow_getSource();\par
+93     unit_Flow_getTarget();\par
+94     std::cout << {\cf22 "All Flow unit tests passed!"} << std::endl;\par
+95 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6052,13 +6017,15 @@ Testa o m\'E9todo execute da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo execute da classe {\b Flow} funciona corretamente. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                          \{\par
-15     System* source = MyVensim::getInstance()->createSystem({\cf22 "Source"}, 100);\par
-16     Flow* flow = MyVensim::getInstance()->createFlow<FlowExponential>({\cf22 ""}, source);\par
-17     \par
-18     {\cf18 double} result = flow->execute();\par
-19     assert(result == 1.0);\par
-20 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                          \{\par
+16     MyVensim* factory = MyVensim::getInstance();\par
+17     Model* model = factory->createModel();\par
+18     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+19     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, source);\par
+20     \par
+21     {\cf18 double} result = flow->execute();\par
+22     assert(result == 1.0);\par
+23 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6086,11 +6053,12 @@ Testa o m\'E9todo getName da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getName da classe {\b Flow} retorna corretamente o nome do fluxo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 54                          \{\par
-55     MyVensim* factory = MyVensim::getInstance();\par
-56     Flow* flow = factory->createFlow<FlowExponential>({\cf22 "Flow1"});\par
-57     assert(flow->getName() == {\cf22 "Flow1"});\par
-58 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 61                          \{\par
+62     MyVensim* factory = MyVensim::getInstance();\par
+63     Model* model = factory->createModel();\par
+64     Flow* flow = model->createFlow<FlowExponential>({\cf22 "Flow1"});\par
+65     assert(flow->getName() == {\cf22 "Flow1"});\par
+66 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6118,12 +6086,13 @@ Testa o m\'E9todo getSource da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getSource da classe {\b Flow} retorna corretamente o componente de origem. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 60                            \{\par
-61     MyVensim* factory = MyVensim::getInstance();\par
-62     System* source = factory->createSystem({\cf22 "Source"}, 100);\par
-63     Flow* flow = factory->createFlow<FlowExponential>({\cf22 ""}, source);\par
-64     assert(flow->getSource() == source);\par
-65 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 68                            \{\par
+69     MyVensim* factory = MyVensim::getInstance();\par
+70     Model* model = factory->createModel();\par
+71     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+72     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, source);\par
+73     assert(flow->getSource() == source);\par
+74 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6151,12 +6120,13 @@ Testa o m\'E9todo getTarget da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getTarget da classe {\b Flow} retorna corretamente o componente de destino. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 67                            \{\par
-68     MyVensim* factory = MyVensim::getInstance();\par
-69     System* target = factory->createSystem({\cf22 "Target"}, 200);\par
-70     Flow* flow = factory->createFlow<FlowExponential>({\cf22 ""}, {\cf17 nullptr}, target);\par
-71     assert(flow->getTarget() == target);\par
-72 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76                            \{\par
+77     MyVensim* factory = MyVensim::getInstance();\par
+78     Model* model = factory->createModel();\par
+79     System* target = model->createSystem({\cf22 "Target"}, 200);\par
+80     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, {\cf17 nullptr}, target);\par
+81     assert(flow->getTarget() == target);\par
+82 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6184,14 +6154,15 @@ Testa o m\'E9todo link da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo link da classe {\b Flow} est\'E1 corretamente implementado. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22                       \{\par
-23     MyVensim* factory = MyVensim::getInstance();\par
-24     System* source = factory->createSystem({\cf22 "Source"}, 100);\par
-25     System* target = factory->createSystem({\cf22 "Target"}, 200);\par
-26     Flow* flow = factory->createFlow<FlowExponential>({\cf22 ""}, source, target);\par
-27     assert(flow->getSource() == source);\par
-28     assert(flow->getTarget() == target);\par
-29 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 25                       \{\par
+26     MyVensim* factory = MyVensim::getInstance();\par
+27     Model* model = factory->createModel();\par
+28     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+29     System* target = model->createSystem({\cf22 "Target"}, 200);\par
+30     Flow* flow = model->createFlow<FlowExponential>({\cf22 ""}, source, target);\par
+31     assert(flow->getSource() == source);\par
+32     assert(flow->getTarget() == target);\par
+33 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6219,12 +6190,13 @@ Testa o m\'E9todo setName da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setName da classe {\b Flow} atribui corretamente o nome ao fluxo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47                          \{\par
-48     MyVensim* factory = MyVensim::getInstance();\par
-49     Flow* flow = factory->createFlow<FlowExponential>();\par
-50     flow->setName({\cf22 "Flow1"});\par
-51     assert(flow->getName() == {\cf22 "Flow1"});\par
-52 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 53                          \{\par
+54     MyVensim* factory = MyVensim::getInstance();\par
+55     Model* model = factory->createModel();\par
+56     Flow* flow =  model->createFlow<FlowExponential>();\par
+57     flow->setName({\cf22 "Flow1"});\par
+58     assert(flow->getName() == {\cf22 "Flow1"});\par
+59 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6252,13 +6224,14 @@ Testa o m\'E9todo setSource da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setSource da classe {\b Flow} atribui corretamente o componente de origem. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 31                            \{\par
-32     MyVensim* factory = MyVensim::getInstance();\par
-33     System* source = factory->createSystem({\cf22 "Source"}, 100);\par
-34     Flow* flow = factory->createFlow<FlowExponential>();\par
-35     flow->setSource(source);\par
-36     assert(flow->getSource() == source);\par
-37 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 35                            \{\par
+36     MyVensim* factory = MyVensim::getInstance();\par
+37     Model* model = factory->createModel();\par
+38     System* source = model->createSystem({\cf22 "Source"}, 100);\par
+39     Flow* flow = model->createFlow<FlowExponential>();\par
+40     flow->setSource(source);\par
+41     assert(flow->getSource() == source);\par
+42 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6286,13 +6259,14 @@ Testa o m\'E9todo setTarget da classe {\b Flow}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setTarget da classe {\b Flow} atribui corretamente o componente de destino. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 39                            \{\par
-40     MyVensim* factory = MyVensim::getInstance();\par
-41     System* target = factory->createSystem({\cf22 "Target"}, 200);\par
-42     Flow* flow = factory->createFlow<FlowExponential>();\par
-43     flow->setTarget(target);\par
-44     assert(flow->getTarget() == target);\par
-45 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 44                            \{\par
+45     MyVensim* factory = MyVensim::getInstance();\par
+46     Model* model = factory->createModel();\par
+47     System* target = model->createSystem({\cf22 "Target"}, 200);\par
+48     Flow* flow = model->createFlow<FlowExponential>();\par
+49     flow->setTarget(target);\par
+50     assert(flow->getTarget() == target);\par
+51 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6473,19 +6447,19 @@ Fun\'E7\'E3o para executar todos os testes unit\'E1rios para a classe {\b Model}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Esta fun\'E7\'E3o chama todos os testes unit\'E1rios definidos para a classe {\b Model}. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 94                             \{\par
-95     unit_Model_constructor();\par
-96     unit_Model_beginSystems();\par
-97     unit_Model_endSystems();\par
-98     unit_Model_beginFlows();\par
-99     unit_Model_endFlows();\par
-100     unit_Model_beginHistory();\par
-101     unit_Model_endHistory();\par
-102     unit_Model_add();\par
-103     unit_Model_setInitialHistory();\par
-104     unit_Model_execute();\par
-105     std::cout << {\cf22 "All Model unit tests passed!"} << std::endl;\par
-106 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 95                             \{\par
+96     unit_Model_constructor();\par
+97     unit_Model_beginSystems();\par
+98     unit_Model_endSystems();\par
+99     unit_Model_beginFlows();\par
+100     unit_Model_endFlows();\par
+101     unit_Model_beginHistory();\par
+102     unit_Model_endHistory();\par
+103     unit_Model_add();\par
+104     unit_Model_setInitialHistory();\par
+105     unit_Model_execute();\par
+106     std::cout << {\cf22 "All Model unit tests passed!"} << std::endl;\par
+107 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6513,14 +6487,14 @@ Testa o m\'E9todo add da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo add adiciona corretamente um elemento ao modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 71                       \{\par
-72     MyVensim* factory = MyVensim::getInstance();\par
-73     Model* model = factory->createModel();\par
-74     System* sys = factory->createSystem({\cf22 "System1"}, 100);\par
-75     Flow* flow = factory->createFlow<FlowExponential>();\par
-76     assert(*model->beginSystems() == sys);\par
-77     assert(*model->beginFlows() == flow);\par
-78 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 72                       \{\par
+73     MyVensim* factory = MyVensim::getInstance();\par
+74     Model* model = factory->createModel();\par
+75     System* sys = model->createSystem({\cf22 "System1"}, 100);\par
+76     Flow* flow = model->createFlow<FlowExponential>();\par
+77     assert(*model->beginSystems() == sys);\par
+78     assert(*model->beginFlows() == flow);\par
+79 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6548,14 +6522,14 @@ Testa o m\'E9todo beginFlows da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo beginFlows inicia adequadamente os fluxos no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36                              \{\par
-37     MyVensim* factory = MyVensim::getInstance();\par
-38     Model* model = factory->createModel();\par
-39     Flow* flow1 = factory->createFlow<FlowExponential>();\par
-40     {\cf17 auto} it = model->beginFlows();\par
-41     assert(it != model->endFlows());\par
-42     assert(*it == flow1);\par
-43 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 37                              \{\par
+38     MyVensim* factory = MyVensim::getInstance();\par
+39     Model* model = factory->createModel();\par
+40     Flow* flow1 = model->createFlow<FlowExponential>();\par
+41     {\cf17 auto} it = model->beginFlows();\par
+42     assert(it != model->endFlows());\par
+43     assert(*it == flow1);\par
+44 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6583,13 +6557,13 @@ Testa o m\'E9todo beginHistory da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo beginHistory inicia adequadamente o hist\'F3rico no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 57                                \{\par
-58     MyVensim* factory = MyVensim::getInstance();\par
-59     Model* model = factory->createModel();\par
-60     model->execute(0, 10);\par
-61     {\cf17 auto} it = model->beginHistory();\par
-62     assert(it != model->endHistory());\par
-63 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 58                                \{\par
+59     MyVensim* factory = MyVensim::getInstance();\par
+60     Model* model = factory->createModel();\par
+61     model->execute(0, 10);\par
+62     {\cf17 auto} it = model->beginHistory();\par
+63     assert(it != model->endHistory());\par
+64 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6617,14 +6591,14 @@ Testa o m\'E9todo beginSystems da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo beginSystems inicia adequadamente os sistemas no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                                \{\par
-15     MyVensim* factory = MyVensim::getInstance();\par
-16     Model* model = factory->createModel();\par
-17     System* sys1 = factory->createSystem({\cf22 "System1"}, 100);\par
-18     {\cf17 auto} it = model->beginSystems();\par
-19     assert(it != model->endSystems());\par
-20     assert(*it == sys1);\par
-21 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                                \{\par
+16     MyVensim* factory = MyVensim::getInstance();\par
+17     Model* model = factory->createModel();\par
+18     System* sys1 = model->createSystem({\cf22 "System1"}, 100);\par
+19     {\cf17 auto} it = model->beginSystems();\par
+20     assert(it != model->endSystems());\par
+21     assert(*it == sys1);\par
+22 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6656,10 +6630,11 @@ Este m\'E9todo verifica se o construtor da classe {\b Model} funciona conforme e
 }{
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7                               \{\par
 8     MyVensim* factory = MyVensim::getInstance();\par
-9     System* q1 = factory->createSystem({\cf22 "Q1"}, 100.3);\par
-10     assert(q1->getName() == {\cf22 "Q1"});\par
-11     assert(std::abs(q1->getValue() - 100.3) < 0.001);\par
-12 \}\par
+9     Model* model = factory->createModel();\par
+10     System* q1 = model->createSystem({\cf22 "Q1"}, 100.3);\par
+11     assert(q1->getName() == {\cf22 "Q1"});\par
+12     assert(std::abs(q1->getValue() - 100.3) < 0.001);\par
+13 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6687,17 +6662,17 @@ Testa o m\'E9todo endFlows da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo endFlows conclui adequadamente os fluxos no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 45                            \{\par
-46     MyVensim* factory = MyVensim::getInstance();\par
-47     Model* model = factory->createModel();\par
-48     factory->createFlow<FlowExponential>();\par
-49     {\cf17 auto} it = model->beginFlows();\par
-50     {\cf19 while} (it != model->endFlows()) \{\par
-51         ++it;\par
-52     \}\par
-53 \par
-54     assert(it == model->endFlows());\par
-55 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 46                            \{\par
+47     MyVensim* factory = MyVensim::getInstance();\par
+48     Model* model = factory->createModel();\par
+49     model->createFlow<FlowExponential>();\par
+50     {\cf17 auto} it = model->beginFlows();\par
+51     {\cf19 while} (it != model->endFlows()) \{\par
+52         ++it;\par
+53     \}\par
+54 \par
+55     assert(it == model->endFlows());\par
+56 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6725,11 +6700,11 @@ Testa o m\'E9todo endHistory da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo endHistory conclui adequadamente o hist\'F3rico no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 65                              \{\par
-66     MyVensim* factory = MyVensim::getInstance();\par
-67     Model* model = factory->createModel();\par
-68     assert(model->beginHistory() == model->endHistory());\par
-69 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 66                              \{\par
+67     MyVensim* factory = MyVensim::getInstance();\par
+68     Model* model = factory->createModel();\par
+69     assert(model->beginHistory() == model->endHistory());\par
+70 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6757,18 +6732,18 @@ Testa o m\'E9todo endSystems da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo endSystems conclui adequadamente os sistemas no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 23                              \{\par
-24     MyVensim* factory = MyVensim::getInstance();\par
-25     Model* model = factory->createModel();\par
-26     factory->createSystem({\cf22 "System1"}, 100);\par
-27 \par
-28     {\cf17 auto} it = model->beginSystems();\par
-29     {\cf19 while} (it != model->endSystems()) \{\par
-30         ++it;\par
-31     \}\par
-32 \par
-33     assert(it == model->endSystems());\par
-34 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 24                              \{\par
+25     MyVensim* factory = MyVensim::getInstance();\par
+26     Model* model = factory->createModel();\par
+27     model->createSystem({\cf22 "System1"}, 100);\par
+28 \par
+29     {\cf17 auto} it = model->beginSystems();\par
+30     {\cf19 while} (it != model->endSystems()) \{\par
+31         ++it;\par
+32     \}\par
+33 \par
+34     assert(it == model->endSystems());\par
+35 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6796,12 +6771,12 @@ Testa o m\'E9todo execute da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo execute executa corretamente a l\'F3gica do modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 87                           \{\par
-88     MyVensim* factory = MyVensim::getInstance();\par
-89     Model* model = factory->createModel();\par
-90     model->execute(0, 10);\par
-91     assert(model->beginHistory() != model->endHistory());\par
-92 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 88                           \{\par
+89     MyVensim* factory = MyVensim::getInstance();\par
+90     Model* model = factory->createModel();\par
+91     model->execute(0, 10);\par
+92     assert(model->beginHistory() != model->endHistory());\par
+93 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6829,12 +6804,12 @@ Testa o m\'E9todo setInitialHistory da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setInitialHistory atribui corretamente o hist\'F3rico inicial ao modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 80                                     \{\par
-81     MyVensim* factory = MyVensim::getInstance();\par
-82     Model* model = factory->createModel();\par
-83     model->setInitialHistory();\par
-84     assert(model->beginHistory()->empty());\par
-85 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 81                                     \{\par
+82     MyVensim* factory = MyVensim::getInstance();\par
+83     Model* model = factory->createModel();\par
+84     model->setInitialHistory();\par
+85     assert(model->beginHistory()->empty());\par
+86 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -6986,19 +6961,19 @@ Fun\'E7\'E3o para executar todos os testes unit\'E1rios para a classe {\b Model}
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Esta fun\'E7\'E3o chama todos os testes unit\'E1rios definidos para a classe {\b Model}. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 94                             \{\par
-95     unit_Model_constructor();\par
-96     unit_Model_beginSystems();\par
-97     unit_Model_endSystems();\par
-98     unit_Model_beginFlows();\par
-99     unit_Model_endFlows();\par
-100     unit_Model_beginHistory();\par
-101     unit_Model_endHistory();\par
-102     unit_Model_add();\par
-103     unit_Model_setInitialHistory();\par
-104     unit_Model_execute();\par
-105     std::cout << {\cf22 "All Model unit tests passed!"} << std::endl;\par
-106 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 95                             \{\par
+96     unit_Model_constructor();\par
+97     unit_Model_beginSystems();\par
+98     unit_Model_endSystems();\par
+99     unit_Model_beginFlows();\par
+100     unit_Model_endFlows();\par
+101     unit_Model_beginHistory();\par
+102     unit_Model_endHistory();\par
+103     unit_Model_add();\par
+104     unit_Model_setInitialHistory();\par
+105     unit_Model_execute();\par
+106     std::cout << {\cf22 "All Model unit tests passed!"} << std::endl;\par
+107 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7026,14 +7001,14 @@ Testa o m\'E9todo add da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo add adiciona corretamente um elemento ao modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 71                       \{\par
-72     MyVensim* factory = MyVensim::getInstance();\par
-73     Model* model = factory->createModel();\par
-74     System* sys = factory->createSystem({\cf22 "System1"}, 100);\par
-75     Flow* flow = factory->createFlow<FlowExponential>();\par
-76     assert(*model->beginSystems() == sys);\par
-77     assert(*model->beginFlows() == flow);\par
-78 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 72                       \{\par
+73     MyVensim* factory = MyVensim::getInstance();\par
+74     Model* model = factory->createModel();\par
+75     System* sys = model->createSystem({\cf22 "System1"}, 100);\par
+76     Flow* flow = model->createFlow<FlowExponential>();\par
+77     assert(*model->beginSystems() == sys);\par
+78     assert(*model->beginFlows() == flow);\par
+79 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7061,14 +7036,14 @@ Testa o m\'E9todo beginFlows da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo beginFlows inicia adequadamente os fluxos no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36                              \{\par
-37     MyVensim* factory = MyVensim::getInstance();\par
-38     Model* model = factory->createModel();\par
-39     Flow* flow1 = factory->createFlow<FlowExponential>();\par
-40     {\cf17 auto} it = model->beginFlows();\par
-41     assert(it != model->endFlows());\par
-42     assert(*it == flow1);\par
-43 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 37                              \{\par
+38     MyVensim* factory = MyVensim::getInstance();\par
+39     Model* model = factory->createModel();\par
+40     Flow* flow1 = model->createFlow<FlowExponential>();\par
+41     {\cf17 auto} it = model->beginFlows();\par
+42     assert(it != model->endFlows());\par
+43     assert(*it == flow1);\par
+44 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7096,13 +7071,13 @@ Testa o m\'E9todo beginHistory da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo beginHistory inicia adequadamente o hist\'F3rico no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 57                                \{\par
-58     MyVensim* factory = MyVensim::getInstance();\par
-59     Model* model = factory->createModel();\par
-60     model->execute(0, 10);\par
-61     {\cf17 auto} it = model->beginHistory();\par
-62     assert(it != model->endHistory());\par
-63 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 58                                \{\par
+59     MyVensim* factory = MyVensim::getInstance();\par
+60     Model* model = factory->createModel();\par
+61     model->execute(0, 10);\par
+62     {\cf17 auto} it = model->beginHistory();\par
+63     assert(it != model->endHistory());\par
+64 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7130,14 +7105,14 @@ Testa o m\'E9todo beginSystems da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo beginSystems inicia adequadamente os sistemas no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                                \{\par
-15     MyVensim* factory = MyVensim::getInstance();\par
-16     Model* model = factory->createModel();\par
-17     System* sys1 = factory->createSystem({\cf22 "System1"}, 100);\par
-18     {\cf17 auto} it = model->beginSystems();\par
-19     assert(it != model->endSystems());\par
-20     assert(*it == sys1);\par
-21 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                                \{\par
+16     MyVensim* factory = MyVensim::getInstance();\par
+17     Model* model = factory->createModel();\par
+18     System* sys1 = model->createSystem({\cf22 "System1"}, 100);\par
+19     {\cf17 auto} it = model->beginSystems();\par
+20     assert(it != model->endSystems());\par
+21     assert(*it == sys1);\par
+22 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7186,10 +7161,11 @@ Este m\'E9todo verifica se o construtor da classe {\b Model} funciona conforme e
 }{
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7                               \{\par
 8     MyVensim* factory = MyVensim::getInstance();\par
-9     System* q1 = factory->createSystem({\cf22 "Q1"}, 100.3);\par
-10     assert(q1->getName() == {\cf22 "Q1"});\par
-11     assert(std::abs(q1->getValue() - 100.3) < 0.001);\par
-12 \}\par
+9     Model* model = factory->createModel();\par
+10     System* q1 = model->createSystem({\cf22 "Q1"}, 100.3);\par
+11     assert(q1->getName() == {\cf22 "Q1"});\par
+12     assert(std::abs(q1->getValue() - 100.3) < 0.001);\par
+13 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7217,17 +7193,17 @@ Testa o m\'E9todo endFlows da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo endFlows conclui adequadamente os fluxos no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 45                            \{\par
-46     MyVensim* factory = MyVensim::getInstance();\par
-47     Model* model = factory->createModel();\par
-48     factory->createFlow<FlowExponential>();\par
-49     {\cf17 auto} it = model->beginFlows();\par
-50     {\cf19 while} (it != model->endFlows()) \{\par
-51         ++it;\par
-52     \}\par
-53 \par
-54     assert(it == model->endFlows());\par
-55 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 46                            \{\par
+47     MyVensim* factory = MyVensim::getInstance();\par
+48     Model* model = factory->createModel();\par
+49     model->createFlow<FlowExponential>();\par
+50     {\cf17 auto} it = model->beginFlows();\par
+51     {\cf19 while} (it != model->endFlows()) \{\par
+52         ++it;\par
+53     \}\par
+54 \par
+55     assert(it == model->endFlows());\par
+56 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7255,11 +7231,11 @@ Testa o m\'E9todo endHistory da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo endHistory conclui adequadamente o hist\'F3rico no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 65                              \{\par
-66     MyVensim* factory = MyVensim::getInstance();\par
-67     Model* model = factory->createModel();\par
-68     assert(model->beginHistory() == model->endHistory());\par
-69 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 66                              \{\par
+67     MyVensim* factory = MyVensim::getInstance();\par
+68     Model* model = factory->createModel();\par
+69     assert(model->beginHistory() == model->endHistory());\par
+70 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7287,18 +7263,18 @@ Testa o m\'E9todo endSystems da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo endSystems conclui adequadamente os sistemas no modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 23                              \{\par
-24     MyVensim* factory = MyVensim::getInstance();\par
-25     Model* model = factory->createModel();\par
-26     factory->createSystem({\cf22 "System1"}, 100);\par
-27 \par
-28     {\cf17 auto} it = model->beginSystems();\par
-29     {\cf19 while} (it != model->endSystems()) \{\par
-30         ++it;\par
-31     \}\par
-32 \par
-33     assert(it == model->endSystems());\par
-34 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 24                              \{\par
+25     MyVensim* factory = MyVensim::getInstance();\par
+26     Model* model = factory->createModel();\par
+27     model->createSystem({\cf22 "System1"}, 100);\par
+28 \par
+29     {\cf17 auto} it = model->beginSystems();\par
+30     {\cf19 while} (it != model->endSystems()) \{\par
+31         ++it;\par
+32     \}\par
+33 \par
+34     assert(it == model->endSystems());\par
+35 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7326,12 +7302,12 @@ Testa o m\'E9todo execute da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo execute executa corretamente a l\'F3gica do modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 87                           \{\par
-88     MyVensim* factory = MyVensim::getInstance();\par
-89     Model* model = factory->createModel();\par
-90     model->execute(0, 10);\par
-91     assert(model->beginHistory() != model->endHistory());\par
-92 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 88                           \{\par
+89     MyVensim* factory = MyVensim::getInstance();\par
+90     Model* model = factory->createModel();\par
+91     model->execute(0, 10);\par
+92     assert(model->beginHistory() != model->endHistory());\par
+93 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7359,12 +7335,12 @@ Testa o m\'E9todo setInitialHistory da classe {\b Model}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setInitialHistory atribui corretamente o hist\'F3rico inicial ao modelo. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 80                                     \{\par
-81     MyVensim* factory = MyVensim::getInstance();\par
-82     Model* model = factory->createModel();\par
-83     model->setInitialHistory();\par
-84     assert(model->beginHistory()->empty());\par
-85 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 81                                     \{\par
+82     MyVensim* factory = MyVensim::getInstance();\par
+83     Model* model = factory->createModel();\par
+84     model->setInitialHistory();\par
+85     assert(model->beginHistory()->empty());\par
+86 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7529,16 +7505,16 @@ Fun\'E7\'E3o para executar todos os testes unit\'E1rios para a classe {\b System
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Esta fun\'E7\'E3o chama todos os testes unit\'E1rios definidos para a classe {\b System}. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 55                              \{\par
-56     unit_System_constructor();\par
-57     unit_System_setName();\par
-58     unit_System_setValue();\par
-59     unit_System_getName();\par
-60     unit_System_getValue();\par
-61     unit_System_operator();\par
-62     unit_System_clone();\par
-63     std::cout << {\cf22 "All System unit tests passed!"} << std::endl;\par
-64 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 62                              \{\par
+63     unit_System_constructor();\par
+64     unit_System_setName();\par
+65     unit_System_setValue();\par
+66     unit_System_getName();\par
+67     unit_System_getValue();\par
+68     unit_System_operator();\par
+69     unit_System_clone();\par
+70     std::cout << {\cf22 "All System unit tests passed!"} << std::endl;\par
+71 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7566,13 +7542,14 @@ Testa o m\'E9todo clone da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo clone cria corretamente uma c\'F3pia do sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47                          \{\par
-48     MyVensim* factory = MyVensim::getInstance();\par
-49     System* sys1 = factory->createSystem({\cf22 "System1"}, 100.0);\par
-50     System* sys2 = sys1->clone();\par
-51     assert(sys2->getName() == {\cf22 "System1"});\par
-52     assert(std::abs(sys2->getValue() - 100.0) < 0.001);\par
-53 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 53                          \{\par
+54     MyVensim* factory = MyVensim::getInstance();\par
+55     Model* model = factory->createModel();\par
+56     System* sys1 = model->createSystem({\cf22 "System1"}, 100.0);\par
+57     System* sys2 = sys1->clone();\par
+58     assert(sys2->getName() == {\cf22 "System1"});\par
+59     assert(std::abs(sys2->getValue() - 100.0) < 0.001);\par
+60 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7604,10 +7581,11 @@ Este m\'E9todo verifica se o construtor da classe {\b System} funciona conforme 
 }{
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7                                \{\par
 8     MyVensim* factory = MyVensim::getInstance();\par
-9     System* sys = factory->createSystem({\cf22 "System1"}, 100.0);\par
-10     assert(sys->getName() == {\cf22 "System1"});\par
-11     assert(std::abs(sys->getValue() - 100.0) < 0.001);\par
-12 \}\par
+9     Model* model = factory->createModel();\par
+10     System* sys = model->createSystem({\cf22 "System1"}, 100.0);\par
+11     assert(sys->getName() == {\cf22 "System1"});\par
+12     assert(std::abs(sys->getValue() - 100.0) < 0.001);\par
+13 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7635,11 +7613,12 @@ Testa o m\'E9todo getName da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getName retorna corretamente o nome do sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 28                            \{\par
-29     MyVensim* factory = MyVensim::getInstance();\par
-30     System* sys = factory->createSystem({\cf22 "System1"}, 0);\par
-31     assert(sys->getName() == {\cf22 "System1"});\par
-32 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 31                            \{\par
+32     MyVensim* factory = MyVensim::getInstance();\par
+33     Model* model = factory->createModel();\par
+34     System* sys = model->createSystem({\cf22 "System1"}, 0);\par
+35     assert(sys->getName() == {\cf22 "System1"});\par
+36 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7667,11 +7646,12 @@ Testa o m\'E9todo getValue da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getValue retorna corretamente o valor do sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 34                             \{\par
-35     MyVensim* factory = MyVensim::getInstance();\par
-36     System* sys = factory->createSystem({\cf22 ""}, 200.0);\par
-37     assert(std::abs(sys->getValue() - 200.0) < 0.001);\par
-38 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 38                             \{\par
+39     MyVensim* factory = MyVensim::getInstance();\par
+40     Model* model = factory->createModel();\par
+41     System* sys = model->createSystem({\cf22 ""}, 200.0);\par
+42     assert(std::abs(sys->getValue() - 200.0) < 0.001);\par
+43 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7699,12 +7679,13 @@ Testa o operador de atribui\'E7\'E3o da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o operador de atribui\'E7\'E3o da classe {\b System} funciona corretamente. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 40                             \{\par
-41     MyVensim* factory = MyVensim::getInstance();\par
-42     System* sys1 = factory->createSystem({\cf22 "System1"}, 100.0);\par
-43     assert(sys1->getName() == {\cf22 "System1"});\par
-44     assert(std::abs(sys1->getValue() - 100.0) < 0.001);\par
-45 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 45                             \{\par
+46     MyVensim* factory = MyVensim::getInstance();\par
+47     Model* model = factory->createModel();\par
+48     System* sys1 = model->createSystem({\cf22 "System1"}, 100.0);\par
+49     assert(sys1->getName() == {\cf22 "System1"});\par
+50     assert(std::abs(sys1->getValue() - 100.0) < 0.001);\par
+51 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7732,12 +7713,13 @@ Testa o m\'E9todo setName da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setName atribui corretamente o nome ao sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                            \{\par
-15     MyVensim* factory = MyVensim::getInstance();\par
-16     System* sys = factory->createSystem({\cf22 ""}, 0);\par
-17     sys->setName({\cf22 "System1"});\par
-18     assert(sys->getName() == {\cf22 "System1"});\par
-19 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                            \{\par
+16     MyVensim* factory = MyVensim::getInstance();\par
+17     Model* model = factory->createModel();\par
+18     System* sys = model->createSystem({\cf22 ""}, 0);\par
+19     sys->setName({\cf22 "System1"});\par
+20     assert(sys->getName() == {\cf22 "System1"});\par
+21 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7765,12 +7747,13 @@ Testa o m\'E9todo setValue da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setValue atribui corretamente o valor ao sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 21                             \{\par
-22     MyVensim* factory = MyVensim::getInstance();\par
-23     System* sys = factory->createSystem({\cf22 ""}, 0);\par
-24     sys->setValue(150.0);\par
-25     assert(std::abs(sys->getValue() - 150.0) < 0.001);\par
-26 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 23                             \{\par
+24     MyVensim* factory = MyVensim::getInstance();\par
+25     Model* model = factory->createModel();\par
+26     System* sys = model->createSystem({\cf22 ""}, 0);\par
+27     sys->setValue(150.0);\par
+28     assert(std::abs(sys->getValue() - 150.0) < 0.001);\par
+29 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7892,16 +7875,16 @@ Fun\'E7\'E3o para executar todos os testes unit\'E1rios para a classe {\b System
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Esta fun\'E7\'E3o chama todos os testes unit\'E1rios definidos para a classe {\b System}. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 55                              \{\par
-56     unit_System_constructor();\par
-57     unit_System_setName();\par
-58     unit_System_setValue();\par
-59     unit_System_getName();\par
-60     unit_System_getValue();\par
-61     unit_System_operator();\par
-62     unit_System_clone();\par
-63     std::cout << {\cf22 "All System unit tests passed!"} << std::endl;\par
-64 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 62                              \{\par
+63     unit_System_constructor();\par
+64     unit_System_setName();\par
+65     unit_System_setValue();\par
+66     unit_System_getName();\par
+67     unit_System_getValue();\par
+68     unit_System_operator();\par
+69     unit_System_clone();\par
+70     std::cout << {\cf22 "All System unit tests passed!"} << std::endl;\par
+71 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7929,13 +7912,14 @@ Testa o m\'E9todo clone da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo clone cria corretamente uma c\'F3pia do sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47                          \{\par
-48     MyVensim* factory = MyVensim::getInstance();\par
-49     System* sys1 = factory->createSystem({\cf22 "System1"}, 100.0);\par
-50     System* sys2 = sys1->clone();\par
-51     assert(sys2->getName() == {\cf22 "System1"});\par
-52     assert(std::abs(sys2->getValue() - 100.0) < 0.001);\par
-53 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 53                          \{\par
+54     MyVensim* factory = MyVensim::getInstance();\par
+55     Model* model = factory->createModel();\par
+56     System* sys1 = model->createSystem({\cf22 "System1"}, 100.0);\par
+57     System* sys2 = sys1->clone();\par
+58     assert(sys2->getName() == {\cf22 "System1"});\par
+59     assert(std::abs(sys2->getValue() - 100.0) < 0.001);\par
+60 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7967,10 +7951,11 @@ Este m\'E9todo verifica se o construtor da classe {\b System} funciona conforme 
 }{
 \pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7                                \{\par
 8     MyVensim* factory = MyVensim::getInstance();\par
-9     System* sys = factory->createSystem({\cf22 "System1"}, 100.0);\par
-10     assert(sys->getName() == {\cf22 "System1"});\par
-11     assert(std::abs(sys->getValue() - 100.0) < 0.001);\par
-12 \}\par
+9     Model* model = factory->createModel();\par
+10     System* sys = model->createSystem({\cf22 "System1"}, 100.0);\par
+11     assert(sys->getName() == {\cf22 "System1"});\par
+12     assert(std::abs(sys->getValue() - 100.0) < 0.001);\par
+13 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -7998,11 +7983,12 @@ Testa o m\'E9todo getName da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getName retorna corretamente o nome do sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 28                            \{\par
-29     MyVensim* factory = MyVensim::getInstance();\par
-30     System* sys = factory->createSystem({\cf22 "System1"}, 0);\par
-31     assert(sys->getName() == {\cf22 "System1"});\par
-32 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 31                            \{\par
+32     MyVensim* factory = MyVensim::getInstance();\par
+33     Model* model = factory->createModel();\par
+34     System* sys = model->createSystem({\cf22 "System1"}, 0);\par
+35     assert(sys->getName() == {\cf22 "System1"});\par
+36 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -8030,11 +8016,12 @@ Testa o m\'E9todo getValue da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo getValue retorna corretamente o valor do sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 34                             \{\par
-35     MyVensim* factory = MyVensim::getInstance();\par
-36     System* sys = factory->createSystem({\cf22 ""}, 200.0);\par
-37     assert(std::abs(sys->getValue() - 200.0) < 0.001);\par
-38 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 38                             \{\par
+39     MyVensim* factory = MyVensim::getInstance();\par
+40     Model* model = factory->createModel();\par
+41     System* sys = model->createSystem({\cf22 ""}, 200.0);\par
+42     assert(std::abs(sys->getValue() - 200.0) < 0.001);\par
+43 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -8062,12 +8049,13 @@ Testa o operador de atribui\'E7\'E3o da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o operador de atribui\'E7\'E3o da classe {\b System} funciona corretamente. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 40                             \{\par
-41     MyVensim* factory = MyVensim::getInstance();\par
-42     System* sys1 = factory->createSystem({\cf22 "System1"}, 100.0);\par
-43     assert(sys1->getName() == {\cf22 "System1"});\par
-44     assert(std::abs(sys1->getValue() - 100.0) < 0.001);\par
-45 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 45                             \{\par
+46     MyVensim* factory = MyVensim::getInstance();\par
+47     Model* model = factory->createModel();\par
+48     System* sys1 = model->createSystem({\cf22 "System1"}, 100.0);\par
+49     assert(sys1->getName() == {\cf22 "System1"});\par
+50     assert(std::abs(sys1->getValue() - 100.0) < 0.001);\par
+51 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -8095,12 +8083,13 @@ Testa o m\'E9todo setName da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setName atribui corretamente o nome ao sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                            \{\par
-15     MyVensim* factory = MyVensim::getInstance();\par
-16     System* sys = factory->createSystem({\cf22 ""}, 0);\par
-17     sys->setName({\cf22 "System1"});\par
-18     assert(sys->getName() == {\cf22 "System1"});\par
-19 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                            \{\par
+16     MyVensim* factory = MyVensim::getInstance();\par
+17     Model* model = factory->createModel();\par
+18     System* sys = model->createSystem({\cf22 ""}, 0);\par
+19     sys->setName({\cf22 "System1"});\par
+20     assert(sys->getName() == {\cf22 "System1"});\par
+21 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 
@@ -8128,12 +8117,13 @@ Testa o m\'E9todo setValue da classe {\b System}. }}\par
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Este m\'E9todo verifica se o m\'E9todo setValue atribui corretamente o valor ao sistema. \par
 }{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 21                             \{\par
-22     MyVensim* factory = MyVensim::getInstance();\par
-23     System* sys = factory->createSystem({\cf22 ""}, 0);\par
-24     sys->setValue(150.0);\par
-25     assert(std::abs(sys->getValue() - 150.0) < 0.001);\par
-26 \}\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 23                             \{\par
+24     MyVensim* factory = MyVensim::getInstance();\par
+25     Model* model = factory->createModel();\par
+26     System* sys = model->createSystem({\cf22 ""}, 0);\par
+27     sys->setValue(150.0);\par
+28     assert(std::abs(sys->getValue() - 150.0) < 0.001);\par
+29 \}\par
 }
 Here is the call graph for this function:{
 \pard\plain 

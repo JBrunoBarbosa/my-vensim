@@ -86,9 +86,9 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__inherit__graph.png" border="0" usemap="#a_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_model_inherit__map" id="a_model_inherit__map">
-<area shape="rect" title="Classe que representa um modelo de sistema puramente virtual." alt="" coords="5,5,125,331"/>
-<area shape="rect" href="class_model_impl.html" title="Classe que implementa Model." alt="" coords="5,379,125,789"/>
-<area shape="poly" title=" " alt="" coords="68,345,68,379,63,379,63,345"/>
+<area shape="rect" title="Classe que representa um modelo de sistema puramente virtual." alt="" coords="5,5,125,373"/>
+<area shape="rect" href="class_model_impl.html" title="Classe que implementa Model." alt="" coords="8,421,123,747"/>
+<area shape="poly" title=" " alt="" coords="68,388,68,421,63,421,63,388"/>
 </map>
 </div>
 <div class="dynheader">
@@ -96,7 +96,7 @@ Collaboration diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__coll__graph.png" border="0" usemap="#a_model_coll__map" alt="Collaboration graph"/></div>
 <map name="a_model_coll__map" id="a_model_coll__map">
-<area shape="rect" title="Classe que representa um modelo de sistema puramente virtual." alt="" coords="5,5,125,331"/>
+<area shape="rect" title="Classe que representa um modelo de sistema puramente virtual." alt="" coords="5,5,125,373"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -151,6 +151,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a686edecbb77beb3000f1bd6c1ac6b251" id="r_a686edecbb77beb3000f1bd6c1ac6b251"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a686edecbb77beb3000f1bd6c1ac6b251">execute</a> (const int timeInitial, const int timeFinal)=0</td></tr>
 <tr class="memdesc:a686edecbb77beb3000f1bd6c1ac6b251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa o modelo de tempo inicial a tempo final.  <br /></td></tr>
 <tr class="separator:a686edecbb77beb3000f1bd6c1ac6b251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851720e25fa19a32e59e5ca12be23901" id="r_a851720e25fa19a32e59e5ca12be23901"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a851720e25fa19a32e59e5ca12be23901">createSystem</a> (const std::string name, double value)=0</td></tr>
+<tr class="memdesc:a851720e25fa19a32e59e5ca12be23901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma instância de <a class="el" href="class_system.html" title="Classe que representa um sistema puramente virtual.">System</a>.  <br /></td></tr>
+<tr class="separator:a851720e25fa19a32e59e5ca12be23901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837d1676759dfb5cd1279260966c06c7" id="r_a837d1676759dfb5cd1279260966c06c7"><td class="memTemplParams" colspan="2">template&lt;typename FlowType &gt; </td></tr>
+<tr class="memitem:a837d1676759dfb5cd1279260966c06c7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a837d1676759dfb5cd1279260966c06c7">createFlow</a> (std::string name=&quot;&quot;, <a class="el" href="class_system.html">System</a> *source=nullptr, <a class="el" href="class_system.html">System</a> *destiny=nullptr)</td></tr>
+<tr class="memdesc:a837d1676759dfb5cd1279260966c06c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma instância de <a class="el" href="class_flow.html" title="Classe que representa um fluxo de sistema puramente virtual.">Flow</a>.  <br /></td></tr>
+<tr class="separator:a837d1676759dfb5cd1279260966c06c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Classe que representa um modelo de sistema puramente virtual. </p>
@@ -268,9 +275,60 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model_ab7df81041f62f049cfc6e4d50dcaf721_icgraph.png" border="0" usemap="#aclass_model_ab7df81041f62f049cfc6e4d50dcaf721_icgraph" alt=""/></div>
 <map name="aclass_model_ab7df81041f62f049cfc6e4d50dcaf721_icgraph" id="aclass_model_ab7df81041f62f049cfc6e4d50dcaf721_icgraph">
-<area shape="rect" title="Adiciona um flow no model." alt="" coords="250,5,335,32"/>
-<area shape="rect" href="class_my_vensim_impl.html#a83b6eff816fc051ea6ca3e2516802df1" title="Cria uma instância de System." alt="" coords="5,5,202,32"/>
-<area shape="poly" title=" " alt="" coords="234,21,202,21,202,16,234,16"/>
+<area shape="rect" title="Adiciona um flow no model." alt="" coords="688,360,773,387"/>
+<area shape="rect" href="class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="512,360,640,387"/>
+<area shape="poly" title=" " alt="" coords="672,376,640,376,640,371,672,371"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa o teste funcional em modelo complexo." alt="" coords="305,5,456,32"/>
+<area shape="poly" title=" " alt="" coords="571,345,564,283,547,202,533,160,515,119,491,80,463,46,447,35,450,30,466,42,496,77,519,116,538,158,552,201,569,282,576,344"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa o teste funcional para fluxos exponenciais." alt="" coords="296,56,464,83"/>
+<area shape="poly" title=" " alt="" coords="569,345,559,292,540,225,509,156,488,124,463,97,446,85,449,81,466,93,492,121,514,153,545,223,564,290,574,344"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa o teste funcional para fluxos logísticos." alt="" coords="304,107,457,133"/>
+<area shape="poly" title=" " alt="" coords="566,346,554,302,533,248,503,194,484,169,463,147,445,136,448,132,466,143,488,166,508,191,538,246,559,300,571,344"/>
+<area shape="rect" href="_unit_flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title=" " alt="" coords="306,157,454,184"/>
+<area shape="poly" title=" " alt="" coords="562,346,547,312,526,272,497,232,463,198,443,187,446,182,466,194,501,229,530,269,552,310,567,344"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title="Testa o método execute da classe Flow." alt="" coords="316,208,445,235"/>
+<area shape="poly" title=" " alt="" coords="556,349,517,298,492,271,463,249,440,238,442,233,466,244,495,267,521,294,560,345"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title="Testa o método getName da classe Flow." alt="" coords="313,259,448,285"/>
+<area shape="poly" title=" " alt="" coords="545,353,507,325,463,300,434,288,436,283,465,295,510,321,548,348"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Testa o método getSource da classe Flow." alt="" coords="309,309,451,336"/>
+<area shape="poly" title=" " alt="" coords="506,358,434,339,435,334,507,353"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Testa o método getTarget da classe Flow." alt="" coords="312,360,449,387"/>
+<area shape="poly" title=" " alt="" coords="497,376,449,376,449,371,497,371"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a63db95fe4c2c52fecec5eaad8ff4cacd" title="Testa o método link da classe Flow." alt="" coords="329,411,432,437"/>
+<area shape="poly" title=" " alt="" coords="508,394,433,413,431,408,506,389"/>
+<area shape="rect" href="_unit_flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="Testa o método setName da classe Flow." alt="" coords="313,461,448,488"/>
+<area shape="poly" title=" " alt="" coords="548,398,510,426,465,452,436,463,434,458,463,447,507,421,545,394"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Testa o método setSource da classe Flow." alt="" coords="309,512,451,539"/>
+<area shape="poly" title=" " alt="" coords="560,401,521,452,495,479,466,502,442,514,440,509,463,498,492,475,517,449,556,398"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Testa o método setTarget da classe Flow." alt="" coords="312,563,449,589"/>
+<area shape="poly" title=" " alt="" coords="567,403,552,437,530,477,501,518,466,553,446,564,443,560,463,549,497,514,526,475,547,435,562,400"/>
+<area shape="rect" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="324,613,436,640"/>
+<area shape="poly" title=" " alt="" coords="571,402,559,447,538,501,508,556,488,581,466,603,438,619,436,614,463,599,484,578,503,553,533,498,554,445,566,401"/>
+<area shape="rect" href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="302,664,458,691"/>
+<area shape="poly" title=" " alt="" coords="574,403,564,456,545,524,514,593,492,626,466,654,449,666,446,661,463,650,488,622,509,591,540,522,559,455,569,402"/>
+<area shape="rect" href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="307,715,453,741"/>
+<area shape="poly" title=" " alt="" coords="576,403,569,465,552,546,538,589,519,631,496,670,466,705,450,716,447,712,463,701,491,667,515,628,533,587,547,544,564,464,571,402"/>
+<area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
+<area shape="poly" title=" " alt="" coords="309,39,201,66,200,61,308,34"/>
+<area shape="poly" title=" " alt="" coords="280,72,200,72,200,67,280,67"/>
+<area shape="poly" title=" " alt="" coords="308,105,200,78,201,73,309,100"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Executa todos os testes unitários para a classe Flow." alt="" coords="107,385,244,412"/>
+<area shape="poly" title=" " alt="" coords="304,194,298,198,274,219,254,244,220,298,197,348,183,386,178,384,192,346,216,295,249,241,271,216,294,194,301,189"/>
+<area shape="rect" href="test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,487,55,513"/>
+<area shape="poly" title=" " alt="" coords="144,423,52,488,49,484,141,419"/>
+<area shape="poly" title=" " alt="" coords="306,244,298,249,259,282,227,320,186,386,181,384,223,317,256,278,294,245,303,239"/>
+<area shape="poly" title=" " alt="" coords="310,294,297,300,265,320,236,344,191,387,187,383,232,340,262,316,295,295,307,289"/>
+<area shape="poly" title=" " alt="" coords="317,344,297,350,208,387,206,382,295,346,315,339"/>
+<area shape="poly" title=" " alt="" coords="296,386,245,393,244,388,296,381"/>
+<area shape="poly" title=" " alt="" coords="313,418,244,410,245,405,314,413"/>
+<area shape="poly" title=" " alt="" coords="315,459,295,452,206,415,208,410,297,447,317,454"/>
+<area shape="poly" title=" " alt="" coords="307,508,295,502,262,481,232,457,187,414,191,411,236,453,265,477,297,498,310,504"/>
+<area shape="poly" title=" " alt="" coords="303,558,294,553,256,519,223,480,181,414,186,411,227,477,259,515,298,549,306,553"/>
+<area shape="rect" href="_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,639,248,665"/>
+<area shape="poly" title=" " alt="" coords="309,638,249,646,248,640,308,633"/>
+<area shape="poly" title=" " alt="" coords="149,629,42,516,46,512,153,626"/>
+<area shape="poly" title=" " alt="" coords="286,668,248,664,248,658,287,663"/>
+<area shape="poly" title=" " alt="" coords="315,712,295,705,206,668,208,663,297,700,317,707"/>
 </map>
 </div>
 
@@ -495,6 +553,261 @@ Here is the caller graph for this function:</div>
 <p>Limpa o modelo, removendo todos os sistemas e fluxos. </p>
 
 <p>Implemented in <a class="el" href="class_model_impl.html#ae89af8582d85c03a1b63e281e2f0138c">ModelImpl</a>.</p>
+
+</div>
+</div>
+<a id="a837d1676759dfb5cd1279260966c06c7" name="a837d1676759dfb5cd1279260966c06c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837d1676759dfb5cd1279260966c06c7">&#9670;&#160;</a></span>createFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FlowType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flow.html">Flow</a> * Model::createFlow </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
+          <td class="paramname"><em>source</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
+          <td class="paramname"><em>destiny</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cria uma instância de <a class="el" href="class_flow.html" title="Classe que representa um fluxo de sistema puramente virtual.">Flow</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Nome do fluxo. </td></tr>
+    <tr><td class="paramname">source</td><td>Sistema de origem do fluxo. </td></tr>
+    <tr><td class="paramname">target</td><td>Sistema de destino do fluxo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Um ponteiro para a instância de <a class="el" href="class_flow.html" title="Classe que representa um fluxo de sistema puramente virtual.">Flow</a> criada. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                                                                               {</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_class" href="class_flow.html">Flow</a>* f = <span class="keyword">new</span> FlowType(name, source, destiny);</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_function" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">add</a>(f);</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> f;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="ttc" id="aclass_flow_html"><div class="ttname"><a href="class_flow.html">Flow</a></div><div class="ttdoc">Classe que representa um fluxo de sistema puramente virtual.</div><div class="ttdef"><b>Definition</b> Flow.hpp:15</div></div>
+<div class="ttc" id="aclass_model_html_ab7df81041f62f049cfc6e4d50dcaf721"><div class="ttname"><a href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721">Model::add</a></div><div class="ttdeci">virtual void add(Flow *flow)=0</div><div class="ttdoc">Adiciona um flow no model.</div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_a837d1676759dfb5cd1279260966c06c7_cgraph.png" border="0" usemap="#aclass_model_a837d1676759dfb5cd1279260966c06c7_cgraph" alt=""/></div>
+<map name="aclass_model_a837d1676759dfb5cd1279260966c06c7_cgraph" id="aclass_model_a837d1676759dfb5cd1279260966c06c7_cgraph">
+<area shape="rect" title="Cria uma instância de Flow." alt="" coords="5,5,133,32"/>
+<area shape="rect" href="class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="181,5,266,32"/>
+<area shape="poly" title=" " alt="" coords="133,16,165,16,165,21,133,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_a837d1676759dfb5cd1279260966c06c7_icgraph.png" border="0" usemap="#aclass_model_a837d1676759dfb5cd1279260966c06c7_icgraph" alt=""/></div>
+<map name="aclass_model_a837d1676759dfb5cd1279260966c06c7_icgraph" id="aclass_model_a837d1676759dfb5cd1279260966c06c7_icgraph">
+<area shape="rect" title="Cria uma instância de Flow." alt="" coords="512,360,640,387"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa o teste funcional em modelo complexo." alt="" coords="305,5,456,32"/>
+<area shape="poly" title=" " alt="" coords="571,345,564,283,547,202,533,160,515,119,491,80,463,46,447,35,450,30,466,42,496,77,519,116,538,158,552,201,569,282,576,344"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa o teste funcional para fluxos exponenciais." alt="" coords="296,56,464,83"/>
+<area shape="poly" title=" " alt="" coords="569,345,559,292,540,225,509,156,488,124,463,97,446,85,449,81,466,93,492,121,514,153,545,223,564,290,574,344"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa o teste funcional para fluxos logísticos." alt="" coords="304,107,457,133"/>
+<area shape="poly" title=" " alt="" coords="566,346,554,302,533,248,503,194,484,169,463,147,445,136,448,132,466,143,488,166,508,191,538,246,559,300,571,344"/>
+<area shape="rect" href="_unit_flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title=" " alt="" coords="306,157,454,184"/>
+<area shape="poly" title=" " alt="" coords="562,346,547,312,526,272,497,232,463,198,443,187,446,182,466,194,501,229,530,269,552,310,567,344"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title="Testa o método execute da classe Flow." alt="" coords="316,208,445,235"/>
+<area shape="poly" title=" " alt="" coords="556,349,517,298,492,271,463,249,440,238,442,233,466,244,495,267,521,294,560,345"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title="Testa o método getName da classe Flow." alt="" coords="313,259,448,285"/>
+<area shape="poly" title=" " alt="" coords="545,353,507,325,463,300,434,288,436,283,465,295,510,321,548,348"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Testa o método getSource da classe Flow." alt="" coords="309,309,451,336"/>
+<area shape="poly" title=" " alt="" coords="506,358,434,339,435,334,507,353"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Testa o método getTarget da classe Flow." alt="" coords="312,360,449,387"/>
+<area shape="poly" title=" " alt="" coords="497,376,449,376,449,371,497,371"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a63db95fe4c2c52fecec5eaad8ff4cacd" title="Testa o método link da classe Flow." alt="" coords="329,411,432,437"/>
+<area shape="poly" title=" " alt="" coords="508,394,433,413,431,408,506,389"/>
+<area shape="rect" href="_unit_flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="Testa o método setName da classe Flow." alt="" coords="313,461,448,488"/>
+<area shape="poly" title=" " alt="" coords="548,398,510,426,465,452,436,463,434,458,463,447,507,421,545,394"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Testa o método setSource da classe Flow." alt="" coords="309,512,451,539"/>
+<area shape="poly" title=" " alt="" coords="560,401,521,452,495,479,466,502,442,514,440,509,463,498,492,475,517,449,556,398"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Testa o método setTarget da classe Flow." alt="" coords="312,563,449,589"/>
+<area shape="poly" title=" " alt="" coords="567,403,552,437,530,477,501,518,466,553,446,564,443,560,463,549,497,514,526,475,547,435,562,400"/>
+<area shape="rect" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="324,613,436,640"/>
+<area shape="poly" title=" " alt="" coords="571,402,559,447,538,501,508,556,488,581,466,603,438,619,436,614,463,599,484,578,503,553,533,498,554,445,566,401"/>
+<area shape="rect" href="_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="302,664,458,691"/>
+<area shape="poly" title=" " alt="" coords="574,403,564,456,545,524,514,593,492,626,466,654,449,666,446,661,463,650,488,622,509,591,540,522,559,455,569,402"/>
+<area shape="rect" href="_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="307,715,453,741"/>
+<area shape="poly" title=" " alt="" coords="576,403,569,465,552,546,538,589,519,631,496,670,466,705,450,716,447,712,463,701,491,667,515,628,533,587,547,544,564,464,571,402"/>
+<area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="151,56,200,83"/>
+<area shape="poly" title=" " alt="" coords="309,39,201,66,200,61,308,34"/>
+<area shape="poly" title=" " alt="" coords="280,72,200,72,200,67,280,67"/>
+<area shape="poly" title=" " alt="" coords="308,105,200,78,201,73,309,100"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Executa todos os testes unitários para a classe Flow." alt="" coords="107,385,244,412"/>
+<area shape="poly" title=" " alt="" coords="304,194,298,198,274,219,254,244,220,298,197,348,183,386,178,384,192,346,216,295,249,241,271,216,294,194,301,189"/>
+<area shape="rect" href="test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,487,55,513"/>
+<area shape="poly" title=" " alt="" coords="144,423,52,488,49,484,141,419"/>
+<area shape="poly" title=" " alt="" coords="306,244,298,249,259,282,227,320,186,386,181,384,223,317,256,278,294,245,303,239"/>
+<area shape="poly" title=" " alt="" coords="310,294,297,300,265,320,236,344,191,387,187,383,232,340,262,316,295,295,307,289"/>
+<area shape="poly" title=" " alt="" coords="317,344,297,350,208,387,206,382,295,346,315,339"/>
+<area shape="poly" title=" " alt="" coords="296,386,245,393,244,388,296,381"/>
+<area shape="poly" title=" " alt="" coords="313,418,244,410,245,405,314,413"/>
+<area shape="poly" title=" " alt="" coords="315,459,295,452,206,415,208,410,297,447,317,454"/>
+<area shape="poly" title=" " alt="" coords="307,508,295,502,262,481,232,457,187,414,191,411,236,453,265,477,297,498,310,504"/>
+<area shape="poly" title=" " alt="" coords="303,558,294,553,256,519,223,480,181,414,186,411,227,477,259,515,298,549,306,553"/>
+<area shape="rect" href="_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,639,248,665"/>
+<area shape="poly" title=" " alt="" coords="309,638,249,646,248,640,308,633"/>
+<area shape="poly" title=" " alt="" coords="149,629,42,516,46,512,153,626"/>
+<area shape="poly" title=" " alt="" coords="286,668,248,664,248,658,287,663"/>
+<area shape="poly" title=" " alt="" coords="315,712,295,705,206,668,208,663,297,700,317,707"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a851720e25fa19a32e59e5ca12be23901" name="a851720e25fa19a32e59e5ca12be23901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851720e25fa19a32e59e5ca12be23901">&#9670;&#160;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_system.html">System</a> * Model::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cria uma instância de <a class="el" href="class_system.html" title="Classe que representa um sistema puramente virtual.">System</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Nome do sistema. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor associado ao sistema. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Um ponteiro para a instância de <a class="el" href="class_system.html" title="Classe que representa um sistema puramente virtual.">System</a> criada. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_model_impl.html#afb1f7d5b720ba70a5f93b3727bbc19ac">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_a851720e25fa19a32e59e5ca12be23901_icgraph.png" border="0" usemap="#aclass_model_a851720e25fa19a32e59e5ca12be23901_icgraph" alt=""/></div>
+<map name="aclass_model_a851720e25fa19a32e59e5ca12be23901_icgraph" id="aclass_model_a851720e25fa19a32e59e5ca12be23901_icgraph">
+<area shape="rect" title="Cria uma instância de System." alt="" coords="528,487,674,513"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa o teste funcional em modelo complexo." alt="" coords="318,5,469,32"/>
+<area shape="poly" title=" " alt="" coords="593,472,578,376,554,248,538,184,520,125,500,78,478,46,463,35,467,30,482,42,505,75,525,124,543,182,559,247,584,375,599,471"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa o teste funcional para fluxos exponenciais." alt="" coords="309,56,477,83"/>
+<area shape="poly" title=" " alt="" coords="597,471,593,396,577,296,562,242,541,189,514,140,479,97,463,85,466,81,482,93,518,137,546,187,567,240,582,294,599,396,603,471"/>
+<area shape="rect" href="_functional_tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa o teste funcional para fluxos logísticos." alt="" coords="317,107,470,133"/>
+<area shape="poly" title=" " alt="" coords="596,471,589,405,571,318,556,271,536,226,510,184,479,147,462,136,465,132,482,143,514,181,540,224,561,270,576,316,594,404,601,471"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title="Testa o método execute da classe Flow." alt="" coords="329,157,458,184"/>
+<area shape="poly" title=" " alt="" coords="594,471,584,414,564,340,549,301,530,264,507,229,479,198,457,185,460,180,482,194,511,225,534,261,554,299,569,338,589,413,599,471"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Testa o método getSource da classe Flow." alt="" coords="322,208,464,235"/>
+<area shape="poly" title=" " alt="" coords="592,472,579,423,557,363,524,301,503,273,479,249,461,238,464,233,482,245,507,270,529,298,562,361,584,422,597,471"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Testa o método getTarget da classe Flow." alt="" coords="325,259,462,285"/>
+<area shape="poly" title=" " alt="" coords="588,473,573,434,550,387,518,340,479,299,459,288,462,284,482,295,523,336,554,384,578,432,593,471"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a63db95fe4c2c52fecec5eaad8ff4cacd" title="Testa o método link da classe Flow." alt="" coords="342,309,445,336"/>
+<area shape="poly" title=" " alt="" coords="583,474,542,412,512,378,479,350,444,335,446,330,482,346,516,375,546,408,588,471"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Testa o método setSource da classe Flow." alt="" coords="322,360,464,387"/>
+<area shape="poly" title=" " alt="" coords="575,477,532,438,479,401,452,390,455,385,482,396,536,434,578,473"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Testa o método setTarget da classe Flow." alt="" coords="325,411,462,437"/>
+<area shape="poly" title=" " alt="" coords="555,482,479,452,444,440,446,435,481,447,557,477"/>
+<area shape="rect" href="_unit_model_8cpp.html#a70af8f6763c09dd3ff71d65394614447" title="Testa o método add da classe Model." alt="" coords="337,461,449,488"/>
+<area shape="poly" title=" " alt="" coords="513,492,449,484,450,479,514,487"/>
+<area shape="rect" href="_unit_model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Testa o método beginSystems da classe Model." alt="" coords="306,512,480,539"/>
+<area shape="poly" title=" " alt="" coords="513,513,481,517,480,512,513,508"/>
+<area shape="rect" href="_unit_model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title="Arquivo de testes unitários para a classe Model." alt="" coords="315,563,471,589"/>
+<area shape="poly" title=" " alt="" coords="557,523,481,553,446,565,444,560,479,548,555,518"/>
+<area shape="rect" href="_unit_model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Testa o método endSystems da classe Model." alt="" coords="311,613,475,640"/>
+<area shape="poly" title=" " alt="" coords="578,527,536,566,482,604,455,615,452,610,479,599,532,562,575,523"/>
+<area shape="rect" href="_unit_system_8cpp.html#a094d376fe28d77accfef78b6e70d658d" title="Testa o método clone da classe System." alt="" coords="327,664,459,691"/>
+<area shape="poly" title=" " alt="" coords="588,529,546,592,516,625,482,654,460,666,457,661,479,650,512,622,542,588,583,526"/>
+<area shape="rect" href="_unit_system_8cpp.html#a6a39fd054412469cd77649218d3ecceb" title="Arquivo de testes unitários para a classe System." alt="" coords="310,715,476,741"/>
+<area shape="poly" title=" " alt="" coords="593,529,578,568,554,616,523,664,482,705,462,716,459,712,479,701,518,660,550,613,573,566,588,527"/>
+<area shape="rect" href="_unit_system_8cpp.html#a672a51794472bbde676a33115e003b15" title="Testa o método getName da classe System." alt="" coords="317,765,470,792"/>
+<area shape="poly" title=" " alt="" coords="597,529,584,578,562,639,529,702,507,730,482,755,464,767,461,762,479,751,503,727,524,699,557,637,579,577,592,528"/>
+<area shape="rect" href="_unit_system_8cpp.html#ab320622db511f54344c510a9cfdbff94" title="Testa o método getValue da classe System." alt="" coords="317,816,469,843"/>
+<area shape="poly" title=" " alt="" coords="599,529,589,587,569,662,554,701,534,739,511,775,482,806,465,818,462,813,479,802,507,771,530,736,549,699,564,660,584,586,594,529"/>
+<area shape="rect" href="_unit_system_8cpp.html#a95925cfe7e811911b56dbebcdebe16b6" title="Testa o operador de atribuição da classe System." alt="" coords="319,867,467,893"/>
+<area shape="poly" title=" " alt="" coords="601,529,594,596,576,684,561,730,540,776,514,819,482,857,465,868,462,864,479,853,510,816,536,774,556,729,571,682,589,595,596,529"/>
+<area shape="rect" href="_unit_system_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="Testa o método setName da classe System." alt="" coords="317,917,470,944"/>
+<area shape="poly" title=" " alt="" coords="603,529,599,604,582,706,567,760,546,813,518,863,482,907,466,919,463,915,479,903,514,860,541,811,562,758,577,704,593,604,597,529"/>
+<area shape="rect" href="_unit_system_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title="Testa o método setValue da classe System." alt="" coords="317,968,469,995"/>
+<area shape="poly" title=" " alt="" coords="599,529,584,625,559,753,543,818,525,876,505,925,482,958,467,970,463,965,478,954,500,922,520,875,538,816,554,752,578,624,593,528"/>
+<area shape="rect" href="test_2functional_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="156,56,205,83"/>
+<area shape="poly" title=" " alt="" coords="320,39,206,66,205,61,318,34"/>
+<area shape="poly" title=" " alt="" coords="294,72,205,72,205,67,294,67"/>
+<area shape="poly" title=" " alt="" coords="318,105,205,78,206,72,320,100"/>
+<area shape="rect" href="_unit_flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Executa todos os testes unitários para a classe Flow." alt="" coords="112,309,249,336"/>
+<area shape="poly" title=" " alt="" coords="318,193,307,198,271,225,239,256,193,311,189,307,235,252,268,221,305,194,316,188"/>
+<area shape="rect" href="test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,537,55,564"/>
+<area shape="poly" title=" " alt="" coords="164,351,42,538,38,535,159,348"/>
+<area shape="poly" title=" " alt="" coords="323,243,307,249,249,280,202,311,199,307,246,276,305,244,321,238"/>
+<area shape="poly" title=" " alt="" coords="320,292,240,311,239,306,318,287"/>
+<area shape="poly" title=" " alt="" coords="326,325,250,325,250,320,326,320"/>
+<area shape="poly" title=" " alt="" coords="318,358,239,339,240,334,320,353"/>
+<area shape="poly" title=" " alt="" coords="321,408,305,401,246,370,199,339,202,334,249,365,307,396,323,403"/>
+<area shape="rect" href="_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="108,537,253,564"/>
+<area shape="poly" title=" " alt="" coords="328,496,307,503,214,539,212,534,305,497,326,490"/>
+<area shape="poly" title=" " alt="" coords="92,553,55,553,55,548,92,548"/>
+<area shape="poly" title=" " alt="" coords="291,540,254,545,253,539,291,535"/>
+<area shape="poly" title=" " alt="" coords="300,568,253,562,254,557,300,562"/>
+<area shape="poly" title=" " alt="" coords="326,611,305,604,212,567,214,562,307,599,328,606"/>
+<area shape="rect" href="_unit_system_8cpp.html#ad467de422f8fd316dde6be5ded75b13b" title="Função para executar todos os testes unitários para a classe System." alt="" coords="103,791,258,817"/>
+<area shape="poly" title=" " alt="" coords="320,699,307,705,274,726,243,749,197,792,193,788,240,745,271,721,305,700,318,694"/>
+<area shape="poly" title=" " alt="" coords="161,778,37,566,42,563,166,776"/>
+<area shape="poly" title=" " alt="" coords="328,749,307,756,214,793,212,788,305,751,326,744"/>
+<area shape="poly" title=" " alt="" coords="301,792,259,797,258,792,301,787"/>
+<area shape="poly" title=" " alt="" coords="301,821,258,816,259,811,302,816"/>
+<area shape="poly" title=" " alt="" coords="326,864,305,857,212,820,214,815,307,852,328,859"/>
+<area shape="poly" title=" " alt="" coords="318,914,305,908,271,887,240,863,193,820,197,816,243,859,274,882,307,903,320,909"/>
+<area shape="poly" title=" " alt="" coords="313,963,304,958,264,925,230,886,187,819,191,816,235,882,268,921,308,954,316,959"/>
+</map>
+</div>
 
 </div>
 </div>

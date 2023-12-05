@@ -1,5 +1,7 @@
 #include "ModelImpl.hpp"
+#include "SystemImpl.hpp"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -98,4 +100,10 @@ void ModelImpl::clearModel() {
     for (auto system : systems) delete system;
     flows.clear();
     systems.clear();
+}
+
+System* ModelImpl::createSystem(const std::string name, double value) {
+    System* system = new SystemImpl(name, value);
+    add(system);
+    return system;
 }

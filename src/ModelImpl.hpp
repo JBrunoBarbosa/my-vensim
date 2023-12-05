@@ -24,6 +24,7 @@ public:
     flowIterator endFlows() override;
     historyIterator beginHistory() override;
     historyIterator endHistory() override;
+    System* createSystem(const std::string name, double value) override;
     void add(Flow* flow) override;
     void add(System* system) override;
     void report() override;

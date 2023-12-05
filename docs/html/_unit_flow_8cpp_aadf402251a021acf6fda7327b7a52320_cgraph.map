@@ -1,15 +1,17 @@
 <map id="unit_Flow_setName" name="unit_Flow_setName">
-<area shape="rect" id="Node000001" title="Testa o método setName da classe Flow." alt="" coords="5,81,141,108"/>
-<area shape="rect" id="Node000002" href="$class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="191,5,345,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,78,188,42,206,35,208,40,190,46,105,83"/>
-<area shape="rect" id="Node000004" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="189,56,347,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,83,173,79,173,84,141,89"/>
-<area shape="rect" id="Node000006" href="$class_flow.html#a2d0340d844ab2d275222938234e44169" title="Obtém o nome do fluxo." alt="" coords="214,107,322,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="141,101,198,108,198,114,141,106"/>
-<area shape="rect" id="Node000007" href="$class_flow.html#a7ac5c465920d5bff0f1370641c91fc40" title="Define o nome do fluxo." alt="" coords="214,157,322,184"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="105,106,190,143,208,149,206,154,188,148,103,111"/>
-<area shape="rect" id="Node000003" href="$class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="439,5,551,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,16,423,16,423,21,345,21"/>
-<area shape="rect" id="Node000005" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="395,56,595,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="347,67,380,67,380,72,347,72"/>
+<area shape="rect" id="Node000001" title="Testa o método setName da classe Flow." alt="" coords="5,107,141,133"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="206,5,334,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,104,133,73,187,42,202,35,204,40,190,46,136,78,93,108"/>
+<area shape="rect" id="Node000004" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="189,56,351,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,103,200,85,201,90,129,109"/>
+<area shape="rect" id="Node000005" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="191,107,349,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="141,117,175,117,175,123,141,123"/>
+<area shape="rect" id="Node000007" href="$class_flow.html#a2d0340d844ab2d275222938234e44169" title="Obtém o nome do fluxo." alt="" coords="216,157,324,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="129,131,201,150,200,155,127,137"/>
+<area shape="rect" id="Node000008" href="$class_flow.html#a7ac5c465920d5bff0f1370641c91fc40" title="Define o nome do fluxo." alt="" coords="216,208,324,235"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="93,132,136,162,190,194,204,200,202,205,187,198,133,167,90,136"/>
+<area shape="rect" id="Node000003" href="$class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="457,5,542,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,16,441,16,441,21,334,21"/>
+<area shape="rect" id="Node000006" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="399,107,599,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="349,117,383,117,383,123,349,123"/>
 </map>

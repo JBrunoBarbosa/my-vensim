@@ -1,19 +1,19 @@
 <map id="unit_Model_add" name="unit_Model_add">
 <area shape="rect" id="Node000001" title="Testa o método add da classe Model." alt="" coords="5,132,118,159"/>
-<area shape="rect" id="Node000002" href="$class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="187,5,317,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,130,109,86,135,62,164,42,175,36,178,41,167,46,139,67,113,90,75,133"/>
-<area shape="rect" id="Node000003" href="$class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="178,56,326,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,129,165,92,184,85,186,90,167,97,89,134"/>
-<area shape="rect" id="Node000004" href="$class_my_vensim.html#a646f0de3118cc569e9c9a3c45175e760" title="Cria uma instância de Flow." alt="" coords="175,107,329,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,135,159,130,159,135,118,141"/>
-<area shape="rect" id="Node000006" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="171,157,333,184"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="118,150,156,155,155,160,118,155"/>
-<area shape="rect" id="Node000007" href="$class_my_vensim.html#a07b80121d996d6ec25267e039197a557" title="Cria uma instância de System." alt="" coords="166,208,338,235"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="89,157,167,194,186,200,184,205,165,198,87,162"/>
-<area shape="rect" id="Node000008" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="173,259,331,285"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="75,158,113,200,139,224,167,244,178,250,175,255,164,249,135,228,109,204,71,161"/>
-<area shape="rect" id="Node000005" href="$class_my_vensim.html#a9b44b5b24c9499436c5d7ff82cb9d72d" title="Adiciona um fluxo ao modelo." alt="" coords="430,107,542,133"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="330,117,414,117,414,123,330,123"/>
-<area shape="rect" id="Node000009" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="386,259,586,285"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="332,269,370,269,370,275,332,275"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a4c21fa615edc5d7b8a9696fe090707a4" title="Retorna um iterador para o início dos fluxos no modelo." alt="" coords="182,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,130,109,87,135,63,164,42,175,36,177,41,167,46,139,67,113,90,75,133"/>
+<area shape="rect" id="Node000003" href="$class_model.html#af44c12bce2645f91b796e750ddbacbd2" title="Retorna um iterador para o início dos sistemas no modelo." alt="" coords="173,56,321,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,129,165,92,182,86,184,91,167,97,89,134"/>
+<area shape="rect" id="Node000004" href="$class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="183,107,311,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,135,167,128,168,133,119,140"/>
+<area shape="rect" id="Node000006" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="166,157,328,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="119,150,151,155,150,160,118,156"/>
+<area shape="rect" id="Node000007" href="$class_model.html#a851720e25fa19a32e59e5ca12be23901" title="Cria uma instância de System." alt="" coords="174,208,320,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="89,157,167,194,184,200,182,205,165,198,87,162"/>
+<area shape="rect" id="Node000008" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="168,259,326,285"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="75,157,113,200,139,224,167,244,177,250,175,255,164,249,135,228,109,204,71,161"/>
+<area shape="rect" id="Node000005" href="$class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="434,107,519,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="311,117,418,117,418,123,311,123"/>
+<area shape="rect" id="Node000009" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="376,259,576,285"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="326,269,360,269,360,275,326,275"/>
 </map>
