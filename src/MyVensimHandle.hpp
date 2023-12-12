@@ -1,5 +1,6 @@
 /**
- * @brief Classe que implementa o handle MyVensim.
+ * @class MyVensimHandle
+ * @brief Classe que implementa o Handle de MyVensim.
  */
 #ifndef MY_HANDLE_HPP
 #define MY_HANDLE_HPP

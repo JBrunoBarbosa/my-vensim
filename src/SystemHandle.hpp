@@ -1,3 +1,7 @@
+/**
+ * @class SystemHandle
+ * @brief Classe que implementa o Handle de System.
+ */
 #ifndef SYSTEM_HANDLE_HPP
 #define SYSTEM_HANDLE_HPP
 
