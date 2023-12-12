@@ -24,6 +24,7 @@ public:
      */
     typedef std::vector<Model *>::iterator modelsIterator;
     virtual Model* createModel() = 0;
+    virtual void deleteModel(Model* const model) = 0;
     virtual modelsIterator endModels() = 0;
     virtual modelsIterator beginModels() = 0;
 };

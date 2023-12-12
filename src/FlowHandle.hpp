@@ -4,6 +4,11 @@
  *
  * @tparam T O tipo de implementação de fluxo.
  */
+
+#include "Flow.hpp"
+#include "HandleBody.hpp"
+#include <string>
+
 template <typename T>
 class FlowHandle : public Flow, public Handle<T> {
 public:

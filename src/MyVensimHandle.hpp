@@ -28,6 +28,10 @@ public:
     modelsIterator beginModels() {
         return pImpl_->beginModels();
     }
+
+    void deleteModel(Model* const model) {
+        pImpl_->deleteModel(model);
+    }
 };
 
 #endif
