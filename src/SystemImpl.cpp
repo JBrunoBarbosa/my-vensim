@@ -27,12 +27,15 @@ string SystemImpl::getName() const { return name; }
 double SystemImpl::getValue() const { return value; }
 
 // Operator
-System& SystemImpl::operator=(const System& other) {
-    if (this != &other) {
-        name = other.getName();
-        value = other.getValue();
+SystemImpl& SystemImpl::operator=(const SystemImpl& other) {
+    if (this == &other) {
+        // Verificação de auto-atribuição
+        return *this;
     }
+
+    // Copiando os dados
+    this->name = other.name;
+    this->value = other.value;
+
     return *this;
 }
-
-System* SystemImpl::clone() const { return new SystemImpl(name, value); }

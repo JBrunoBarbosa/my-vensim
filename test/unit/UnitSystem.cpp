@@ -50,15 +50,6 @@ void unit_System_operator() {
     assert(std::abs(sys1->getValue() - 100.0) < 0.001);
 }
 
-void unit_System_clone() {
-    MyVensim* factory = MyVensim::getInstance();
-    Model* model = factory->createModel();
-    System* sys1 = model->createSystem("System1", 100.0);
-    System* sys2 = sys1->clone();
-    assert(sys2->getName() == "System1");
-    assert(std::abs(sys2->getValue() - 100.0) < 0.001);
-}
-
 void run_unit_tests_System() {
     unit_System_constructor();
     unit_System_setName();
@@ -66,6 +57,5 @@ void run_unit_tests_System() {
     unit_System_getName();
     unit_System_getValue();
     unit_System_operator();
-    unit_System_clone();
     std::cout << "All System unit tests passed!" << std::endl;
 }

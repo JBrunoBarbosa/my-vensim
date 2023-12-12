@@ -1,7 +1,8 @@
 #include "ModelImpl.hpp"
-#include "SystemImpl.hpp"
+#include "SystemHandle.hpp"
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -95,15 +96,39 @@ void ModelImpl::report() {
     }
 }
 
-void ModelImpl::clearModel() {
-    for (auto flow : flows) delete flow;
-    for (auto system : systems) delete system;
-    flows.clear();
-    systems.clear();
+System* ModelImpl::createSystem(const std::string name, double value) {
+    System *sys = new SystemHandle(name, value);
+    add(sys);
+    return sys;
 }
 
-System* ModelImpl::createSystem(const std::string name, double value) {
-    System* system = new SystemImpl(name, value);
-    add(system);
-    return system;
+void ModelImpl::deleteSystem(System* const system) {
+	// Usar os iteradores fornecidos para encontrar e remover o sistema
+    for (auto it = beginSystems(); it != endSystems(); ) {
+        if (*it == system) {
+            it = systems.erase(it);  // Assumindo que 'systems' é acessível aqui
+        } else {
+            ++it;
+        }
+    }
+
+    // Iterar pelos fluxos para atualizar as referências ao sistema
+    for (auto it = flows.begin(); it != flows.end(); ++it) {
+        if ((*it)->getSource() == system) {
+            (*it)->setSource(NULL);
+        }
+        if ((*it)->getTarget() == system) {
+            (*it)->setTarget(NULL);
+        }
+    }
+}
+
+void ModelImpl::deleteFlow(Flow* const flow) {
+    for (auto it = beginFlows(); it != endFlows(); ) {
+        if (*it == flow) {
+            it = flows.erase(it);
+        } else {
+            ++it;
+        }
+    }
 }
