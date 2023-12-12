@@ -1,5 +1,14 @@
 <map id="Model::endFlows" name="Model::endFlows">
-<area shape="rect" id="Node000001" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="201,5,320,32"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html#a6f5958c8c1a164751346a284fe0df4a7" title=" " alt="" coords="5,5,153,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+<area shape="rect" id="Node000001" title="Retorna um iterador para o final dos fluxos no modelo." alt="" coords="500,56,620,83"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html#a6f5958c8c1a164751346a284fe0df4a7" title=" " alt="" coords="301,5,448,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,54,425,35,427,30,495,49"/>
+<area shape="rect" id="Node000003" href="$_unit_model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Testa o método beginFlows da classe Model." alt="" coords="296,56,452,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="485,72,452,72,452,67,485,67"/>
+<area shape="rect" id="Node000006" href="$_unit_model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Testa o método endFlows da classe Model." alt="" coords="301,107,447,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="495,90,427,109,425,103,493,85"/>
+<area shape="rect" id="Node000004" href="$_unit_model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title="Função para executar todos os testes unitários para a classe Model." alt="" coords="103,81,248,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="281,84,249,88,248,83,281,79"/>
+<area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,97,55,97,55,92,87,92"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="285,111,248,107,249,101,286,106"/>
 </map>

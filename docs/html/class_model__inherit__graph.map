@@ -1,5 +1,5 @@
 <map id="Model" name="Model">
-<area shape="rect" id="Node000001" title="Classe que representa um modelo de sistema puramente virtual." alt="" coords="5,5,125,331"/>
-<area shape="rect" id="Node000002" href="$class_model_impl.html" title="Classe que implementa Model." alt="" coords="5,379,125,789"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,345,68,379,63,379,63,345"/>
+<area shape="rect" id="Node000001" title="Classe que representa um modelo de sistema puramente virtual." alt="" coords="5,5,125,373"/>
+<area shape="rect" id="Node000002" href="$class_model_impl.html" title="Classe que implementa Model." alt="" coords="8,421,123,747"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,388,68,421,63,421,63,388"/>
 </map>

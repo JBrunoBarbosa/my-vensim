@@ -6,8 +6,9 @@
 #define SYSTEM_IMPL_HPP
 
 #include "System.hpp"
+#include "HandleBody.hpp"
 
-class SystemImpl: public System {
+class SystemImpl: public Body {
 protected:
     std::string name;      
     double value;     
@@ -17,12 +18,11 @@ public:
     SystemImpl(const System* other);
     virtual ~SystemImpl();
 
-    void setName(const std::string name) override;
-    void setValue(const double value) override;
-    std::string getName() const override;
-    double getValue() const override;
-    System& operator=(const System& other);
-    System* clone() const override;
+    void setName(const std::string name);
+    void setValue(const double value);
+    std::string getName() const;
+    double getValue() const;
+    SystemImpl& operator=(const SystemImpl& other);
 };
 
 #endif

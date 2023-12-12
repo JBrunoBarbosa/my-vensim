@@ -12,6 +12,7 @@
 
 #include "System.hpp"
 #include "Flow.hpp"
+#include "FlowHandle.hpp"
 #include <vector>
 
 class Model {
@@ -86,11 +87,6 @@ public:
      * @brief Define o histórico inicial com valores padrão.
      */
     virtual void setInitialHistory() = 0;
-
-    /**
-     * @brief Limpa o modelo, removendo todos os sistemas e fluxos.
-     */
-    virtual void clearModel() = 0;
     
     /**
      * @brief Executa o modelo de tempo inicial a tempo final.
@@ -98,6 +94,40 @@ public:
      * @param timeFinal O tempo final da execução do modelo.
      */
     virtual void execute(const int timeInitial, const int timeFinal) = 0;
+
+    /**
+     * @brief Cria uma instância de System.
+     * @param name Nome do sistema.
+     * @param value Valor associado ao sistema.
+     * @return Um ponteiro para a instância de System criada.
+     */
+    virtual System* createSystem(const std::string name, double value) = 0;
+
+    /**
+     * @brief Cria uma instância de Flow.
+     * @param name Nome do fluxo.
+     * @param source Sistema de origem do fluxo.
+     * @param target Sistema de destino do fluxo.
+     * @return Um ponteiro para a instância de Flow criada.
+     */
+    template <typename FlowType>
+    Flow* createFlow(std::string name = "", System* source = nullptr, System* destiny = nullptr) {
+        Flow* f = new FlowHandle<FlowType>(name, source, destiny);
+        add(f);
+        return f;
+    }
+
+    /**
+     * @brief Deleta uma instância de System.
+     * @param system Sistema do fluxo a ser deletado.
+     */
+    virtual void deleteSystem(System* const system) = 0;
+
+    /**
+     * @brief Deleta uma instância de Flow.
+     * @param flow Flow do fluxo a ser deletado.
+     */
+    virtual void deleteFlow(Flow* const flow) = 0;
 };
 
 #endif

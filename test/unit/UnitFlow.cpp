@@ -1,90 +1,84 @@
 #include "UnitFlow.hpp"
 #include "../models/FlowExponential.hpp"
+#include "../../src/MyVensim.hpp"
 #include <iostream>
 
 void unit_Flow_constructor() {
-    FlowImpl* flow = new FlowExponential("Flow1");
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    Flow* flow = model->createFlow<FlowExponential>("Flow1", nullptr, nullptr);
     assert(flow->getName() == "Flow1");
     assert(flow->getSource() == nullptr);
     assert(flow->getTarget() == nullptr);
-    delete flow;
 }
 
 void unit_Flow_execute() {
-    SystemImpl* source = new SystemImpl("Source", 100);
-    FlowExponential* flow = new FlowExponential("", source);
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    Flow* flow = model->createFlow<FlowExponential>("", source);
     
     double result = flow->execute();
     assert(result == 1.0);
-    
-    delete source;
-    delete flow;
 }
 
 void unit_Flow_link() {
-    SystemImpl* source = new SystemImpl("Source", 100);
-    SystemImpl* target = new SystemImpl("Target", 200);
-    FlowExponential* flow = new FlowExponential();
-    flow->link(source, target);
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    System* target = model->createSystem("Target", 200);
+    Flow* flow = model->createFlow<FlowExponential>("", source, target);
     assert(flow->getSource() == source);
     assert(flow->getTarget() == target);
-    
-    delete source;
-    delete target;
-    delete flow;
 }
 
 void unit_Flow_setSource() {
-    SystemImpl* source = new SystemImpl("Source", 100);
-    FlowExponential* flow = new FlowExponential();
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    Flow* flow = model->createFlow<FlowExponential>();
     flow->setSource(source);
     assert(flow->getSource() == source);
-    
-    delete source;
-    delete flow;
 }
 
 void unit_Flow_setTarget() {
-    SystemImpl* target = new SystemImpl("Target", 200);
-    FlowExponential* flow = new FlowExponential();
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* target = model->createSystem("Target", 200);
+    Flow* flow = model->createFlow<FlowExponential>();
     flow->setTarget(target);
     assert(flow->getTarget() == target);
-    
-    delete target;
-    delete flow;
 }
 
 void unit_Flow_setName() {
-    FlowExponential* flow = new FlowExponential();
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    Flow* flow =  model->createFlow<FlowExponential>();
     flow->setName("Flow1");
     assert(flow->getName() == "Flow1");
-    
-    delete flow;
 }
 
 void unit_Flow_getName() {
-    FlowExponential* flow = new FlowExponential("Flow1");
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    Flow* flow = model->createFlow<FlowExponential>("Flow1");
     assert(flow->getName() == "Flow1");
-    
-    delete flow;
 }
 
 void unit_Flow_getSource() {
-    SystemImpl* source = new SystemImpl("Source", 100);
-    FlowExponential* flow = new FlowExponential("", source);
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* source = model->createSystem("Source", 100);
+    Flow* flow = model->createFlow<FlowExponential>("", source);
     assert(flow->getSource() == source);
-    
-    delete source;
-    delete flow;
 }
 
 void unit_Flow_getTarget() {
-    SystemImpl* target = new SystemImpl("Target", 200);
-    FlowExponential* flow = new FlowExponential("", nullptr, target);
+    MyVensim* factory = MyVensim::getInstance();
+    Model* model = factory->createModel();
+    System* target = model->createSystem("Target", 200);
+    Flow* flow = model->createFlow<FlowExponential>("", nullptr, target);
     assert(flow->getTarget() == target);
-    
-    delete target;
-    delete flow;
 }
 
 void run_unit_tests_Flow() {

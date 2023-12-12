@@ -6,8 +6,9 @@
 #define MODELIMPL_HPP
 
 #include "Model.hpp"
+#include "HandleBody.hpp"
 
-class ModelImpl : public Model {
+class ModelImpl : public Body {
 protected:
     std::vector<Flow*> flows;
     std::vector<System*> systems;
@@ -18,18 +19,24 @@ public:
     ModelImpl(Model* other);
     virtual ~ModelImpl();
 
-    systemIterator beginSystems() override;
-    systemIterator endSystems() override;
-    flowIterator beginFlows() override;
-    flowIterator endFlows() override;
-    historyIterator beginHistory() override;
-    historyIterator endHistory() override;
-    void add(Flow* flow) override;
-    void add(System* system) override;
-    void report() override;
-    void setInitialHistory() override;
-    void clearModel() override;
-    void execute(const int timeInitial, const int timeFinal) override;
+    typedef std::vector<System *>::iterator systemIterator;
+    typedef std::vector<Flow *>::iterator flowIterator;
+    typedef std::vector<std::vector<double>>::iterator historyIterator;
+
+    systemIterator beginSystems();
+    systemIterator endSystems();
+    flowIterator beginFlows();
+    flowIterator endFlows();
+    historyIterator beginHistory();
+    historyIterator endHistory();
+    System* createSystem(const std::string name, double value);
+    void deleteSystem(System* const system);
+    void deleteFlow(Flow* const flow);
+    void add(Flow* flow);
+    void add(System* system);
+    void report();
+    void setInitialHistory();
+    void execute(const int timeInitial, const int timeFinal);
 };
 
 #endif

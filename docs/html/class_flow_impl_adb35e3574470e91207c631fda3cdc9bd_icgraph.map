@@ -1,20 +1,5 @@
 <map id="FlowImpl::getTarget" name="FlowImpl::getTarget">
-<area shape="rect" id="Node000001" title="Obtém o sistema de destino do fluxo." alt="" coords="484,107,619,133"/>
-<area shape="rect" id="Node000002" href="$class_flow_logistic.html#a9b25e905a9501d4b4bcc32183cccc4c5" title="&lt; Herda construtores da classe Flow." alt="" coords="289,5,436,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="519,99,480,72,435,46,408,35,410,30,438,42,483,68,522,95"/>
-<area shape="rect" id="Node000003" href="$_unit_flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title=" " alt="" coords="288,56,436,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="483,105,414,86,416,81,485,99"/>
-<area shape="rect" id="Node000006" href="$_unit_flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Testa o método getTarget da classe Flow." alt="" coords="294,107,431,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="469,123,431,123,431,117,469,117"/>
-<area shape="rect" id="Node000007" href="$_unit_flow_8cpp.html#a63db95fe4c2c52fecec5eaad8ff4cacd" title="Testa o método link da classe Flow." alt="" coords="311,157,414,184"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="485,141,415,159,413,154,483,135"/>
-<area shape="rect" id="Node000008" href="$_unit_flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Testa o método setTarget da classe Flow." alt="" coords="294,208,431,235"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="522,145,483,172,438,198,410,210,408,205,435,194,480,168,519,141"/>
-<area shape="rect" id="Node000004" href="$_unit_flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title="Executa todos os testes unitários para a classe Flow." alt="" coords="103,132,240,159"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="306,91,289,97,204,134,202,129,287,92,304,86"/>
-<area shape="rect" id="Node000005" href="$test_2unit_2_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,132,55,159"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,148,55,148,55,143,87,143"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="278,134,241,139,240,134,278,129"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="295,164,240,157,241,152,295,159"/>
-<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="304,205,287,198,202,162,204,157,289,194,306,200"/>
+<area shape="rect" id="Node000001" title="Obtém o sistema de destino do fluxo." alt="" coords="201,5,335,32"/>
+<area shape="rect" id="Node000002" href="$class_flow_logistic.html#a9b25e905a9501d4b4bcc32183cccc4c5" title="&lt; Herda construtores da classe Flow." alt="" coords="5,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
 </map>

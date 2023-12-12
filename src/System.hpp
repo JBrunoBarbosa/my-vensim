@@ -43,12 +43,6 @@ public:
      * @return O valor associado ao sistema.
      */
     virtual double getValue() const = 0;
-    
-    /**
-     * @brief Clona um sistema.
-     * @return O valor associado ao sistema.
-     */
-    virtual System* clone() const = 0;
 };
 
 #endif

@@ -1,5 +1,15 @@
 <map id="unit_Flow_getName" name="unit_Flow_getName">
-<area shape="rect" id="Node000001" title="Testa o método getName da classe Flow." alt="" coords="5,5,141,32"/>
-<area shape="rect" id="Node000002" href="$class_flow_impl.html#aff4ced90aedec7ff19ea84086ea0d412" title="Obtém o nome do fluxo." alt="" coords="189,5,321,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,16,173,16,173,21,141,21"/>
+<area shape="rect" id="Node000001" title="Testa o método getName da classe Flow." alt="" coords="5,81,141,108"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a837d1676759dfb5cd1279260966c06c7" title="Cria uma instância de Flow." alt="" coords="206,5,334,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,78,188,42,207,35,209,40,190,46,104,83"/>
+<area shape="rect" id="Node000004" href="$class_my_vensim.html#a7364cd2d39a32f921181e3ceee2bf2cf" title="Cria uma instância de Model." alt="" coords="189,56,351,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,83,173,79,173,84,141,89"/>
+<area shape="rect" id="Node000005" href="$class_my_vensim.html#a4fa77c524863cdeacc0f08c8e96cf209" title=" " alt="" coords="191,107,349,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="141,101,176,105,175,110,141,106"/>
+<area shape="rect" id="Node000007" href="$class_flow.html#a2d0340d844ab2d275222938234e44169" title="Obtém o nome do fluxo." alt="" coords="216,157,324,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="104,106,190,143,209,150,207,155,188,148,102,111"/>
+<area shape="rect" id="Node000003" href="$class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="Adiciona um flow no model." alt="" coords="457,5,542,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,16,441,16,441,21,334,21"/>
+<area shape="rect" id="Node000006" href="$class_my_vensim_impl.html#a156f82cc299ac8445261e635703a7aef" title=" " alt="" coords="399,107,599,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="349,117,383,117,383,123,349,123"/>
 </map>

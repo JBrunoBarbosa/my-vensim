@@ -6,9 +6,9 @@
 #define FLOW_IMPL_HPP
 
 #include "System.hpp"
-#include "Flow.hpp"
+#include "HandleBody.hpp"
 
-class FlowImpl : public Flow {
+class FlowImpl : public Body {
 protected:
     std::string name;
     System* source;
@@ -18,15 +18,15 @@ public:
     FlowImpl(std::string name = "", System* source = nullptr, System* target = nullptr);
     FlowImpl(const FlowImpl& other);
     virtual ~FlowImpl();
-    virtual double execute() override = 0;
-    void link(System* source, System* target) override;
-    void setSource(System* source) override;
-    void setTarget(System* target) override;
-    void setName(const std::string name) override;
-    std::string getName() const override;
-    System* getSource() const override;
-    System* getTarget() const override;
-    Flow& operator=(const Flow& other);
+    virtual double execute() = 0;
+    void link(System* source, System* target);
+    void setSource(System* source);
+    void setTarget(System* target);
+    void setName(const std::string name) ;
+    std::string getName() const;
+    System* getSource() const;
+    System* getTarget() const;
+    FlowImpl& operator=(const FlowImpl& other);
 };
 
 #endif
